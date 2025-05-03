@@ -1,13 +1,13 @@
-name: Build and Deploy to sbom-server-us-east4
+name: Build and Deploy to Cloud Run
 
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main
 
 jobs:
   build-and-deploy:
-    name: Build and Deploy to us-east4
+    name: Build and Deploy to Cloud Run
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
@@ -60,7 +60,7 @@ jobs:
           echo 'EXPOSE 8080' >> Dockerfile
           echo '' >> Dockerfile
           echo '# Set database URI to mounted directory' >> Dockerfile
-          echo 'ENV SQLITE_PATH=/data/sboms.db' >> Dockerfile
+          echo 'ENV SQLITE_PATH=/tmp/sboms.db' >> Dockerfile
           echo '' >> Dockerfile
           echo 'CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]' >> Dockerfile
         fi
@@ -79,114 +79,48 @@ jobs:
         docker push us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:${{ github.sha }}
         docker push us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:latest
 
-    # Create the deploy script that will run on the VM
-    - name: Create deploy script
+    # Create GCS bucket for SBOM files
+    - name: Create GCS bucket
+      id: create_bucket
       run: |
-        # Write raw JSON service account key to file using cat <<EOF
-        cat <<EOF > service-account-key.json
-        ${{ secrets.GCP_SA_KEY }}
-        EOF
-
-        # Debug: verify key file
-        ls -l service-account-key.json
-        echo "DEBUG: service-account-key.json size: $(wc -c < service-account-key.json) bytes"
-        echo "DEBUG: first line: $(head -n1 service-account-key.json)"
-
-        # Create the deploy script using a single cat <<EOF
-        cat <<'DEPLOY_SCRIPT_EOF' > deploy.sh
-        #!/bin/bash
-        set -e
-
-        # Configure gcloud with service account
-        if [ -f service-account-key.json ]; then
-          gcloud auth activate-service-account --key-file=service-account-key.json
-          # Configure Docker authentication for Artifact Registry
-          gcloud auth configure-docker us-east4-docker.pkg.dev --quiet
+        # Generate a unique bucket name using project ID and a suffix
+        BUCKET_NAME="${{ secrets.GCP_PROJECT_ID }}-sbom-files"
+        
+        # Check if bucket exists, create if it doesn't
+        if ! gsutil ls -b gs://$BUCKET_NAME >/dev/null 2>&1; then
+          echo "Creating bucket: $BUCKET_NAME"
+          gsutil mb -l us-east4 gs://$BUCKET_NAME
+        else
+          echo "Bucket $BUCKET_NAME already exists"
         fi
+        
+        # Make sure bucket is readable
+        gsutil iam ch allUsers:objectViewer gs://$BUCKET_NAME
+        
+        # Save bucket name for later steps
+        echo "bucket_name=$BUCKET_NAME" >> $GITHUB_OUTPUT
 
-        # Pull the latest image
-        docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest
-
-        # Stop and remove the existing container
-        docker stop sbom-finder || true
-        docker rm sbom-finder || true
-
-        # Ensure directories exist
-        mkdir -p /mnt/sbom-data/sbom_files
-        mkdir -p /mnt/sbom-data/uploads
-        mkdir -p /mnt/sbom-data/sbom_files/SBOM
-        sudo chmod -R 777 /mnt/sbom-data
-
-        # Run the new container with volumes mounted
-        docker run -d \
-          --name sbom-finder \
-          -v /mnt/sbom-data:/data \
-          -v /mnt/sbom-data/sbom_files:/app/sbom_files \
-          -v /mnt/sbom-data/uploads:/app/uploads \
-          -e SQLITE_PATH=/data/sboms.db \
-          --restart unless-stopped \
-          us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest
-
-        # Initialize database if it doesnt exist
-        if [ ! -f /mnt/sbom-data/sboms.db ]; then
-          echo "Initializing database..."
-          # Give container a moment to start up before initializing DB
-          sleep 5 
-          docker exec sbom-finder flask db init || echo "Database already initialized or command failed. Continuing..."
-          docker exec sbom-finder flask db migrate -m "Initial migration." || echo "Migration already exists or failed. Continuing..."
-          docker exec sbom-finder flask db upgrade || echo "Upgrade failed. Continuing..."
-          # Fallback: Original create_all if flask-migrate commands fail
-          docker exec sbom-finder python -c "from app import app, db; app.app_context().push(); db.create_all()" || echo "create_all failed. Check container logs."
-        fi
-
-        # Verify container is running
-        docker ps | grep sbom-finder
-        echo "Deployment completed successfully!"
-
-        # Clean up credentials after deployment
-        rm -f service-account-key.json
-        DEPLOY_SCRIPT_EOF
-
-        chmod +x deploy.sh
-
-    # Deploy to the VM using SSH
-    - name: Deploy to VM
+    # Deploy to Cloud Run
+    - name: Deploy to Cloud Run
       id: deploy
       run: |
-        # Add host key to known_hosts to prevent SSH prompt
-        gcloud compute config-ssh
-        
-        # Copy service account key and deploy script to VM
-        echo "Copying service account key and deploy script to VM..."
-        gcloud compute scp service-account-key.json sbom-server-us-east4:~ --zone=us-east4-a || {
-          echo "ERROR: Failed to copy service account key to VM"
-          exit 1
-        }
-        
-        gcloud compute scp deploy.sh sbom-server-us-east4:~ --zone=us-east4-a || {
-          echo "ERROR: Failed to copy deploy script to VM" 
-          exit 1
-        }
-        
-        # Execute deploy script on VM with detailed output
-        echo "Executing deploy script on VM..."
-        gcloud compute ssh sbom-server-us-east4 --zone=us-east4-a -- \
-          "set -x && PROJECT_ID=${{ secrets.GCP_PROJECT_ID }} bash -x ~/deploy.sh" || {
-          echo "ERROR: Deploy script execution failed"
-          # Get logs from the VM
-          gcloud compute ssh sbom-server-us-east4 --zone=us-east4-a -- \
-            "docker logs sbom-finder 2>&1 || echo 'No container logs available'"
-          exit 1
-        }
+        gcloud run deploy sbom-finder \
+          --image=us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:latest \
+          --platform=managed \
+          --region=us-east4 \
+          --allow-unauthenticated \
+          --memory=512Mi \
+          --cpu=1 \
+          --port=8080 \
+          --set-env-vars="SQLITE_PATH=/tmp/sboms.db" \
+          --set-env-vars="FLASK_ENV=production" \
+          --set-env-vars="CORS_ORIGIN=https://sbom-frontend-git-main-sneha-joyces-projects.vercel.app" \
+          --set-env-vars="GCS_BUCKET_NAME=${{ steps.create_bucket.outputs.bucket_name }}" \
+          --timeout=300s
       
     # Get deployed application URL
     - name: Get Application URL
       run: |
-        VM_IP=$(gcloud compute instances describe sbom-server-us-east4 --zone=us-east4-a --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
-        echo "app_url=http://$VM_IP/" >> $GITHUB_OUTPUT
-        echo "Application deployed to: http://$VM_IP/"
-        
-    # Clean up service account key file
-    - name: Clean up
-      if: always()
-      run: rm -f service-account-key.json
+        SERVICE_URL=$(gcloud run services describe sbom-finder --region=us-east4 --format='value(status.url)')
+        echo "app_url=$SERVICE_URL" >> $GITHUB_OUTPUT
+        echo "Application deployed to: $SERVICE_URL"
