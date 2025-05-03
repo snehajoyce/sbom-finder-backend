@@ -120,7 +120,6 @@ jobs:
         # Run the new container with volumes mounted
         docker run -d \
           --name sbom-finder \
-          -p 80:8080 \
           -v /mnt/sbom-data:/data \
           -v /mnt/sbom-data/sbom_files:/app/sbom_files \
           -v /mnt/sbom-data/uploads:/app/uploads \
