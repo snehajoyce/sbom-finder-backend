@@ -24,7 +24,8 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(DATASET_DIR, exist_ok=True)
 
 # Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sboms.db'
+SQLITE_PATH = os.environ.get('SQLITE_PATH', 'sboms.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{SQLITE_PATH}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

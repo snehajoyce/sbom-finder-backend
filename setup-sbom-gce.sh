@@ -58,8 +58,14 @@ then
     echo "Docker could not be found, installing..."
     sudo apt-get update
     sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+    # Use a temporary file instead of piping directly to avoid TTY issues
+    echo "Getting Docker GPG key..."
+    curl -fsSL https://download.docker.com/linux/debian/gpg -o /tmp/docker.gpg
+    sudo gpg --batch --yes --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg /tmp/docker.gpg
+    rm -f /tmp/docker.gpg
+
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     sudo apt-get update
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io
     sudo usermod -aG docker $USER
@@ -72,6 +78,13 @@ if ! gcloud auth list --filter=status:ACTIVE --format="value(account)" &> /dev/n
     echo "Not authenticated with Google Cloud. Please login:"
     gcloud auth login
 fi
+
+# Function to check if input is a yes response
+is_yes_response() {
+    local input=$(echo "$1" | tr '[:upper:]' '[:lower:]')
+    [[ "$input" == "y" || "$input" == "yes" || "$input" == "true" || "$input" == "1" ]]
+    return $?
+}
 
 # --- STEP 1: Configure GCP project and region ---
 # Get current project or prompt for one
@@ -90,7 +103,7 @@ if [ "$BILLING_ENABLED" != "true" ]; then
     echo "WARNING: Billing may not be enabled for this project."
     echo "Please ensure billing is set up before continuing: https://console.cloud.google.com/billing/linkedaccount?project=$PROJECT_ID"
     read -p "Continue anyway? (y/n): " continue_billing
-    if [[ "$continue_billing" != "y" ]]; then
+    if ! is_yes_response "$continue_billing"; then
         echo "Setup aborted."
         exit 0
     fi
@@ -150,7 +163,7 @@ echo "VM Name: $VM_NAME"
 echo "Machine Type: $MACHINE_TYPE"
 echo "Data Disk Size: ${DISK_SIZE}GB"
 read -p "Continue with setup? (y/n, default: y): " continue_setup
-if [[ "$continue_setup" == "n" ]]; then
+if [[ -n "$continue_setup" ]] && ! is_yes_response "$continue_setup"; then
     echo "Setup aborted."
     exit 0
 fi
@@ -167,27 +180,41 @@ gcloud services enable compute.googleapis.com \
 
 # --- STEP 3: Create persistent disk in region ---
 echo "Creating persistent disk: $DISK_NAME..."
-gcloud compute disks create $DISK_NAME \
-    --size=${DISK_SIZE}GB \
-    --type=pd-balanced \
-    --zone=$ZONE || {
+# Check if the disk already exists using list
+if gcloud compute disks list --filter="name=$DISK_NAME" --zones=$ZONE --format="value(name)" | grep -qx "$DISK_NAME"; then
+    echo "Disk $DISK_NAME already exists, skipping creation."
+else
+    echo "Disk $DISK_NAME does not exist, creating..."
+    if ! gcloud compute disks create $DISK_NAME \
+        --size=${DISK_SIZE}GB \
+        --type=pd-balanced \
+        --zone=$ZONE; then
         echo "Failed to create disk. Please check your permissions and quotas."
         exit 1
-    }
+    fi
+fi
 
 # --- STEP 4: Create VM with disk attached in region ---
 echo "Creating VM: $VM_NAME..."
-gcloud compute instances create $VM_NAME \
-    --zone=$ZONE \
-    --machine-type=$MACHINE_TYPE \
-    --disk=boot=yes,auto-delete=yes,size=20,type=pd-standard,image-project=debian-cloud,image-family=debian-12 \
-    --disk=name=$DISK_NAME,device-name=sbom-data-disk,mode=rw,boot=no \
-    --tags=http-server,https-server \
-    --scopes=storage-full,compute-rw,logging-write || {
-        echo "Failed to create VM. Please check your permissions and quotas."
-        gcloud compute disks delete $DISK_NAME --zone=$ZONE --quiet
-        exit 1
-    }
+# Check if the VM already exists
+if gcloud compute instances describe $VM_NAME --zone=$ZONE &>/dev/null; then
+    echo "VM $VM_NAME already exists, skipping creation."
+else
+    gcloud compute instances create $VM_NAME \
+        --zone=$ZONE \
+        --machine-type=$MACHINE_TYPE \
+        --create-disk=boot=yes,auto-delete=yes,size=20,type=pd-standard,image-project=debian-cloud,image-family=debian-12 \
+        --disk=name=$DISK_NAME,device-name=sbom-data-disk,mode=rw,boot=no \
+        --tags=http-server,https-server \
+        --scopes=storage-full,compute-rw,logging-write || {
+            echo "Failed to create VM. Please check your permissions and quotas."
+            # Don't delete the disk if it existed before
+            if ! gcloud compute disks describe $DISK_NAME --zone=$ZONE &>/dev/null; then
+                gcloud compute disks delete $DISK_NAME --zone=$ZONE --quiet
+            fi
+            exit 1
+        }
+fi
 
 # Create a startup script to handle automatic mounting on reboot
 echo "Creating startup script for automatic mounting..."
@@ -209,13 +236,13 @@ gcloud compute instances add-metadata $VM_NAME \
 echo "Creating firewall rules..."
 FIREWALL_NAME="allow-http-$VM_NAME"
 # Check if firewall rule already exists
-if ! gcloud compute firewall-rules describe $FIREWALL_NAME &>/dev/null; then
+if gcloud compute firewall-rules describe $FIREWALL_NAME &>/dev/null; then
+    echo "Firewall rule $FIREWALL_NAME already exists, skipping creation."
+else
     gcloud compute firewall-rules create $FIREWALL_NAME \
         --allow=tcp:80,tcp:443 \
         --target-tags=http-server,https-server \
         --description="Allow HTTP and HTTPS traffic for $VM_NAME"
-else
-    echo "Firewall rule $FIREWALL_NAME already exists, skipping creation."
 fi
 
 # --- STEP 6: Wait for VM to be ready ---
@@ -250,24 +277,99 @@ fi
 # --- STEP 7: Set up the VM and disk ---
 echo "Setting up VM environment..."
 gcloud compute ssh $VM_NAME --zone=$ZONE -- "bash -s" << 'EOF'
-set -e
+# Disable strict error handling during disk setup
+set +e
 
-# Format and mount data disk
-echo "Formatting and mounting disk..."
-sudo mkfs.ext4 -m 0 -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/disk/by-id/google-sbom-data-disk
-sudo mkdir -p /mnt/sbom-data
-sudo mount -o discard,defaults /dev/disk/by-id/google-sbom-data-disk /mnt/sbom-data
-sudo chmod 777 /mnt/sbom-data
+echo "Checking disk status..."
+# First make sure the disk isn't mounted
+if grep -q "/dev/disk/by-id/google-sbom-data-disk" /proc/mounts; then
+    echo "Disk is currently mounted, unmounting first..."
+    sudo umount -f /dev/disk/by-id/google-sbom-data-disk || {
+        echo "Failed to unmount disk. Trying alternative approaches..."
+        # Find mount point
+        MOUNT_POINT=$(grep "/dev/disk/by-id/google-sbom-data-disk" /proc/mounts | awk '{print $2}')
+        if [ -n "$MOUNT_POINT" ]; then
+            echo "Trying to unmount from $MOUNT_POINT"
+            sudo umount -f $MOUNT_POINT || echo "Warning: Could not unmount from $MOUNT_POINT"
+        fi
+    }
+    # Double-check if unmounted
+    if grep -q "/dev/disk/by-id/google-sbom-data-disk" /proc/mounts; then
+        echo "WARNING: Disk still mounted, processes may be using it"
+        # List processes using the mount
+        sudo lsof | grep "$MOUNT_POINT" || echo "No processes found using the mount"
+    else
+        echo "Disk successfully unmounted"
+    fi
+else
+    echo "Disk is not currently mounted"
+fi
+
+# Check if disk exists and is visible
+if [ -e "/dev/disk/by-id/google-sbom-data-disk" ]; then
+    echo "Disk device exists"
+    # Check if disk is already formatted
+    if sudo blkid /dev/disk/by-id/google-sbom-data-disk | grep -q 'TYPE="ext4"'; then
+        echo "Disk is already formatted as ext4"
+    else
+        echo "Formatting disk as ext4..."
+        # Force format the disk
+        sudo mkfs.ext4 -F -m 0 -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/disk/by-id/google-sbom-data-disk
+        if [ $? -ne 0 ]; then
+            echo "WARNING: Formatting failed, checking device status..."
+            sudo lsblk -f
+        else
+            echo "Disk formatted successfully"
+        fi
+    fi
+    
+    # Create mount point and mount
+    echo "Setting up mount point..."
+    sudo mkdir -p /mnt/sbom-data
+    
+    # Mount the disk
+    echo "Mounting disk..."
+    sudo mount -o discard,defaults /dev/disk/by-id/google-sbom-data-disk /mnt/sbom-data
+    if [ $? -ne 0 ]; then
+        echo "Mount failed, checking device and mount status..."
+        echo "Device status:"
+        sudo lsblk -f
+        echo "Current mounts:"
+        cat /proc/mounts | grep "/dev/disk/by-id/google-sbom-data-disk" || echo "Disk not mounted"
+    else
+        echo "Disk mounted successfully"
+    fi
+    
+    # Set permissions
+    sudo chmod 777 /mnt/sbom-data
+else
+    echo "ERROR: Disk device /dev/disk/by-id/google-sbom-data-disk not found!"
+    echo "Available disks:"
+    ls -la /dev/disk/by-id/ || echo "No disks found in /dev/disk/by-id/"
+    echo "Block devices:"
+    sudo lsblk
+    exit 1
+fi
+
+# Re-enable strict error handling for the rest of the script
+set -e
 
 # Add disk to /etc/fstab to persist across reboots
 echo "Setting up persistent mount..."
-echo "/dev/disk/by-id/google-sbom-data-disk /mnt/sbom-data ext4 discard,defaults,nofail 0 2" | sudo tee -a /etc/fstab
+grep -qxF '/dev/disk/by-id/google-sbom-data-disk /mnt/sbom-data ext4 discard,defaults,nofail 0 2' /etc/fstab \
+  || echo '/dev/disk/by-id/google-sbom-data-disk /mnt/sbom-data ext4 discard,defaults,nofail 0 2' | sudo tee -a /etc/fstab
 
 # Install Docker
 echo "Installing Docker..."
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Use a temporary file instead of piping directly to avoid TTY issues
+echo "Getting Docker GPG key..."
+curl -fsSL https://download.docker.com/linux/debian/gpg -o /tmp/docker.gpg
+sudo gpg --batch --yes --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg /tmp/docker.gpg
+rm -f /tmp/docker.gpg
+
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
@@ -320,7 +422,17 @@ EOF
 
 # --- STEP 8: Create a service account for GitHub Actions ---
 echo "Creating service account for CI/CD..."
-SERVICE_ACCOUNT_NAME="github-actions-$VM_NAME"
+# Create a shorter service account name that fits within the 30-character limit
+VM_SHORT_NAME=$(echo $VM_NAME | sed 's/sbom-server-/sbom-/')
+SERVICE_ACCOUNT_NAME="gh-action-$VM_SHORT_NAME"
+
+# Ensure the service account name is less than 30 characters
+if [ ${#SERVICE_ACCOUNT_NAME} -gt 30 ]; then
+    # Truncate to ensure it's under 30 characters
+    SERVICE_ACCOUNT_NAME="${SERVICE_ACCOUNT_NAME:0:27}-sa"
+    echo "Service account name truncated to $SERVICE_ACCOUNT_NAME to meet length requirements"
+fi
+
 SERVICE_ACCOUNT_ID="${SERVICE_ACCOUNT_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
 
 # Check if service account already exists

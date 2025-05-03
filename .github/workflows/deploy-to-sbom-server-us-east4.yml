@@ -1,0 +1,124 @@
+name: Build and Deploy to sbom-server-us-east4
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy to us-east4
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+
+    # Configure Docker to use the gcloud command-line tool as a credential helper
+    - name: Configure Docker for GCR
+      run: |
+        gcloud auth configure-docker
+        
+    # Build the Docker image and tag with GCR path
+    - name: Build Docker image
+      run: |
+        # Create Dockerfile if not exists
+        if [ ! -f Dockerfile ]; then
+          cat > Dockerfile << 'DOCKEREOF'
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt gunicorn
+
+COPY . .
+ENV PORT=8080
+EXPOSE 8080
+
+# Set database URI to mounted directory
+ENV SQLITE_PATH=/data/sboms.db
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]
+DOCKEREOF
+        fi
+        
+        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }} .
+        docker tag gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }} gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-latest
+
+    # Push the Docker image to Google Container Registry
+    - name: Push Docker image to GCR
+      run: |
+        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }}
+        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-latest
+
+    # Create the deploy script that will run on the VM
+    - name: Create deploy script
+      run: |
+        cat > deploy.sh << 'DEPLOYEOF'
+#!/bin/bash
+set -e
+
+# Pull the latest image
+docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest
+
+# Stop and remove the existing container
+docker stop sbom-finder || true
+docker rm sbom-finder || true
+
+# Ensure directories exist 
+mkdir -p /mnt/sbom-data/sbom_files
+mkdir -p /mnt/sbom-data/uploads
+mkdir -p /mnt/sbom-data/sbom_files/SBOM
+chmod -R 777 /mnt/sbom-data
+
+# Run the new container with volumes mounted
+docker run -d \
+  --name sbom-finder \
+  -p 80:8080 \
+  -v /mnt/sbom-data:/data \
+  -v /mnt/sbom-data/sbom_files:/app/sbom_files \
+  -v /mnt/sbom-data/uploads:/app/uploads \
+  -e SQLITE_PATH=/data/sboms.db \
+  --restart unless-stopped \
+  gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest
+
+# Initialize database if it doesn't exist
+if [ ! -f /mnt/sbom-data/sboms.db ]; then
+  echo "Initializing database..."
+  docker exec sbom-finder python -c "from app import db; db.create_all()"
+fi
+
+# Verify container is running
+docker ps | grep sbom-finder
+echo "Deployment completed successfully!"
+DEPLOYEOF
+        
+        chmod +x deploy.sh
+
+    # Deploy to the VM using SSH
+    - name: Deploy to VM
+      id: deploy
+      run: |
+        # Add host key to known_hosts to prevent SSH prompt
+        gcloud compute config-ssh
+        
+        # Copy deploy script to VM
+        gcloud compute scp deploy.sh sbom-server-us-east4:~ --zone=us-east4-a
+        
+        # Execute deploy script on VM
+        gcloud compute ssh sbom-server-us-east4 --zone=us-east4-a -- \
+          "PROJECT_ID=${{ secrets.GCP_PROJECT_ID }} bash ~/deploy.sh"
+      
+    # Get deployed application URL
+    - name: Get Application URL
+      run: |
+        VM_IP=$(gcloud compute instances describe sbom-server-us-east4 --zone=us-east4-a --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
+        echo "::set-output name=app_url::http://$VM_IP/"
+        echo "Application deployed to: http://$VM_IP/"
