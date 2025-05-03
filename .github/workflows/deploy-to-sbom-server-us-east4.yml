@@ -82,8 +82,18 @@ jobs:
     # Create the deploy script that will run on the VM
     - name: Create deploy script
       run: |
+        # Save service account key to file for VM authentication
+        echo '${{ secrets.GCP_SA_KEY }}' > service-account-key.json
+        
         echo '#!/bin/bash' > deploy.sh
         echo 'set -e' >> deploy.sh
+        echo '' >> deploy.sh
+        echo '# Configure gcloud with service account' >> deploy.sh
+        echo 'if [ -f service-account-key.json ]; then' >> deploy.sh
+        echo '  gcloud auth activate-service-account --key-file=service-account-key.json' >> deploy.sh
+        echo '  # Configure Docker authentication for Artifact Registry' >> deploy.sh
+        echo '  gcloud auth configure-docker us-east4-docker.pkg.dev --quiet' >> deploy.sh
+        echo 'fi' >> deploy.sh
         echo '' >> deploy.sh
         echo '# Pull the latest image' >> deploy.sh
         echo 'docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest' >> deploy.sh
@@ -118,6 +128,9 @@ jobs:
         echo '# Verify container is running' >> deploy.sh
         echo 'docker ps | grep sbom-finder' >> deploy.sh
         echo 'echo "Deployment completed successfully!"' >> deploy.sh
+        echo '' >> deploy.sh
+        echo '# Clean up credentials after deployment' >> deploy.sh
+        echo 'rm -f service-account-key.json' >> deploy.sh
         
         chmod +x deploy.sh
 
@@ -128,7 +141,8 @@ jobs:
         # Add host key to known_hosts to prevent SSH prompt
         gcloud compute config-ssh
         
-        # Copy deploy script to VM
+        # Copy service account key and deploy script to VM
+        gcloud compute scp service-account-key.json sbom-server-us-east4:~ --zone=us-east4-a
         gcloud compute scp deploy.sh sbom-server-us-east4:~ --zone=us-east4-a
         
         # Execute deploy script on VM
@@ -141,3 +155,8 @@ jobs:
         VM_IP=$(gcloud compute instances describe sbom-server-us-east4 --zone=us-east4-a --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
         echo "app_url=http://$VM_IP/" >> $GITHUB_OUTPUT
         echo "Application deployed to: http://$VM_IP/"
+        
+    # Clean up service account key file
+    - name: Clean up
+      if: always()
+      run: rm -f service-account-key.json
