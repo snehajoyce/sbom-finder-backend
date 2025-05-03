@@ -82,9 +82,13 @@ jobs:
     # Create the deploy script that will run on the VM
     - name: Create deploy script
       run: |
-        # Save service account key to file for VM authentication
-        printf '%s' "${{ secrets.GCP_SA_KEY }}" > service-account-key.json
-        
+        # Write raw JSON service account key to file
+        printf '%s\n' "${{ secrets.GCP_SA_KEY }}" > service-account-key.json
+        # Debug: verify key file
+        ls -l service-account-key.json
+        echo "DEBUG: service-account-key.json size: $(wc -c < service-account-key.json) bytes"
+        echo "DEBUG: first line: $(head -n1 service-account-key.json)"
+
         echo '#!/bin/bash' > deploy.sh
         echo 'set -e' >> deploy.sh
         echo '' >> deploy.sh
