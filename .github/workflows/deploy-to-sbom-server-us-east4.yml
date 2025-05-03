@@ -142,12 +142,27 @@ jobs:
         gcloud compute config-ssh
         
         # Copy service account key and deploy script to VM
-        gcloud compute scp service-account-key.json sbom-server-us-east4:~ --zone=us-east4-a
-        gcloud compute scp deploy.sh sbom-server-us-east4:~ --zone=us-east4-a
+        echo "Copying service account key and deploy script to VM..."
+        gcloud compute scp service-account-key.json sbom-server-us-east4:~ --zone=us-east4-a || {
+          echo "ERROR: Failed to copy service account key to VM"
+          exit 1
+        }
         
-        # Execute deploy script on VM
+        gcloud compute scp deploy.sh sbom-server-us-east4:~ --zone=us-east4-a || {
+          echo "ERROR: Failed to copy deploy script to VM" 
+          exit 1
+        }
+        
+        # Execute deploy script on VM with detailed output
+        echo "Executing deploy script on VM..."
         gcloud compute ssh sbom-server-us-east4 --zone=us-east4-a -- \
-          "PROJECT_ID=${{ secrets.GCP_PROJECT_ID }} bash ~/deploy.sh"
+          "set -x && PROJECT_ID=${{ secrets.GCP_PROJECT_ID }} bash -x ~/deploy.sh" || {
+          echo "ERROR: Deploy script execution failed"
+          # Get logs from the VM
+          gcloud compute ssh sbom-server-us-east4 --zone=us-east4-a -- \
+            "docker logs sbom-finder 2>&1 || echo 'No container logs available'"
+          exit 1
+        }
       
     # Get deployed application URL
     - name: Get Application URL
