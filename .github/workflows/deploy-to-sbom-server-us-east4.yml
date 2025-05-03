@@ -32,9 +32,19 @@ jobs:
     # Configure Docker to use the gcloud command-line tool as a credential helper
     - name: Configure Docker for Artifact Registry
       run: |
-        gcloud auth configure-docker --quiet
+        gcloud auth configure-docker us-east4-docker.pkg.dev --quiet
         
-    # Build the Docker image and tag with GCR path
+    # Create the repository if it doesn't exist
+    - name: Create Artifact Registry repository
+      run: |
+        # Try to create the repository, ignore if it already exists
+        gcloud artifacts repositories create sbom-finder \
+          --repository-format=docker \
+          --location=us-east4 \
+          --description="Docker repository for SBOM Finder" \
+          --quiet || echo "Repository already exists"
+        
+    # Build the Docker image and tag with Artifact Registry path
     - name: Build Docker image
       run: |
         # Create Dockerfile if not exists
@@ -55,18 +65,19 @@ jobs:
           echo 'CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]' >> Dockerfile
         fi
         
-        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }} .
-        docker tag gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }} gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-latest
+        # Build and tag with Artifact Registry path
+        docker build -t us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:${{ github.sha }} .
+        docker tag us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:${{ github.sha }} us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:latest
 
-    # Push the Docker image to Google Container Registry
-    - name: Push Docker image to GCR
+    # Push the Docker image to Artifact Registry
+    - name: Push Docker image to Artifact Registry
       run: |
         # Print authentication status before push
         gcloud auth list
         
         # Push images
-        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }}
-        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-latest
+        docker push us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:${{ github.sha }}
+        docker push us-east4-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sbom-finder/sbom-server:latest
 
     # Create the deploy script that will run on the VM
     - name: Create deploy script
@@ -75,7 +86,7 @@ jobs:
         echo 'set -e' >> deploy.sh
         echo '' >> deploy.sh
         echo '# Pull the latest image' >> deploy.sh
-        echo 'docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest' >> deploy.sh
+        echo 'docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest' >> deploy.sh
         echo '' >> deploy.sh
         echo '# Stop and remove the existing container' >> deploy.sh
         echo 'docker stop sbom-finder || true' >> deploy.sh
@@ -96,7 +107,7 @@ jobs:
         echo '  -v /mnt/sbom-data/uploads:/app/uploads \\' >> deploy.sh
         echo '  -e SQLITE_PATH=/data/sboms.db \\' >> deploy.sh
         echo '  --restart unless-stopped \\' >> deploy.sh
-        echo '  gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest' >> deploy.sh
+        echo '  us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest' >> deploy.sh
         echo '' >> deploy.sh
         echo '# Initialize database if it doesnt exist' >> deploy.sh
         echo 'if [ ! -f /mnt/sbom-data/sboms.db ]; then' >> deploy.sh
