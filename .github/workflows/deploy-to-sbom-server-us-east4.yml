@@ -92,53 +92,62 @@ jobs:
         echo "DEBUG: service-account-key.json size: $(wc -c < service-account-key.json) bytes"
         echo "DEBUG: first line: $(head -n1 service-account-key.json)"
 
-        echo '#!/bin/bash' > deploy.sh
-        echo 'set -e' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Configure gcloud with service account' >> deploy.sh
-        echo 'if [ -f service-account-key.json ]; then' >> deploy.sh
-        echo '  gcloud auth activate-service-account --key-file=service-account-key.json' >> deploy.sh
-        echo '  # Configure Docker authentication for Artifact Registry' >> deploy.sh
-        echo '  gcloud auth configure-docker us-east4-docker.pkg.dev --quiet' >> deploy.sh
-        echo 'fi' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Pull the latest image' >> deploy.sh
-        echo 'docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Stop and remove the existing container' >> deploy.sh
-        echo 'docker stop sbom-finder || true' >> deploy.sh
-        echo 'docker rm sbom-finder || true' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Ensure directories exist' >> deploy.sh
-        echo 'mkdir -p /mnt/sbom-data/sbom_files' >> deploy.sh
-        echo 'mkdir -p /mnt/sbom-data/uploads' >> deploy.sh
-        echo 'mkdir -p /mnt/sbom-data/sbom_files/SBOM' >> deploy.sh
-        echo 'sudo chmod -R 777 /mnt/sbom-data' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Run the new container with volumes mounted' >> deploy.sh
-        echo 'docker run -d \\' >> deploy.sh
-        echo '  --name sbom-finder \\' >> deploy.sh
-        echo '  -p 80:8080 \\' >> deploy.sh
-        echo '  -v /mnt/sbom-data:/data \\' >> deploy.sh
-        echo '  -v /mnt/sbom-data/sbom_files:/app/sbom_files \\' >> deploy.sh
-        echo '  -v /mnt/sbom-data/uploads:/app/uploads \\' >> deploy.sh
-        echo '  -e SQLITE_PATH=/data/sboms.db \\' >> deploy.sh
-        echo '  --restart unless-stopped \\' >> deploy.sh
-        echo '  us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Initialize database if it doesnt exist' >> deploy.sh
-        echo 'if [ ! -f /mnt/sbom-data/sboms.db ]; then' >> deploy.sh
-        echo '  echo "Initializing database..."' >> deploy.sh
-        echo '  docker exec sbom-finder python -c "from app import db; db.create_all()"' >> deploy.sh
-        echo 'fi' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Verify container is running' >> deploy.sh
-        echo 'docker ps | grep sbom-finder' >> deploy.sh
-        echo 'echo "Deployment completed successfully!"' >> deploy.sh
-        echo '' >> deploy.sh
-        echo '# Clean up credentials after deployment' >> deploy.sh
-        echo 'rm -f service-account-key.json' >> deploy.sh
-        
+        # Create the deploy script using a single cat <<EOF
+        cat <<'DEPLOY_SCRIPT_EOF' > deploy.sh
+        #!/bin/bash
+        set -e
+
+        # Configure gcloud with service account
+        if [ -f service-account-key.json ]; then
+          gcloud auth activate-service-account --key-file=service-account-key.json
+          # Configure Docker authentication for Artifact Registry
+          gcloud auth configure-docker us-east4-docker.pkg.dev --quiet
+        fi
+
+        # Pull the latest image
+        docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest
+
+        # Stop and remove the existing container
+        docker stop sbom-finder || true
+        docker rm sbom-finder || true
+
+        # Ensure directories exist
+        mkdir -p /mnt/sbom-data/sbom_files
+        mkdir -p /mnt/sbom-data/uploads
+        mkdir -p /mnt/sbom-data/sbom_files/SBOM
+        sudo chmod -R 777 /mnt/sbom-data
+
+        # Run the new container with volumes mounted
+        docker run -d \
+          --name sbom-finder \
+          -p 80:8080 \
+          -v /mnt/sbom-data:/data \
+          -v /mnt/sbom-data/sbom_files:/app/sbom_files \
+          -v /mnt/sbom-data/uploads:/app/uploads \
+          -e SQLITE_PATH=/data/sboms.db \
+          --restart unless-stopped \
+          us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest
+
+        # Initialize database if it doesnt exist
+        if [ ! -f /mnt/sbom-data/sboms.db ]; then
+          echo "Initializing database..."
+          # Give container a moment to start up before initializing DB
+          sleep 5 
+          docker exec sbom-finder flask db init || echo "Database already initialized or command failed. Continuing..."
+          docker exec sbom-finder flask db migrate -m "Initial migration." || echo "Migration already exists or failed. Continuing..."
+          docker exec sbom-finder flask db upgrade || echo "Upgrade failed. Continuing..."
+          # Fallback: Original create_all if flask-migrate commands fail
+          docker exec sbom-finder python -c "from app import app, db; app.app_context().push(); db.create_all()" || echo "create_all failed. Check container logs."
+        fi
+
+        # Verify container is running
+        docker ps | grep sbom-finder
+        echo "Deployment completed successfully!"
+
+        # Clean up credentials after deployment
+        rm -f service-account-key.json
+        DEPLOY_SCRIPT_EOF
+
         chmod +x deploy.sh
 
     # Deploy to the VM using SSH
