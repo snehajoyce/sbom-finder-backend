@@ -54,6 +54,21 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{SQLITE_PATH}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+def init_db():
+    """Initializes the database and creates tables if they don't exist."""
+    with app.app_context():
+        # Check if tables exist (optional but good practice)
+        # inspector = db.inspect(db.engine)
+        # if not inspector.has_table('sbom'):
+        #     print("Creating database tables...")
+        #     db.create_all()
+        # else:
+        #     print("Database tables already exist.")
+        # Simpler approach: just call create_all(), it's safe.
+        print("Ensuring database tables exist...")
+        db.create_all()
+        print("Database tables checked/created.")
+
 # Enhanced SBOM Database Model
 class SBOM(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -868,7 +883,8 @@ def get_sbom_file_path(filename):
     return None
 
 # Initialize DB
+init_db() # Call the function to ensure tables are created on startup
+
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
+    # The init_db() call above handles the create_all()
     app.run(debug=True, port=5001)
