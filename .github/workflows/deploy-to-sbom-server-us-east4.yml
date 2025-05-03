@@ -84,6 +84,7 @@ jobs:
       run: |
         # Write raw JSON service account key to file
         printf '%s\n' "${{ secrets.GCP_SA_KEY }}" > service-account-key.json
+
         # Debug: verify key file
         ls -l service-account-key.json
         echo "DEBUG: service-account-key.json size: $(wc -c < service-account-key.json) bytes"
