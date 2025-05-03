@@ -5,12 +5,12 @@ set -e
 PROJECT_ID=scenic-block-458718-t0
 
 # Pull the latest image
-docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest || {
-  echo "Image not found, trying initial image..."
-  docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-initial || {
+docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest || {
+  echo "Image not found in Artifact Registry, trying Container Registry as fallback..."
+  docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest || {
     echo "No Docker images found. You need to build and push an image first."
-    echo "Run: docker build -t gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-initial ."
-    echo "And: docker push gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-initial"
+    echo "Try: docker build -t us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest ."
+    echo "And: docker push us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest"
     exit 1
   }
 }
@@ -35,7 +35,7 @@ docker run -d \
   -v /mnt/sbom-data/uploads:/app/uploads \
   -e SQLITE_PATH=/data/sboms.db \
   --restart unless-stopped \
-  gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest || \
+  us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest || \
   docker run -d \
     --name sbom-finder \
     -p 80:8080 \
@@ -44,7 +44,7 @@ docker run -d \
     -v /mnt/sbom-data/uploads:/app/uploads \
     -e SQLITE_PATH=/data/sboms.db \
     --restart unless-stopped \
-    gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-initial
+    gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest
 
 # Initialize database if it doesn't exist
 if [ ! -f /mnt/sbom-data/sboms.db ]; then
