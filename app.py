@@ -19,9 +19,11 @@ except ImportError:
 
 # Initialize Flask app
 app = Flask(__name__)
-# Enable CORS for specific origin or * for all
-cors_origin = os.environ.get('CORS_ORIGIN', '*')
-CORS(app, resources={r"/*": {"origins": cors_origin, "methods": ["GET", "POST", "OPTIONS"], "allow_headers": ["Content-Type", "Authorization"]}})
+CORS(app, origins=[
+    "https://sbom-frontend-6zbf.vercel.app",
+    "https://sbom-frontend-6zbf-git-main-sneha-joyces-projects.vercel.app",
+    "https://sbom-frontend-6zbf-dnll0fe15-sneha-joyces-projects.vercel.app"
+])
 
 # File storage path
 SBOM_DIR = "./sbom_files/"
