@@ -1,0 +1,408 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:d5f866a173f99f43a2373f3b690927e0",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:57.404049",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:mojang/minecraft@5.4.23",
+      "name": "minecraft",
+      "version": "5.4.23",
+      "supplier": {
+        "name": "mojang"
+      },
+      "cpe": "cpe:2.3:a:mojang:minecraft:5.4.23:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/minecraft-framework-base@3.8.29",
+      "name": "minecraft-framework-base",
+      "version": "3.8.29",
+      "purl": "pkg:generic/minecraft-framework-base@3.8.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-minecraft-js@6.7.68",
+      "name": "module-minecraft-js",
+      "version": "6.7.68",
+      "purl": "pkg:generic/module-minecraft-js@6.7.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-minecraft-server@3.15.87",
+      "name": "core-minecraft-server",
+      "version": "3.15.87",
+      "purl": "pkg:generic/core-minecraft-server@3.15.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/plugin-minecraft-js@8.13.66",
+      "name": "plugin-minecraft-js",
+      "version": "8.13.66",
+      "purl": "pkg:generic/plugin-minecraft-js@8.13.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-minecraft-api@1.8.20",
+      "name": "util-minecraft-api",
+      "version": "1.8.20",
+      "purl": "pkg:generic/util-minecraft-api@1.8.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/framework-minecraft-utils@9.18.48",
+      "name": "framework-minecraft-utils",
+      "version": "9.18.48",
+      "purl": "pkg:generic/framework-minecraft-utils@9.18.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/engine-minecraft-api@10.1.76",
+      "name": "engine-minecraft-api",
+      "version": "10.1.76",
+      "purl": "pkg:generic/engine-minecraft-api@10.1.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lib-minecraft-utils@6.2.88",
+      "name": "lib-minecraft-utils",
+      "version": "6.2.88",
+      "purl": "pkg:generic/lib-minecraft-utils@6.2.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-minecraft-utils@10.12.50",
+      "name": "module-minecraft-utils",
+      "version": "10.12.50",
+      "purl": "pkg:generic/module-minecraft-utils@10.12.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/api-minecraft-core@10.5.52",
+      "name": "api-minecraft-core",
+      "version": "10.5.52",
+      "purl": "pkg:generic/api-minecraft-core@10.5.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-minecraft-common@7.15.85",
+      "name": "module-minecraft-common",
+      "version": "7.15.85",
+      "purl": "pkg:generic/module-minecraft-common@7.15.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/minecraft-engine@5.17.26",
+      "name": "minecraft-engine",
+      "version": "5.17.26",
+      "purl": "pkg:generic/minecraft-engine@5.17.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/minecraft-lib@9.8.40",
+      "name": "minecraft-lib",
+      "version": "9.8.40",
+      "purl": "pkg:generic/minecraft-lib@9.8.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-minecraft-utils@6.6.91",
+      "name": "engine-minecraft-utils",
+      "version": "6.6.91",
+      "purl": "pkg:generic/engine-minecraft-utils@6.6.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/minecraft-lib-common@6.16.83",
+      "name": "minecraft-lib-common",
+      "version": "6.16.83",
+      "purl": "pkg:generic/minecraft-lib-common@6.16.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/minecraft-lib-utils@7.14.74",
+      "name": "minecraft-lib-utils",
+      "version": "7.14.74",
+      "purl": "pkg:generic/minecraft-lib-utils@7.14.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-minecraft-base@5.9.45",
+      "name": "sdk-minecraft-base",
+      "version": "5.9.45",
+      "purl": "pkg:generic/sdk-minecraft-base@5.9.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-23T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

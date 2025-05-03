@@ -1,0 +1,1068 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:75df9cbc2a8f2895c557ed821a95f260",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.573898",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:brave/brave@3.2.55",
+      "name": "brave",
+      "version": "3.2.55",
+      "supplier": {
+        "name": "brave"
+      },
+      "cpe": "cpe:2.3:a:brave:brave:3.2.55:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/plugin-brave-js@3.5.52",
+      "name": "plugin-brave-js",
+      "version": "3.5.52",
+      "purl": "pkg:generic/plugin-brave-js@3.5.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-brave-common@6.7.80",
+      "name": "core-brave-common",
+      "version": "6.7.80",
+      "purl": "pkg:generic/core-brave-common@6.7.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/brave-service-core@1.7.95",
+      "name": "brave-service-core",
+      "version": "1.7.95",
+      "purl": "pkg:generic/brave-service-core@1.7.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-brave-client@3.10.63",
+      "name": "lib-brave-client",
+      "version": "3.10.63",
+      "purl": "pkg:generic/lib-brave-client@3.10.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/brave-lib-lib@6.12.87",
+      "name": "brave-lib-lib",
+      "version": "6.12.87",
+      "purl": "pkg:generic/brave-lib-lib@6.12.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-brave-api@1.10.43",
+      "name": "engine-brave-api",
+      "version": "1.10.43",
+      "purl": "pkg:generic/engine-brave-api@1.10.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/util-brave-lib@9.18.75",
+      "name": "util-brave-lib",
+      "version": "9.18.75",
+      "purl": "pkg:generic/util-brave-lib@9.18.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-brave-lib@2.17.61",
+      "name": "lib-brave-lib",
+      "version": "2.17.61",
+      "purl": "pkg:generic/lib-brave-lib@2.17.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/brave-lib-api@2.0.28",
+      "name": "brave-lib-api",
+      "version": "2.0.28",
+      "purl": "pkg:generic/brave-lib-api@2.0.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-brave@6.0.30",
+      "name": "plugin-brave",
+      "version": "6.0.30",
+      "purl": "pkg:generic/plugin-brave@6.0.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/service-brave-server@7.20.14",
+      "name": "service-brave-server",
+      "version": "7.20.14",
+      "purl": "pkg:generic/service-brave-server@7.20.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-brave-lib@1.0.93",
+      "name": "service-brave-lib",
+      "version": "1.0.93",
+      "purl": "pkg:generic/service-brave-lib@1.0.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/brave-api-server@6.16.34",
+      "name": "brave-api-server",
+      "version": "6.16.34",
+      "purl": "pkg:generic/brave-api-server@6.16.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-brave-base@8.0.36",
+      "name": "module-brave-base",
+      "version": "8.0.36",
+      "purl": "pkg:generic/module-brave-base@8.0.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-brave-server@5.7.72",
+      "name": "module-brave-server",
+      "version": "5.7.72",
+      "purl": "pkg:generic/module-brave-server@5.7.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/api-brave-common@9.0.42",
+      "name": "api-brave-common",
+      "version": "9.0.42",
+      "purl": "pkg:generic/api-brave-common@9.0.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/brave-plugin-utils@6.17.94",
+      "name": "brave-plugin-utils",
+      "version": "6.17.94",
+      "purl": "pkg:generic/brave-plugin-utils@6.17.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/brave-api-api@2.19.12",
+      "name": "brave-api-api",
+      "version": "2.19.12",
+      "purl": "pkg:generic/brave-api-api@2.19.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/brave-core-utils@7.1.57",
+      "name": "brave-core-utils",
+      "version": "7.1.57",
+      "purl": "pkg:generic/brave-core-utils@7.1.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/framework-brave@7.9.99",
+      "name": "framework-brave",
+      "version": "7.9.99",
+      "purl": "pkg:generic/framework-brave@7.9.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/brave-module-js@4.13.81",
+      "name": "brave-module-js",
+      "version": "4.13.81",
+      "purl": "pkg:generic/brave-module-js@4.13.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-brave-core@4.4.83",
+      "name": "lib-brave-core",
+      "version": "4.4.83",
+      "purl": "pkg:generic/lib-brave-core@4.4.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-brave-common@6.20.41",
+      "name": "engine-brave-common",
+      "version": "6.20.41",
+      "purl": "pkg:generic/engine-brave-common@6.20.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/brave-core-core@10.9.28",
+      "name": "brave-core-core",
+      "version": "10.9.28",
+      "purl": "pkg:generic/brave-core-core@10.9.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/brave-plugin-common@3.3.80",
+      "name": "brave-plugin-common",
+      "version": "3.3.80",
+      "purl": "pkg:generic/brave-plugin-common@3.3.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/brave-util-core@6.20.23",
+      "name": "brave-util-core",
+      "version": "6.20.23",
+      "purl": "pkg:generic/brave-util-core@6.20.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-brave-client@4.5.9",
+      "name": "core-brave-client",
+      "version": "4.5.9",
+      "purl": "pkg:generic/core-brave-client@4.5.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-brave-api@7.14.55",
+      "name": "module-brave-api",
+      "version": "7.14.55",
+      "purl": "pkg:generic/module-brave-api@7.14.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/core-brave-utils@3.20.72",
+      "name": "core-brave-utils",
+      "version": "3.20.72",
+      "purl": "pkg:generic/core-brave-utils@3.20.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/brave-lib-client@10.12.86",
+      "name": "brave-lib-client",
+      "version": "10.12.86",
+      "purl": "pkg:generic/brave-lib-client@10.12.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/brave-util@2.6.99",
+      "name": "brave-util",
+      "version": "2.6.99",
+      "purl": "pkg:generic/brave-util@2.6.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/brave-engine-js@10.8.39",
+      "name": "brave-engine-js",
+      "version": "10.8.39",
+      "purl": "pkg:generic/brave-engine-js@10.8.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/sdk-brave-api@7.7.24",
+      "name": "sdk-brave-api",
+      "version": "7.7.24",
+      "purl": "pkg:generic/sdk-brave-api@7.7.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-brave-utils@4.10.41",
+      "name": "api-brave-utils",
+      "version": "4.10.41",
+      "purl": "pkg:generic/api-brave-utils@4.10.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/brave-util-js@5.19.32",
+      "name": "brave-util-js",
+      "version": "5.19.32",
+      "purl": "pkg:generic/brave-util-js@5.19.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-brave-server@6.11.99",
+      "name": "engine-brave-server",
+      "version": "6.11.99",
+      "purl": "pkg:generic/engine-brave-server@6.11.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-brave-core@2.19.18",
+      "name": "plugin-brave-core",
+      "version": "2.19.18",
+      "purl": "pkg:generic/plugin-brave-core@2.19.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-brave-client@3.6.21",
+      "name": "api-brave-client",
+      "version": "3.6.21",
+      "purl": "pkg:generic/api-brave-client@3.6.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/brave-engine-common@2.2.21",
+      "name": "brave-engine-common",
+      "version": "2.2.21",
+      "purl": "pkg:generic/brave-engine-common@2.2.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/brave-plugin-api@10.13.68",
+      "name": "brave-plugin-api",
+      "version": "10.13.68",
+      "purl": "pkg:generic/brave-plugin-api@10.13.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/brave-api@4.13.92",
+      "name": "brave-api",
+      "version": "4.13.92",
+      "purl": "pkg:generic/brave-api@4.13.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-brave@4.6.19",
+      "name": "lib-brave",
+      "version": "4.6.19",
+      "purl": "pkg:generic/lib-brave@4.6.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/brave-module-server@4.9.66",
+      "name": "brave-module-server",
+      "version": "4.9.66",
+      "purl": "pkg:generic/brave-module-server@4.9.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-brave-server@6.0.33",
+      "name": "lib-brave-server",
+      "version": "6.0.33",
+      "purl": "pkg:generic/lib-brave-server@6.0.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/util-brave-common@5.17.56",
+      "name": "util-brave-common",
+      "version": "5.17.56",
+      "purl": "pkg:generic/util-brave-common@5.17.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-brave-core@6.2.47",
+      "name": "core-brave-core",
+      "version": "6.2.47",
+      "purl": "pkg:generic/core-brave-core@6.2.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/brave-core-server@1.9.86",
+      "name": "brave-core-server",
+      "version": "1.9.86",
+      "purl": "pkg:generic/brave-core-server@1.9.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/brave-service-utils@2.18.10",
+      "name": "brave-service-utils",
+      "version": "2.18.10",
+      "purl": "pkg:generic/brave-service-utils@2.18.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/brave-framework-common@9.3.69",
+      "name": "brave-framework-common",
+      "version": "9.3.69",
+      "purl": "pkg:generic/brave-framework-common@9.3.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-24T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

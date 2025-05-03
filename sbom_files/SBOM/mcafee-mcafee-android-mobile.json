@@ -1,0 +1,153 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:eb9d63b252854d24f7e4c66bee07bd96",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:57.964940",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:mcafee/mcafee@6.13.56",
+      "name": "mcafee",
+      "version": "6.13.56",
+      "supplier": {
+        "name": "mcafee"
+      },
+      "cpe": "cpe:2.3:a:mcafee:mcafee:6.13.56:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/mcafee-api-common@3.16.52",
+      "name": "mcafee-api-common",
+      "version": "3.16.52",
+      "purl": "pkg:generic/mcafee-api-common@3.16.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/mcafee-plugin-base@1.11.88",
+      "name": "mcafee-plugin-base",
+      "version": "1.11.88",
+      "purl": "pkg:generic/mcafee-plugin-base@1.11.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/api-mcafee-base@10.5.62",
+      "name": "api-mcafee-base",
+      "version": "10.5.62",
+      "purl": "pkg:generic/api-mcafee-base@10.5.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/mcafee-util-utils@10.6.25",
+      "name": "mcafee-util-utils",
+      "version": "10.6.25",
+      "purl": "pkg:generic/mcafee-util-utils@10.6.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-mcafee-js@2.10.14",
+      "name": "core-mcafee-js",
+      "version": "2.10.14",
+      "purl": "pkg:generic/core-mcafee-js@2.10.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

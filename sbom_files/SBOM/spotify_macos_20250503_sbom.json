@@ -1,0 +1,336 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:c58974ffddbc7d40d646f7090541ae4c",
+  "metadata": {
+    "timestamp": "2025-05-03T01:06:41.063749",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "spotify",
+      "version": "12.57.868",
+      "supplier": {
+        "name": "spotify"
+      },
+      "properties": [
+        {
+          "name": "category",
+          "value": "media"
+        },
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        },
+        {
+          "name": "total_components",
+          "value": "24"
+        },
+        {
+          "name": "unique_licenses",
+          "value": "5"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "dependency-0",
+      "version": "11.37.921",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-1",
+      "version": "4.57.688",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-2",
+      "version": "9.33.777",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-3",
+      "version": "1.52.588",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-4",
+      "version": "4.52.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-5",
+      "version": "10.46.991",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-6",
+      "version": "10.3.174",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-7",
+      "version": "5.2.256",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-8",
+      "version": "8.56.864",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-9",
+      "version": "14.33.244",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-10",
+      "version": "1.10.556",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-11",
+      "version": "9.92.943",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-12",
+      "version": "10.74.659",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-13",
+      "version": "6.29.590",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-14",
+      "version": "6.31.477",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-15",
+      "version": "18.14.103",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-16",
+      "version": "20.58.231",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-17",
+      "version": "15.97.987",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-18",
+      "version": "7.91.614",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-19",
+      "version": "10.98.817",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-20",
+      "version": "14.66.282",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-21",
+      "version": "14.12.799",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-22",
+      "version": "3.92.471",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-23",
+      "version": "14.18.392",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:fca074bd36dfa45b6948ddad79c58eec",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:54.664509",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:mpc/mpc-hc@10.18.84",
+      "name": "mpc-hc",
+      "version": "10.18.84",
+      "supplier": {
+        "name": "mpc"
+      },
+      "cpe": "cpe:2.3:a:mpc:mpc-hc:10.18.84:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/core-mpc-hc-js@5.18.5",
+      "name": "core-mpc-hc-js",
+      "version": "5.18.5",
+      "purl": "pkg:generic/core-mpc-hc-js@5.18.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/mpc-hc-lib@10.4.39",
+      "name": "mpc-hc-lib",
+      "version": "10.4.39",
+      "purl": "pkg:generic/mpc-hc-lib@10.4.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/mpc-hc-util-client@9.5.5",
+      "name": "mpc-hc-util-client",
+      "version": "9.5.5",
+      "purl": "pkg:generic/mpc-hc-util-client@9.5.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-mpc-hc@3.18.44",
+      "name": "util-mpc-hc",
+      "version": "3.18.44",
+      "purl": "pkg:generic/util-mpc-hc@3.18.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-mpc-hc-lib@6.4.8",
+      "name": "module-mpc-hc-lib",
+      "version": "6.4.8",
+      "purl": "pkg:generic/module-mpc-hc-lib@6.4.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-mpc-hc-api@6.20.20",
+      "name": "lib-mpc-hc-api",
+      "version": "6.20.20",
+      "purl": "pkg:generic/lib-mpc-hc-api@6.20.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/mpc-hc-plugin-base@6.14.11",
+      "name": "mpc-hc-plugin-base",
+      "version": "6.14.11",
+      "purl": "pkg:generic/mpc-hc-plugin-base@6.14.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/sdk-mpc-hc-lib@8.18.10",
+      "name": "sdk-mpc-hc-lib",
+      "version": "8.18.10",
+      "purl": "pkg:generic/sdk-mpc-hc-lib@8.18.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lib-mpc-hc-client@10.20.37",
+      "name": "lib-mpc-hc-client",
+      "version": "10.20.37",
+      "purl": "pkg:generic/lib-mpc-hc-client@10.20.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-mpc-hc-common@9.6.49",
+      "name": "service-mpc-hc-common",
+      "version": "9.6.49",
+      "purl": "pkg:generic/service-mpc-hc-common@9.6.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-06T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

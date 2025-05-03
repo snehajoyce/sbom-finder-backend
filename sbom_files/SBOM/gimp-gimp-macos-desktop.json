@@ -1,0 +1,873 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:e151cd9c01de4380f4ab639d6bf644c8",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:54.884999",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:gimp/gimp@5.16.90",
+      "name": "gimp",
+      "version": "5.16.90",
+      "supplier": {
+        "name": "gimp"
+      },
+      "cpe": "cpe:2.3:a:gimp:gimp:5.16.90:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/gimp-framework-common@2.1.99",
+      "name": "gimp-framework-common",
+      "version": "2.1.99",
+      "purl": "pkg:generic/gimp-framework-common@2.1.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-gimp-server@9.17.30",
+      "name": "service-gimp-server",
+      "version": "9.17.30",
+      "purl": "pkg:generic/service-gimp-server@9.17.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-gimp@4.6.93",
+      "name": "engine-gimp",
+      "version": "4.6.93",
+      "purl": "pkg:generic/engine-gimp@4.6.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-gimp-base@5.7.23",
+      "name": "engine-gimp-base",
+      "version": "5.7.23",
+      "purl": "pkg:generic/engine-gimp-base@5.7.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/gimp-plugin-lib@7.13.49",
+      "name": "gimp-plugin-lib",
+      "version": "7.13.49",
+      "purl": "pkg:generic/gimp-plugin-lib@7.13.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/engine-gimp-core@10.0.76",
+      "name": "engine-gimp-core",
+      "version": "10.0.76",
+      "purl": "pkg:generic/engine-gimp-core@10.0.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-gimp-base@2.10.67",
+      "name": "service-gimp-base",
+      "version": "2.10.67",
+      "purl": "pkg:generic/service-gimp-base@2.10.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/gimp-engine-js@3.18.49",
+      "name": "gimp-engine-js",
+      "version": "3.18.49",
+      "purl": "pkg:generic/gimp-engine-js@3.18.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/gimp-sdk-server@10.7.70",
+      "name": "gimp-sdk-server",
+      "version": "10.7.70",
+      "purl": "pkg:generic/gimp-sdk-server@10.7.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-gimp-client@4.13.15",
+      "name": "module-gimp-client",
+      "version": "4.13.15",
+      "purl": "pkg:generic/module-gimp-client@4.13.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-gimp-api@9.9.97",
+      "name": "lib-gimp-api",
+      "version": "9.9.97",
+      "purl": "pkg:generic/lib-gimp-api@9.9.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/gimp-lib-api@3.4.60",
+      "name": "gimp-lib-api",
+      "version": "3.4.60",
+      "purl": "pkg:generic/gimp-lib-api@3.4.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-gimp-lib@9.5.97",
+      "name": "sdk-gimp-lib",
+      "version": "9.5.97",
+      "purl": "pkg:generic/sdk-gimp-lib@9.5.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-gimp-server@9.14.82",
+      "name": "util-gimp-server",
+      "version": "9.14.82",
+      "purl": "pkg:generic/util-gimp-server@9.14.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/gimp-util-base@6.19.95",
+      "name": "gimp-util-base",
+      "version": "6.19.95",
+      "purl": "pkg:generic/gimp-util-base@6.19.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/gimp-lib-common@8.20.88",
+      "name": "gimp-lib-common",
+      "version": "8.20.88",
+      "purl": "pkg:generic/gimp-lib-common@8.20.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/gimp-core-utils@1.4.48",
+      "name": "gimp-core-utils",
+      "version": "1.4.48",
+      "purl": "pkg:generic/gimp-core-utils@1.4.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-gimp-lib@5.13.8",
+      "name": "plugin-gimp-lib",
+      "version": "5.13.8",
+      "purl": "pkg:generic/plugin-gimp-lib@5.13.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/gimp-plugin-utils@6.0.43",
+      "name": "gimp-plugin-utils",
+      "version": "6.0.43",
+      "purl": "pkg:generic/gimp-plugin-utils@6.0.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/api-gimp-server@3.15.96",
+      "name": "api-gimp-server",
+      "version": "3.15.96",
+      "purl": "pkg:generic/api-gimp-server@3.15.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-gimp-api@9.15.12",
+      "name": "sdk-gimp-api",
+      "version": "9.15.12",
+      "purl": "pkg:generic/sdk-gimp-api@9.15.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/module-gimp-lib@9.17.13",
+      "name": "module-gimp-lib",
+      "version": "9.17.13",
+      "purl": "pkg:generic/module-gimp-lib@9.17.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lib-gimp-server@10.8.58",
+      "name": "lib-gimp-server",
+      "version": "10.8.58",
+      "purl": "pkg:generic/lib-gimp-server@10.8.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/gimp-sdk-api@2.13.85",
+      "name": "gimp-sdk-api",
+      "version": "2.13.85",
+      "purl": "pkg:generic/gimp-sdk-api@2.13.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/gimp-service-core@7.11.43",
+      "name": "gimp-service-core",
+      "version": "7.11.43",
+      "purl": "pkg:generic/gimp-service-core@7.11.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/gimp-api-base@2.11.58",
+      "name": "gimp-api-base",
+      "version": "2.11.58",
+      "purl": "pkg:generic/gimp-api-base@2.11.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-gimp-lib@4.8.30",
+      "name": "util-gimp-lib",
+      "version": "4.8.30",
+      "purl": "pkg:generic/util-gimp-lib@4.8.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/gimp-service-api@7.8.55",
+      "name": "gimp-service-api",
+      "version": "7.8.55",
+      "purl": "pkg:generic/gimp-service-api@7.8.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-gimp-js@2.20.89",
+      "name": "util-gimp-js",
+      "version": "2.20.89",
+      "purl": "pkg:generic/util-gimp-js@2.20.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/gimp-sdk-lib@6.15.63",
+      "name": "gimp-sdk-lib",
+      "version": "6.15.63",
+      "purl": "pkg:generic/gimp-sdk-lib@6.15.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-gimp-server@9.13.69",
+      "name": "framework-gimp-server",
+      "version": "9.13.69",
+      "purl": "pkg:generic/framework-gimp-server@9.13.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/framework-gimp-api@4.8.75",
+      "name": "framework-gimp-api",
+      "version": "4.8.75",
+      "purl": "pkg:generic/framework-gimp-api@4.8.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-gimp-js@5.9.18",
+      "name": "sdk-gimp-js",
+      "version": "5.9.18",
+      "purl": "pkg:generic/sdk-gimp-js@5.9.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/framework-gimp-client@4.18.83",
+      "name": "framework-gimp-client",
+      "version": "4.18.83",
+      "purl": "pkg:generic/framework-gimp-client@4.18.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/gimp-framework-core@3.20.74",
+      "name": "gimp-framework-core",
+      "version": "3.20.74",
+      "purl": "pkg:generic/gimp-framework-core@3.20.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-gimp-client@4.15.75",
+      "name": "sdk-gimp-client",
+      "version": "4.15.75",
+      "purl": "pkg:generic/sdk-gimp-client@4.15.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/gimp-service-utils@5.2.22",
+      "name": "gimp-service-utils",
+      "version": "5.2.22",
+      "purl": "pkg:generic/gimp-service-utils@5.2.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/gimp-engine-core@10.8.45",
+      "name": "gimp-engine-core",
+      "version": "10.8.45",
+      "purl": "pkg:generic/gimp-engine-core@10.8.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/gimp-module-common@10.14.67",
+      "name": "gimp-module-common",
+      "version": "10.14.67",
+      "purl": "pkg:generic/gimp-module-common@10.14.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-23T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

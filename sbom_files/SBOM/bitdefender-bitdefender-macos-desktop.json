@@ -1,0 +1,748 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:afd2256fecfb9af14ee00e837553c475",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:58.422465",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:bitdefender/bitdefender@1.11.50",
+      "name": "bitdefender",
+      "version": "1.11.50",
+      "supplier": {
+        "name": "bitdefender"
+      },
+      "cpe": "cpe:2.3:a:bitdefender:bitdefender:1.11.50:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/bitdefender-api@6.20.60",
+      "name": "bitdefender-api",
+      "version": "6.20.60",
+      "purl": "pkg:generic/bitdefender-api@6.20.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-bitdefender-utils@6.6.91",
+      "name": "engine-bitdefender-utils",
+      "version": "6.6.91",
+      "purl": "pkg:generic/engine-bitdefender-utils@6.6.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/bitdefender-sdk-utils@2.4.47",
+      "name": "bitdefender-sdk-utils",
+      "version": "2.4.47",
+      "purl": "pkg:generic/bitdefender-sdk-utils@2.4.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-module-utils@8.1.32",
+      "name": "bitdefender-module-utils",
+      "version": "8.1.32",
+      "purl": "pkg:generic/bitdefender-module-utils@8.1.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-bitdefender-lib@4.17.62",
+      "name": "plugin-bitdefender-lib",
+      "version": "4.17.62",
+      "purl": "pkg:generic/plugin-bitdefender-lib@4.17.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/bitdefender-util-base@7.18.15",
+      "name": "bitdefender-util-base",
+      "version": "7.18.15",
+      "purl": "pkg:generic/bitdefender-util-base@7.18.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-api-js@4.19.91",
+      "name": "bitdefender-api-js",
+      "version": "4.19.91",
+      "purl": "pkg:generic/bitdefender-api-js@4.19.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/sdk-bitdefender-common@3.18.85",
+      "name": "sdk-bitdefender-common",
+      "version": "3.18.85",
+      "purl": "pkg:generic/sdk-bitdefender-common@3.18.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/bitdefender-module-base@9.4.23",
+      "name": "bitdefender-module-base",
+      "version": "9.4.23",
+      "purl": "pkg:generic/bitdefender-module-base@9.4.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/bitdefender-util@1.5.56",
+      "name": "bitdefender-util",
+      "version": "1.5.56",
+      "purl": "pkg:generic/bitdefender-util@1.5.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-bitdefender-common@10.8.25",
+      "name": "engine-bitdefender-common",
+      "version": "10.8.25",
+      "purl": "pkg:generic/engine-bitdefender-common@10.8.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/bitdefender-api-core@1.18.25",
+      "name": "bitdefender-api-core",
+      "version": "1.18.25",
+      "purl": "pkg:generic/bitdefender-api-core@1.18.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/bitdefender-plugin@7.5.33",
+      "name": "bitdefender-plugin",
+      "version": "7.5.33",
+      "purl": "pkg:generic/bitdefender-plugin@7.5.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-bitdefender-utils@1.6.73",
+      "name": "framework-bitdefender-utils",
+      "version": "1.6.73",
+      "purl": "pkg:generic/framework-bitdefender-utils@1.6.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/bitdefender-module-common@5.8.22",
+      "name": "bitdefender-module-common",
+      "version": "5.8.22",
+      "purl": "pkg:generic/bitdefender-module-common@5.8.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/api-bitdefender-api@8.10.19",
+      "name": "api-bitdefender-api",
+      "version": "8.10.19",
+      "purl": "pkg:generic/api-bitdefender-api@8.10.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-bitdefender@3.2.95",
+      "name": "sdk-bitdefender",
+      "version": "3.2.95",
+      "purl": "pkg:generic/sdk-bitdefender@3.2.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/framework-bitdefender-common@8.14.17",
+      "name": "framework-bitdefender-common",
+      "version": "8.14.17",
+      "purl": "pkg:generic/framework-bitdefender-common@8.14.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/sdk-bitdefender-server@9.5.31",
+      "name": "sdk-bitdefender-server",
+      "version": "9.5.31",
+      "purl": "pkg:generic/sdk-bitdefender-server@9.5.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-framework-base@4.4.30",
+      "name": "bitdefender-framework-base",
+      "version": "4.4.30",
+      "purl": "pkg:generic/bitdefender-framework-base@4.4.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-framework-core@1.11.93",
+      "name": "bitdefender-framework-core",
+      "version": "1.11.93",
+      "purl": "pkg:generic/bitdefender-framework-core@1.11.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/service-bitdefender-api@8.0.30",
+      "name": "service-bitdefender-api",
+      "version": "8.0.30",
+      "purl": "pkg:generic/service-bitdefender-api@8.0.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/engine-bitdefender-core@8.18.23",
+      "name": "engine-bitdefender-core",
+      "version": "8.18.23",
+      "purl": "pkg:generic/engine-bitdefender-core@8.18.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/bitdefender-lib@5.17.9",
+      "name": "bitdefender-lib",
+      "version": "5.17.9",
+      "purl": "pkg:generic/bitdefender-lib@5.17.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/bitdefender-module-api@6.7.13",
+      "name": "bitdefender-module-api",
+      "version": "6.7.13",
+      "purl": "pkg:generic/bitdefender-module-api@6.7.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/engine-bitdefender-lib@5.20.9",
+      "name": "engine-bitdefender-lib",
+      "version": "5.20.9",
+      "purl": "pkg:generic/engine-bitdefender-lib@5.20.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-bitdefender-base@5.14.35",
+      "name": "engine-bitdefender-base",
+      "version": "5.14.35",
+      "purl": "pkg:generic/engine-bitdefender-base@5.14.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/sdk-bitdefender-core@1.3.74",
+      "name": "sdk-bitdefender-core",
+      "version": "1.3.74",
+      "purl": "pkg:generic/sdk-bitdefender-core@1.3.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/bitdefender-core-lib@3.1.23",
+      "name": "bitdefender-core-lib",
+      "version": "3.1.23",
+      "purl": "pkg:generic/bitdefender-core-lib@3.1.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-bitdefender-common@10.15.6",
+      "name": "api-bitdefender-common",
+      "version": "10.15.6",
+      "purl": "pkg:generic/api-bitdefender-common@10.15.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/bitdefender-util-common@10.16.82",
+      "name": "bitdefender-util-common",
+      "version": "10.16.82",
+      "purl": "pkg:generic/bitdefender-util-common@10.16.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-util-utils@5.10.65",
+      "name": "bitdefender-util-utils",
+      "version": "5.10.65",
+      "purl": "pkg:generic/bitdefender-util-utils@5.10.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/bitdefender-core-api@4.1.69",
+      "name": "bitdefender-core-api",
+      "version": "4.1.69",
+      "purl": "pkg:generic/bitdefender-core-api@4.1.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/bitdefender-service-utils@10.3.63",
+      "name": "bitdefender-service-utils",
+      "version": "10.3.63",
+      "purl": "pkg:generic/bitdefender-service-utils@10.3.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-08T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

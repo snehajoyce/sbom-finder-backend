@@ -1,0 +1,1063 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:659c3cf65f514ce3a0bafc80d2c62ada",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.870417",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:libreoffice/libreoffice@9.15.31",
+      "name": "libreoffice",
+      "version": "9.15.31",
+      "supplier": {
+        "name": "libreoffice"
+      },
+      "cpe": "cpe:2.3:a:libreoffice:libreoffice:9.15.31:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-libreoffice-js@1.5.36",
+      "name": "core-libreoffice-js",
+      "version": "1.5.36",
+      "purl": "pkg:generic/core-libreoffice-js@1.5.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-libreoffice-lib@9.16.64",
+      "name": "lib-libreoffice-lib",
+      "version": "9.16.64",
+      "purl": "pkg:generic/lib-libreoffice-lib@9.16.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-libreoffice-js@7.4.54",
+      "name": "module-libreoffice-js",
+      "version": "7.4.54",
+      "purl": "pkg:generic/module-libreoffice-js@7.4.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-libreoffice-api@7.5.95",
+      "name": "sdk-libreoffice-api",
+      "version": "7.5.95",
+      "purl": "pkg:generic/sdk-libreoffice-api@7.5.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/libreoffice-core-core@1.2.38",
+      "name": "libreoffice-core-core",
+      "version": "1.2.38",
+      "purl": "pkg:generic/libreoffice-core-core@1.2.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/libreoffice-framework-base@8.5.92",
+      "name": "libreoffice-framework-base",
+      "version": "8.5.92",
+      "purl": "pkg:generic/libreoffice-framework-base@8.5.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/libreoffice-plugin-common@4.20.64",
+      "name": "libreoffice-plugin-common",
+      "version": "4.20.64",
+      "purl": "pkg:generic/libreoffice-plugin-common@4.20.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/libreoffice-api@7.12.59",
+      "name": "libreoffice-api",
+      "version": "7.12.59",
+      "purl": "pkg:generic/libreoffice-api@7.12.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/libreoffice-lib-server@7.14.80",
+      "name": "libreoffice-lib-server",
+      "version": "7.14.80",
+      "purl": "pkg:generic/libreoffice-lib-server@7.14.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-libreoffice-common@1.12.1",
+      "name": "api-libreoffice-common",
+      "version": "1.12.1",
+      "purl": "pkg:generic/api-libreoffice-common@1.12.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/core-libreoffice-utils@1.2.52",
+      "name": "core-libreoffice-utils",
+      "version": "1.2.52",
+      "purl": "pkg:generic/core-libreoffice-utils@1.2.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/libreoffice-module-client@10.18.17",
+      "name": "libreoffice-module-client",
+      "version": "10.18.17",
+      "purl": "pkg:generic/libreoffice-module-client@10.18.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/libreoffice-util-base@6.15.85",
+      "name": "libreoffice-util-base",
+      "version": "6.15.85",
+      "purl": "pkg:generic/libreoffice-util-base@6.15.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/engine-libreoffice-lib@4.1.29",
+      "name": "engine-libreoffice-lib",
+      "version": "4.1.29",
+      "purl": "pkg:generic/engine-libreoffice-lib@4.1.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/libreoffice-module-api@10.12.92",
+      "name": "libreoffice-module-api",
+      "version": "10.12.92",
+      "purl": "pkg:generic/libreoffice-module-api@10.12.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-libreoffice-lib@8.9.91",
+      "name": "framework-libreoffice-lib",
+      "version": "8.9.91",
+      "purl": "pkg:generic/framework-libreoffice-lib@8.9.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/framework-libreoffice-server@2.10.4",
+      "name": "framework-libreoffice-server",
+      "version": "2.10.4",
+      "purl": "pkg:generic/framework-libreoffice-server@2.10.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-libreoffice-lib@1.20.9",
+      "name": "sdk-libreoffice-lib",
+      "version": "1.20.9",
+      "purl": "pkg:generic/sdk-libreoffice-lib@1.20.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/libreoffice-core-client@6.12.76",
+      "name": "libreoffice-core-client",
+      "version": "6.12.76",
+      "purl": "pkg:generic/libreoffice-core-client@6.12.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/libreoffice-module-common@9.11.66",
+      "name": "libreoffice-module-common",
+      "version": "9.11.66",
+      "purl": "pkg:generic/libreoffice-module-common@9.11.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/libreoffice-module-core@6.14.60",
+      "name": "libreoffice-module-core",
+      "version": "6.14.60",
+      "purl": "pkg:generic/libreoffice-module-core@6.14.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/libreoffice-lib-client@6.14.69",
+      "name": "libreoffice-lib-client",
+      "version": "6.14.69",
+      "purl": "pkg:generic/libreoffice-lib-client@6.14.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-libreoffice-api@7.19.7",
+      "name": "util-libreoffice-api",
+      "version": "7.19.7",
+      "purl": "pkg:generic/util-libreoffice-api@7.19.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-libreoffice-base@9.7.29",
+      "name": "module-libreoffice-base",
+      "version": "9.7.29",
+      "purl": "pkg:generic/module-libreoffice-base@9.7.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/libreoffice-framework-js@4.1.79",
+      "name": "libreoffice-framework-js",
+      "version": "4.1.79",
+      "purl": "pkg:generic/libreoffice-framework-js@4.1.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-libreoffice-lib@2.15.70",
+      "name": "service-libreoffice-lib",
+      "version": "2.15.70",
+      "purl": "pkg:generic/service-libreoffice-lib@2.15.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-libreoffice-base@1.15.4",
+      "name": "plugin-libreoffice-base",
+      "version": "1.15.4",
+      "purl": "pkg:generic/plugin-libreoffice-base@1.15.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/api-libreoffice-base@10.3.15",
+      "name": "api-libreoffice-base",
+      "version": "10.3.15",
+      "purl": "pkg:generic/api-libreoffice-base@10.3.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/libreoffice-lib-lib@2.10.41",
+      "name": "libreoffice-lib-lib",
+      "version": "2.10.41",
+      "purl": "pkg:generic/libreoffice-lib-lib@2.10.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-libreoffice-client@1.1.14",
+      "name": "engine-libreoffice-client",
+      "version": "1.1.14",
+      "purl": "pkg:generic/engine-libreoffice-client@1.1.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-libreoffice-server@3.16.83",
+      "name": "lib-libreoffice-server",
+      "version": "3.16.83",
+      "purl": "pkg:generic/lib-libreoffice-server@3.16.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/libreoffice-plugin-lib@4.12.68",
+      "name": "libreoffice-plugin-lib",
+      "version": "4.12.68",
+      "purl": "pkg:generic/libreoffice-plugin-lib@4.12.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/libreoffice-core-common@4.17.52",
+      "name": "libreoffice-core-common",
+      "version": "4.17.52",
+      "purl": "pkg:generic/libreoffice-core-common@4.17.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/module-libreoffice-utils@4.12.78",
+      "name": "module-libreoffice-utils",
+      "version": "4.12.78",
+      "purl": "pkg:generic/module-libreoffice-utils@4.12.78",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-libreoffice-core@10.9.45",
+      "name": "plugin-libreoffice-core",
+      "version": "10.9.45",
+      "purl": "pkg:generic/plugin-libreoffice-core@10.9.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-libreoffice-client@9.20.76",
+      "name": "plugin-libreoffice-client",
+      "version": "9.20.76",
+      "purl": "pkg:generic/plugin-libreoffice-client@9.20.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-libreoffice-server@7.17.36",
+      "name": "core-libreoffice-server",
+      "version": "7.17.36",
+      "purl": "pkg:generic/core-libreoffice-server@7.17.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/libreoffice-util-common@3.12.27",
+      "name": "libreoffice-util-common",
+      "version": "3.12.27",
+      "purl": "pkg:generic/libreoffice-util-common@3.12.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/libreoffice-core-server@4.0.13",
+      "name": "libreoffice-core-server",
+      "version": "4.0.13",
+      "purl": "pkg:generic/libreoffice-core-server@4.0.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/sdk-libreoffice-base@6.16.16",
+      "name": "sdk-libreoffice-base",
+      "version": "6.16.16",
+      "purl": "pkg:generic/sdk-libreoffice-base@6.16.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/libreoffice-framework-utils@4.15.92",
+      "name": "libreoffice-framework-utils",
+      "version": "4.15.92",
+      "purl": "pkg:generic/libreoffice-framework-utils@4.15.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-libreoffice-api@1.12.92",
+      "name": "module-libreoffice-api",
+      "version": "1.12.92",
+      "purl": "pkg:generic/module-libreoffice-api@1.12.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/libreoffice-plugin-api@10.7.38",
+      "name": "libreoffice-plugin-api",
+      "version": "10.7.38",
+      "purl": "pkg:generic/libreoffice-plugin-api@10.7.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/libreoffice-module-utils@7.19.60",
+      "name": "libreoffice-module-utils",
+      "version": "7.19.60",
+      "purl": "pkg:generic/libreoffice-module-utils@7.19.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/libreoffice-framework-common@4.12.90",
+      "name": "libreoffice-framework-common",
+      "version": "4.12.90",
+      "purl": "pkg:generic/libreoffice-framework-common@4.12.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/libreoffice-util-api@6.0.6",
+      "name": "libreoffice-util-api",
+      "version": "6.0.6",
+      "purl": "pkg:generic/libreoffice-util-api@6.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/libreoffice-framework-lib@10.9.5",
+      "name": "libreoffice-framework-lib",
+      "version": "10.9.5",
+      "purl": "pkg:generic/libreoffice-framework-lib@10.9.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-libreoffice-utils@10.9.71",
+      "name": "plugin-libreoffice-utils",
+      "version": "10.9.71",
+      "purl": "pkg:generic/plugin-libreoffice-utils@10.9.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-09T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

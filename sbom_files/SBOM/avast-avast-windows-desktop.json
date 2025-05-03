@@ -1,0 +1,308 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:5ea3ae304db11638a1412335a101d7ae",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:57.507482",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:avast/avast@6.18.37",
+      "name": "avast",
+      "version": "6.18.37",
+      "supplier": {
+        "name": "avast"
+      },
+      "cpe": "cpe:2.3:a:avast:avast:6.18.37:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/avast-framework-core@7.7.16",
+      "name": "avast-framework-core",
+      "version": "7.7.16",
+      "purl": "pkg:generic/avast-framework-core@7.7.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/avast-sdk-server@3.19.79",
+      "name": "avast-sdk-server",
+      "version": "3.19.79",
+      "purl": "pkg:generic/avast-sdk-server@3.19.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-avast-base@6.3.28",
+      "name": "util-avast-base",
+      "version": "6.3.28",
+      "purl": "pkg:generic/util-avast-base@6.3.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/avast-util-server@1.12.97",
+      "name": "avast-util-server",
+      "version": "1.12.97",
+      "purl": "pkg:generic/avast-util-server@1.12.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/sdk-avast-core@4.15.39",
+      "name": "sdk-avast-core",
+      "version": "4.15.39",
+      "purl": "pkg:generic/sdk-avast-core@4.15.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/avast-util-lib@4.7.0",
+      "name": "avast-util-lib",
+      "version": "4.7.0",
+      "purl": "pkg:generic/avast-util-lib@4.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-avast-lib@4.2.10",
+      "name": "util-avast-lib",
+      "version": "4.2.10",
+      "purl": "pkg:generic/util-avast-lib@4.2.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/avast-api-core@5.6.15",
+      "name": "avast-api-core",
+      "version": "5.6.15",
+      "purl": "pkg:generic/avast-api-core@5.6.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/avast-util-utils@6.1.44",
+      "name": "avast-util-utils",
+      "version": "6.1.44",
+      "purl": "pkg:generic/avast-util-utils@6.1.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/avast-engine-client@4.11.20",
+      "name": "avast-engine-client",
+      "version": "4.11.20",
+      "purl": "pkg:generic/avast-engine-client@4.11.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/module-avast@8.13.66",
+      "name": "module-avast",
+      "version": "8.13.66",
+      "purl": "pkg:generic/module-avast@8.13.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/avast-service@8.4.21",
+      "name": "avast-service",
+      "version": "8.4.21",
+      "purl": "pkg:generic/avast-service@8.4.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/avast-sdk-utils@8.3.7",
+      "name": "avast-sdk-utils",
+      "version": "8.3.7",
+      "purl": "pkg:generic/avast-sdk-utils@8.3.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-15T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

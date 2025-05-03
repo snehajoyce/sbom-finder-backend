@@ -1,0 +1,158 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:2208ba5264bdd2d234cd84093325b16f",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:57.788922",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:symantec/norton@3.16.93",
+      "name": "norton",
+      "version": "3.16.93",
+      "supplier": {
+        "name": "symantec"
+      },
+      "cpe": "cpe:2.3:a:symantec:norton:3.16.93:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/norton-util-base@7.11.44",
+      "name": "norton-util-base",
+      "version": "7.11.44",
+      "purl": "pkg:generic/norton-util-base@7.11.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/norton-core-core@4.1.65",
+      "name": "norton-core-core",
+      "version": "4.1.65",
+      "purl": "pkg:generic/norton-core-core@4.1.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-norton-core@6.7.22",
+      "name": "lib-norton-core",
+      "version": "6.7.22",
+      "purl": "pkg:generic/lib-norton-core@6.7.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/norton-api-js@4.9.35",
+      "name": "norton-api-js",
+      "version": "4.9.35",
+      "purl": "pkg:generic/norton-api-js@4.9.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-norton-common@9.20.41",
+      "name": "plugin-norton-common",
+      "version": "9.20.41",
+      "purl": "pkg:generic/plugin-norton-common@9.20.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/norton-sdk-base@10.9.1",
+      "name": "norton-sdk-base",
+      "version": "10.9.1",
+      "purl": "pkg:generic/norton-sdk-base@10.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-05T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

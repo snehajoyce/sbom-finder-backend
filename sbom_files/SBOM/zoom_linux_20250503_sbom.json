@@ -1,0 +1,144 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:e88b7499199ef81e860938fae64c09fb",
+  "metadata": {
+    "timestamp": "2025-05-03T01:06:56.904364",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "zoom",
+      "version": "18.66.455",
+      "supplier": {
+        "name": "zoom"
+      },
+      "properties": [
+        {
+          "name": "category",
+          "value": "communication"
+        },
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        },
+        {
+          "name": "total_components",
+          "value": "8"
+        },
+        {
+          "name": "unique_licenses",
+          "value": "4"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "dependency-0",
+      "version": "17.79.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-1",
+      "version": "17.50.494",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-2",
+      "version": "13.67.520",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-3",
+      "version": "15.7.305",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-4",
+      "version": "9.44.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-5",
+      "version": "10.1.508",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-6",
+      "version": "10.0.835",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dependency-7",
+      "version": "17.89.203",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ]
+    }
+  ]
+}

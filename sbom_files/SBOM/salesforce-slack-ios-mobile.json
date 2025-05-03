@@ -1,0 +1,233 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:9d1b36f7d13fb3416b4a54896d77544a",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:59.822952",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:salesforce/slack@6.1.63",
+      "name": "slack",
+      "version": "6.1.63",
+      "supplier": {
+        "name": "salesforce"
+      },
+      "cpe": "cpe:2.3:a:salesforce:slack:6.1.63:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/slack-api-core@10.6.60",
+      "name": "slack-api-core",
+      "version": "10.6.60",
+      "purl": "pkg:generic/slack-api-core@10.6.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/core-slack-utils@4.9.97",
+      "name": "core-slack-utils",
+      "version": "4.9.97",
+      "purl": "pkg:generic/core-slack-utils@4.9.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/slack-lib-client@5.9.41",
+      "name": "slack-lib-client",
+      "version": "5.9.41",
+      "purl": "pkg:generic/slack-lib-client@5.9.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/api-slack-server@5.11.15",
+      "name": "api-slack-server",
+      "version": "5.11.15",
+      "purl": "pkg:generic/api-slack-server@5.11.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/slack-module-lib@9.16.90",
+      "name": "slack-module-lib",
+      "version": "9.16.90",
+      "purl": "pkg:generic/slack-module-lib@9.16.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-slack-utils@8.16.1",
+      "name": "lib-slack-utils",
+      "version": "8.16.1",
+      "purl": "pkg:generic/lib-slack-utils@8.16.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/module-slack-core@10.11.10",
+      "name": "module-slack-core",
+      "version": "10.11.10",
+      "purl": "pkg:generic/module-slack-core@10.11.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/slack-lib-lib@8.12.9",
+      "name": "slack-lib-lib",
+      "version": "8.12.9",
+      "purl": "pkg:generic/slack-lib-lib@8.12.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/slack-util@6.4.48",
+      "name": "slack-util",
+      "version": "6.4.48",
+      "purl": "pkg:generic/slack-util@6.4.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-26T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

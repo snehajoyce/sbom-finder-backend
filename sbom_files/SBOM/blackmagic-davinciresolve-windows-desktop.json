@@ -1,0 +1,1038 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:dbed5f3a8ef9c1f6d63ee1a213426811",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:55.454538",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:blackmagic/davinciresolve@6.4.55",
+      "name": "davinciresolve",
+      "version": "6.4.55",
+      "supplier": {
+        "name": "blackmagic"
+      },
+      "cpe": "cpe:2.3:a:blackmagic:davinciresolve:6.4.55:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-davinciresolve-common@4.19.30",
+      "name": "plugin-davinciresolve-common",
+      "version": "4.19.30",
+      "purl": "pkg:generic/plugin-davinciresolve-common@4.19.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/davinciresolve-plugin-common@4.14.68",
+      "name": "davinciresolve-plugin-common",
+      "version": "4.14.68",
+      "purl": "pkg:generic/davinciresolve-plugin-common@4.14.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/davinciresolve-service-lib@10.16.18",
+      "name": "davinciresolve-service-lib",
+      "version": "10.16.18",
+      "purl": "pkg:generic/davinciresolve-service-lib@10.16.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/davinciresolve-plugin-core@6.16.51",
+      "name": "davinciresolve-plugin-core",
+      "version": "6.16.51",
+      "purl": "pkg:generic/davinciresolve-plugin-core@6.16.51",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/davinciresolve-framework-api@7.11.77",
+      "name": "davinciresolve-framework-api",
+      "version": "7.11.77",
+      "purl": "pkg:generic/davinciresolve-framework-api@7.11.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-davinciresolve-server@8.7.4",
+      "name": "core-davinciresolve-server",
+      "version": "8.7.4",
+      "purl": "pkg:generic/core-davinciresolve-server@8.7.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-davinciresolve-core@8.17.34",
+      "name": "engine-davinciresolve-core",
+      "version": "8.17.34",
+      "purl": "pkg:generic/engine-davinciresolve-core@8.17.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/davinciresolve-sdk-base@6.2.31",
+      "name": "davinciresolve-sdk-base",
+      "version": "6.2.31",
+      "purl": "pkg:generic/davinciresolve-sdk-base@6.2.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/davinciresolve-plugin-api@9.2.54",
+      "name": "davinciresolve-plugin-api",
+      "version": "9.2.54",
+      "purl": "pkg:generic/davinciresolve-plugin-api@9.2.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-davinciresolve-server@2.4.34",
+      "name": "engine-davinciresolve-server",
+      "version": "2.4.34",
+      "purl": "pkg:generic/engine-davinciresolve-server@2.4.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-davinciresolve-api@4.10.38",
+      "name": "framework-davinciresolve-api",
+      "version": "4.10.38",
+      "purl": "pkg:generic/framework-davinciresolve-api@4.10.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-davinciresolve-common@8.5.25",
+      "name": "engine-davinciresolve-common",
+      "version": "8.5.25",
+      "purl": "pkg:generic/engine-davinciresolve-common@8.5.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/davinciresolve-engine-js@8.19.15",
+      "name": "davinciresolve-engine-js",
+      "version": "8.19.15",
+      "purl": "pkg:generic/davinciresolve-engine-js@8.19.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/service-davinciresolve-common@1.8.23",
+      "name": "service-davinciresolve-common",
+      "version": "1.8.23",
+      "purl": "pkg:generic/service-davinciresolve-common@1.8.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/plugin-davinciresolve-js@7.1.59",
+      "name": "plugin-davinciresolve-js",
+      "version": "7.1.59",
+      "purl": "pkg:generic/plugin-davinciresolve-js@7.1.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-davinciresolve-lib@9.20.30",
+      "name": "lib-davinciresolve-lib",
+      "version": "9.20.30",
+      "purl": "pkg:generic/lib-davinciresolve-lib@9.20.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/davinciresolve-service-base@8.14.93",
+      "name": "davinciresolve-service-base",
+      "version": "8.14.93",
+      "purl": "pkg:generic/davinciresolve-service-base@8.14.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-davinciresolve-server@4.6.62",
+      "name": "sdk-davinciresolve-server",
+      "version": "4.6.62",
+      "purl": "pkg:generic/sdk-davinciresolve-server@4.6.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/davinciresolve-lib-lib@2.14.72",
+      "name": "davinciresolve-lib-lib",
+      "version": "2.14.72",
+      "purl": "pkg:generic/davinciresolve-lib-lib@2.14.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-davinciresolve-base@6.4.12",
+      "name": "engine-davinciresolve-base",
+      "version": "6.4.12",
+      "purl": "pkg:generic/engine-davinciresolve-base@6.4.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/framework-davinciresolve-server@4.7.32",
+      "name": "framework-davinciresolve-server",
+      "version": "4.7.32",
+      "purl": "pkg:generic/framework-davinciresolve-server@4.7.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/davinciresolve-module-base@6.6.33",
+      "name": "davinciresolve-module-base",
+      "version": "6.6.33",
+      "purl": "pkg:generic/davinciresolve-module-base@6.6.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/service-davinciresolve-client@2.7.77",
+      "name": "service-davinciresolve-client",
+      "version": "2.7.77",
+      "purl": "pkg:generic/service-davinciresolve-client@2.7.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/davinciresolve-engine-lib@6.9.11",
+      "name": "davinciresolve-engine-lib",
+      "version": "6.9.11",
+      "purl": "pkg:generic/davinciresolve-engine-lib@6.9.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-davinciresolve-base@9.9.52",
+      "name": "sdk-davinciresolve-base",
+      "version": "9.9.52",
+      "purl": "pkg:generic/sdk-davinciresolve-base@9.9.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-davinciresolve-core@3.12.99",
+      "name": "sdk-davinciresolve-core",
+      "version": "3.12.99",
+      "purl": "pkg:generic/sdk-davinciresolve-core@3.12.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/davinciresolve-service@10.13.31",
+      "name": "davinciresolve-service",
+      "version": "10.13.31",
+      "purl": "pkg:generic/davinciresolve-service@10.13.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/davinciresolve-util@4.9.75",
+      "name": "davinciresolve-util",
+      "version": "4.9.75",
+      "purl": "pkg:generic/davinciresolve-util@4.9.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/davinciresolve-plugin-lib@7.12.29",
+      "name": "davinciresolve-plugin-lib",
+      "version": "7.12.29",
+      "purl": "pkg:generic/davinciresolve-plugin-lib@7.12.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/davinciresolve-sdk@1.17.19",
+      "name": "davinciresolve-sdk",
+      "version": "1.17.19",
+      "purl": "pkg:generic/davinciresolve-sdk@1.17.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/davinciresolve-module-core@9.5.98",
+      "name": "davinciresolve-module-core",
+      "version": "9.5.98",
+      "purl": "pkg:generic/davinciresolve-module-core@9.5.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-davinciresolve-common@2.4.94",
+      "name": "sdk-davinciresolve-common",
+      "version": "2.4.94",
+      "purl": "pkg:generic/sdk-davinciresolve-common@2.4.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/engine-davinciresolve@3.12.26",
+      "name": "engine-davinciresolve",
+      "version": "3.12.26",
+      "purl": "pkg:generic/engine-davinciresolve@3.12.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-davinciresolve-lib@7.17.86",
+      "name": "engine-davinciresolve-lib",
+      "version": "7.17.86",
+      "purl": "pkg:generic/engine-davinciresolve-lib@7.17.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/davinciresolve-module-common@4.5.10",
+      "name": "davinciresolve-module-common",
+      "version": "4.5.10",
+      "purl": "pkg:generic/davinciresolve-module-common@4.5.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/davinciresolve-lib-common@2.0.73",
+      "name": "davinciresolve-lib-common",
+      "version": "2.0.73",
+      "purl": "pkg:generic/davinciresolve-lib-common@2.0.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-davinciresolve-client@7.15.71",
+      "name": "engine-davinciresolve-client",
+      "version": "7.15.71",
+      "purl": "pkg:generic/engine-davinciresolve-client@7.15.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/davinciresolve-core-lib@4.3.23",
+      "name": "davinciresolve-core-lib",
+      "version": "4.3.23",
+      "purl": "pkg:generic/davinciresolve-core-lib@4.3.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-davinciresolve@3.2.55",
+      "name": "plugin-davinciresolve",
+      "version": "3.2.55",
+      "purl": "pkg:generic/plugin-davinciresolve@3.2.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/util-davinciresolve-base@8.14.10",
+      "name": "util-davinciresolve-base",
+      "version": "8.14.10",
+      "purl": "pkg:generic/util-davinciresolve-base@8.14.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/davinciresolve-engine-common@5.14.11",
+      "name": "davinciresolve-engine-common",
+      "version": "5.14.11",
+      "purl": "pkg:generic/davinciresolve-engine-common@5.14.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-davinciresolve-core@7.11.44",
+      "name": "framework-davinciresolve-core",
+      "version": "7.11.44",
+      "purl": "pkg:generic/framework-davinciresolve-core@7.11.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-davinciresolve-base@3.10.84",
+      "name": "core-davinciresolve-base",
+      "version": "3.10.84",
+      "purl": "pkg:generic/core-davinciresolve-base@3.10.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/davinciresolve-lib-server@7.5.40",
+      "name": "davinciresolve-lib-server",
+      "version": "7.5.40",
+      "purl": "pkg:generic/davinciresolve-lib-server@7.5.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/api-davinciresolve-utils@4.18.38",
+      "name": "api-davinciresolve-utils",
+      "version": "4.18.38",
+      "purl": "pkg:generic/api-davinciresolve-utils@4.18.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/davinciresolve-util-utils@6.6.89",
+      "name": "davinciresolve-util-utils",
+      "version": "6.6.89",
+      "purl": "pkg:generic/davinciresolve-util-utils@6.6.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/davinciresolve-api@10.18.92",
+      "name": "davinciresolve-api",
+      "version": "10.18.92",
+      "purl": "pkg:generic/davinciresolve-api@10.18.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-20T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}
