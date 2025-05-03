@@ -151,16 +151,16 @@ def upload_sbom(file_path, metadata):
     filename = os.path.basename(file_path)
     
     try:
-            with open(file_path, 'rb') as f:
-                files = {'file': (filename, f)}
-                response = requests.post(UPLOAD_URL, data=metadata, files=files)
+        with open(file_path, 'rb') as f:
+            files = {'file': (filename, f)}
+            response = requests.post(UPLOAD_URL, data=metadata, files=files)
 
-                if response.status_code == 200:
-                    print(f"✅ Uploaded: {filename}")
-            return True
-                else:
-            print(f"❌ Failed to upload {filename}: {response.text}")
-            return False
+            if response.status_code == 200:
+                print(f"✅ Uploaded: {filename}")
+                return True
+            else:
+                print(f"❌ Failed to upload {filename}: {response.text}")
+                return False
     
     except Exception as e:
         print(f"❌ Error uploading {filename}: {e}")
