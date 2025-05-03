@@ -9,13 +9,11 @@ import subprocess
 import uuid
 import re
 from sqlalchemy import or_, func, and_
+import tempfile
+from google.cloud import storage
 
-# Optional Google Cloud Storage support
-try:
-    from google.cloud import storage
-    GCS_ENABLED = True
-except ImportError:
-    GCS_ENABLED = False
+# Check if running in Cloud Run
+RUNNING_IN_CLOUD_RUN = os.environ.get('K_SERVICE') is not None
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -25,7 +23,7 @@ CORS(app, origins=[
     "https://sbom-frontend-6zbf-dnll0fe15-sneha-joyces-projects.vercel.app"
 ])
 
-# File storage path
+# Storage setup
 SBOM_DIR = "./sbom_files/"
 UPLOAD_DIR = "./uploads/"
 DATASET_DIR = "./sbom_files/SBOM/"
@@ -33,22 +31,16 @@ os.makedirs(SBOM_DIR, exist_ok=True)
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(DATASET_DIR, exist_ok=True)
 
-# Google Cloud Storage configuration
-GCS_BUCKET_NAME = os.environ.get('GCS_BUCKET_NAME')
-CLOUD_STORAGE_ENABLED = GCS_ENABLED and GCS_BUCKET_NAME is not None
+# Cloud Storage configuration
+BUCKET_NAME = os.environ.get('BUCKET_NAME', 'sbom-finder-storage')
 
-# Initialize GCS client if enabled
-storage_client = None
-if CLOUD_STORAGE_ENABLED:
+# Setup cloud storage if running in Cloud Run
+if RUNNING_IN_CLOUD_RUN:
+    storage_client = storage.Client()
     try:
-        storage_client = storage.Client()
-        bucket = storage_client.bucket(GCS_BUCKET_NAME)
-        if not bucket.exists():
-            bucket = storage_client.create_bucket(GCS_BUCKET_NAME)
-        print(f"Connected to GCS bucket: {GCS_BUCKET_NAME}")
+        bucket = storage_client.get_bucket(BUCKET_NAME)
     except Exception as e:
-        print(f"Warning: Cloud Storage initialization failed: {e}")
-        CLOUD_STORAGE_ENABLED = False
+        print(f"Warning: Could not access bucket {BUCKET_NAME}: {e}")
 
 # Database configuration
 SQLITE_PATH = os.environ.get('SQLITE_PATH', 'sboms.db')
@@ -124,73 +116,74 @@ def list_sboms_metadata():
 # Get specific SBOM file contents
 @app.route('/api/sbom/<filename>', methods=['GET'])
 def get_sbom(filename):
-    # Check if file exists in SBOM_DIR
     file_path = os.path.join(SBOM_DIR, filename)
-    if not os.path.exists(file_path):
-        # Try DATASET_DIR if not found in SBOM_DIR
-        file_path = os.path.join(DATASET_DIR, filename)
-        if not os.path.exists(file_path):
-            return jsonify({"error": "SBOM not found", "filename": filename}), 404
+    
+    # Use our abstracted file operations
+    if not file_exists(file_path):
+        return jsonify({"error": "SBOM not found"}), 404
     
     try:
-        with open(file_path, 'r') as f:
-            data = json.load(f)
-        
-        # Get metadata from database
-        sbom = SBOM.query.filter_by(filename=filename).first()
-        metadata = {}
-        if sbom:
-            metadata = {
-                "app_name": sbom.app_name,
-                "category": sbom.category,
-                "operating_system": sbom.operating_system,
-                "supplier": sbom.supplier,
-                "manufacturer": sbom.manufacturer,
-                "version": sbom.version,
-                "binary_type": sbom.app_binary_type,
-                "total_components": sbom.total_components,
-                "unique_licenses": sbom.unique_licenses
-            }
+        content = load_file(file_path)
+        if content:
+            data = json.loads(content)
+            return jsonify(data)
         else:
-            # If no metadata in database, extract basic info from filename
-            metadata = {
-                "app_name": os.path.splitext(filename)[0],
-                "category": "Unknown",
-                "operating_system": "Unknown",
-                "supplier": "Unknown",
-                "manufacturer": "Unknown",
-                "version": "Unknown",
-                "binary_type": "Unknown"
-            }
-        
-        response = {
-            "metadata": metadata,
-            "sbom_data": data
-        }
-        
-        return jsonify(response)
-    except json.JSONDecodeError as e:
-        return jsonify({"error": f"Invalid JSON in SBOM file: {str(e)}", "filename": filename}), 500
+            return jsonify({"error": "Failed to load SBOM content"}), 500
     except Exception as e:
-        return jsonify({"error": f"Error loading SBOM: {str(e)}", "filename": filename}), 500
+        return jsonify({"error": f"Error loading SBOM: {str(e)}"}), 500
 
-# Helper function to save file to GCS
-def save_to_gcs(file_path, destination_blob_name):
-    """Upload a file to the GCS bucket."""
-    if not CLOUD_STORAGE_ENABLED:
-        return False
-    
-    try:
-        bucket = storage_client.bucket(GCS_BUCKET_NAME)
-        blob = bucket.blob(destination_blob_name)
+# Helper functions for file operations that work in both environments
+def save_file(file_object, file_path):
+    if RUNNING_IN_CLOUD_RUN:
+        # Strip leading './' for cloud storage
+        blob_name = file_path.replace('./', '')
+        blob = bucket.blob(blob_name)
         
-        # Upload from a local file
-        blob.upload_from_filename(file_path)
-        print(f"File {file_path} uploaded to {destination_blob_name} in bucket {GCS_BUCKET_NAME}")
-        return True
-    except Exception as e:
-        print(f"Error uploading to GCS: {e}")
-        return False
+        # For files with content already in memory
+        if hasattr(file_object, 'read'):
+            content = file_object.read()
+            # Reset file pointer if it's a file-like object
+            if hasattr(file_object, 'seek'):
+                file_object.seek(0)
+            
+            if isinstance(content, bytes):
+                blob.upload_from_string(content, content_type='application/json')
+            else:
+                blob.upload_from_string(content)
+        else:
+            # Assume file_object is string content
+            blob.upload_from_string(file_object)
+    else:
+        # For local storage
+        if hasattr(file_object, 'save'):
+            file_object.save(file_path)
+        else:
+            with open(file_path, 'w') as f:
+                f.write(file_object)
+
+def load_file(file_path):
+    if RUNNING_IN_CLOUD_RUN:
+        blob_name = file_path.replace('./', '')
+        blob = bucket.blob(blob_name)
+        
+        if not blob.exists():
+            return None
+            
+        return blob.download_as_text()
+    else:
+        if not os.path.exists(file_path):
+            return None
+            
+        with open(file_path, 'r') as f:
+            return f.read()
+
+def file_exists(file_path):
+    if RUNNING_IN_CLOUD_RUN:
+        blob_name = file_path.replace('./', '')
+        blob = bucket.blob(blob_name)
+        return blob.exists()
+    else:
+        return os.path.exists(file_path)
 
 # Upload SBOM with metadata
 @app.route('/api/upload', methods=['POST'])
@@ -200,113 +193,28 @@ def upload_sbom():
         return jsonify({"error": "No file uploaded"}), 400
 
     metadata = request.form
-    original_filename = file.filename
-    
-    # Use app_name in the filename if provided, otherwise use original name
-    app_name = metadata.get('app_name')
-    if app_name:
-        # Create filename based on app_name (ensure it has .json extension)
-        base_name = app_name.lower().replace(' ', '_')
-        if original_filename.lower().endswith('.json'):
-            filename = f"{base_name}.json"
-        else:
-            filename = f"{base_name}_sbom.json"
-    else:
-        filename = original_filename
-    
-    # Check if file already exists in database
+    filename = file.filename
+    file_path = os.path.join(SBOM_DIR, filename)
+
     if SBOM.query.filter_by(filename=filename).first():
-        return jsonify({"error": f"File with name {filename} already exists"}), 400
+        return jsonify({"error": "File already exists"}), 400
 
-    # Ensure directories exist with appropriate permissions
-    try:
-        # Create main SBOM directory
-        os.makedirs(SBOM_DIR, exist_ok=True)
-        os.chmod(SBOM_DIR, 0o777)  # Full permissions
-        
-        # Create dataset directory 
-        os.makedirs(DATASET_DIR, exist_ok=True)
-        os.chmod(DATASET_DIR, 0o777)  # Full permissions
-    except Exception as e:
-        print(f"Warning: Could not set permissions on directories: {e}")
+    # Save file using our abstraction
+    save_file(file, file_path)
 
-    # Path to save in main SBOM directory
-    sbom_dir_path = os.path.join(SBOM_DIR, filename)
-    
-    # Save to SBOM_DIR
-    try:
-        file.save(sbom_dir_path)
-    except Exception as e:
-        return jsonify({"error": f"Could not save file to main directory: {str(e)}"}), 500
-
-    # Process SBOM to count components and licenses
-    components, unique_licenses = process_sbom_file(sbom_dir_path)
-
-    # Add to database
     new_sbom = SBOM(
         filename=filename,
-        app_name=app_name or os.path.splitext(filename)[0],
         category=metadata.get('category'),
         operating_system=metadata.get('operating_system'),
-        app_binary_type=metadata.get('app_binary_type', 'desktop'),
         supplier=metadata.get('supplier'),
-        manufacturer=metadata.get('manufacturer'),
         version=metadata.get('version'),
-        cost=float(metadata.get('cost') or 0),
-        description=metadata.get('description', ''),
-        total_components=components,
-        unique_licenses=unique_licenses
+        cost=float(metadata.get('cost') or 0)
     )
 
     db.session.add(new_sbom)
     db.session.commit()
 
-    # Now try to copy to dataset directory
-    dataset_saved = False
-    dataset_dir_path = os.path.join(DATASET_DIR, filename)
-    
-    try:
-        # Directly copy the file instead of opening/writing
-        import shutil
-        shutil.copy2(sbom_dir_path, dataset_dir_path)
-        dataset_saved = True
-    except Exception as e:
-        print(f"Warning: Could not save to dataset directory: {e}")
-    
-    # Try to upload to Google Cloud Storage if enabled
-    gcs_saved = False
-    if CLOUD_STORAGE_ENABLED:
-        main_blob_name = f"sbom_files/{filename}"
-        dataset_blob_name = f"sbom_files/SBOM/{filename}"
-        
-        # Upload to main SBOM directory in GCS
-        gcs_saved = save_to_gcs(sbom_dir_path, main_blob_name)
-        
-        # Upload to dataset directory in GCS
-        if dataset_saved:
-            dataset_gcs_saved = save_to_gcs(dataset_dir_path, dataset_blob_name)
-            gcs_saved = gcs_saved and dataset_gcs_saved
-    
-    # Prepare response message
-    message = f"{filename} uploaded successfully with metadata"
-    if dataset_saved:
-        message += " and added to dataset"
-    else:
-        message += " (Note: Only saved to main directory)"
-    
-    if CLOUD_STORAGE_ENABLED:
-        if gcs_saved:
-            message += " and saved to Cloud Storage"
-        else:
-            message += " (Failed to save to Cloud Storage)"
-
-    return jsonify({
-        "message": message,
-        "sbom_id": new_sbom.id,
-        "filename": filename,
-        "dataset_saved": dataset_saved,
-        "cloud_storage_saved": gcs_saved if CLOUD_STORAGE_ENABLED else None
-    }), 200
+    return jsonify({"message": f"{filename} uploaded successfully with metadata"}), 200
 
 # Auto-generate SBOM from uploaded executable using Syft
 @app.route('/api/generate-sbom', methods=['POST'])
@@ -359,16 +267,16 @@ def generate_sbom():
 
         # Try to upload to Google Cloud Storage if enabled
         gcs_saved = False
-        if CLOUD_STORAGE_ENABLED:
+        if RUNNING_IN_CLOUD_RUN:
             blob_name = f"sbom_files/{sbom_filename}"
-            gcs_saved = save_to_gcs(sbom_path, blob_name)
+            gcs_saved = save_file(open(sbom_path, 'rb'), sbom_path)
 
         # Clean up the uploaded executable file
         os.remove(exe_path)
 
         # Prepare the message
         message = f"SBOM generated successfully for {original_name}"
-        if CLOUD_STORAGE_ENABLED:
+        if RUNNING_IN_CLOUD_RUN:
             if gcs_saved:
                 message += " and saved to Cloud Storage"
             else:
@@ -378,7 +286,7 @@ def generate_sbom():
             "message": message, 
             "sbom_id": new_sbom.id,
             "filename": sbom_filename,
-            "cloud_storage_saved": gcs_saved if CLOUD_STORAGE_ENABLED else None
+            "cloud_storage_saved": gcs_saved if RUNNING_IN_CLOUD_RUN else None
         }), 200
 
     except subprocess.CalledProcessError as e:
@@ -396,9 +304,9 @@ def generate_sbom():
             "details": str(e)
         }), 500
 
-# Search for components within a specific SBOM file
-@app.route('/api/search-components', methods=['POST'])
-def search_components():
+# Search for components in a given SBOM
+@app.route('/api/search', methods=['POST'])
+def search_sbom():
     data = request.get_json()
     keyword = data.get('keyword')
     filename = data.get('sbom_file')
@@ -406,32 +314,19 @@ def search_components():
     if not keyword or not filename:
         return jsonify({"error": "Keyword and SBOM filename required"}), 400
 
-    # Check if file exists in SBOM_DIR
-    file_path = os.path.join(SBOM_DIR, filename)
-    if not os.path.exists(file_path):
-        # Try DATASET_DIR if not found in SBOM_DIR
-        file_path = os.path.join(DATASET_DIR, filename)
-        if not os.path.exists(file_path):
-            return jsonify({"error": "SBOM not found"}), 404
+    path = os.path.join(SBOM_DIR, filename)
+    if not file_exists(path):
+        return jsonify({"error": "File not found"}), 404
 
-    with open(file_path, 'r') as f:
-        sbom_data = json.load(f)
-
-    # Extract components based on SBOM format
-    components = extract_components_from_sbom(sbom_data)
+    content = load_file(path)
+    if not content:
+        return jsonify({"error": "Failed to load SBOM content"}), 500
     
-    # Search for keyword in components
-    results = []
-    keyword_lower = keyword.lower()
-    for component in components:
-        if keyword_lower in json.dumps(component).lower():
-            results.append(component)
+    sbom_data = json.loads(content)
+    artifacts = sbom_data.get("artifacts", [])
+    results = [a for a in artifacts if keyword.lower() in json.dumps(a).lower()]
 
-    return jsonify({
-        "filename": filename,
-        "total_matches": len(results),
-        "results": results
-    })
+    return jsonify({"results": results})
 
 # Compare two SBOMs
 @app.route('/api/compare', methods=['POST'])
@@ -440,61 +335,106 @@ def compare_sboms():
     sbom1 = data.get('sbom1')
     sbom2 = data.get('sbom2')
 
-    if not sbom1 or not sbom2:
-        return jsonify({"error": "Two SBOM filenames are required"}), 400
+    path1 = os.path.join(SBOM_DIR, sbom1)
+    path2 = os.path.join(SBOM_DIR, sbom2)
 
-    # Process first SBOM
-    sbom1_data, sbom1_meta = get_sbom_data_and_meta(sbom1)
-    if not sbom1_data:
-        return jsonify({"error": f"SBOM {sbom1} not found"}), 404
+    if not file_exists(path1) or not file_exists(path2):
+        return jsonify({"error": "One or both files not found"}), 404
 
-    # Process second SBOM
-    sbom2_data, sbom2_meta = get_sbom_data_and_meta(sbom2)
-    if not sbom2_data:
-        return jsonify({"error": f"SBOM {sbom2} not found"}), 404
+    content1 = load_file(path1)
+    content2 = load_file(path2)
+    
+    if not content1 or not content2:
+        return jsonify({"error": "Failed to load one or both SBOM files"}), 500
+    
+    artifacts1 = json.loads(content1).get("artifacts", [])
+    artifacts2 = json.loads(content2).get("artifacts", [])
 
-    # Extract components
-    components1 = extract_components_from_sbom(sbom1_data)
-    components2 = extract_components_from_sbom(sbom2_data)
+    set1 = {json.dumps(a, sort_keys=True) for a in artifacts1}
+    set2 = {json.dumps(a, sort_keys=True) for a in artifacts2}
 
-    # Create component maps for efficient comparison
-    comp_map1 = {get_component_key(comp): comp for comp in components1}
-    comp_map2 = {get_component_key(comp): comp for comp in components2}
-    
-    # Find components in both SBOMs
-    common_keys = set(comp_map1.keys()) & set(comp_map2.keys())
-    common_components = [comp_map1[key] for key in common_keys]
-    
-    # Find components only in first SBOM
-    only_in_first_keys = set(comp_map1.keys()) - set(comp_map2.keys())
-    only_in_first = [comp_map1[key] for key in only_in_first_keys]
-    
-    # Find components only in second SBOM
-    only_in_second_keys = set(comp_map2.keys()) - set(comp_map1.keys())
-    only_in_second = [comp_map2[key] for key in only_in_second_keys]
-    
-    # Calculate license distribution
-    licenses1 = count_licenses(components1)
-    licenses2 = count_licenses(components2)
-    
-    comparison_stats = {
-        "common_component_count": len(common_components),
-        "only_in_first_count": len(only_in_first),
-        "only_in_second_count": len(only_in_second),
-        "first_total_components": len(components1),
-        "second_total_components": len(components2),
-        "similarity_percentage": round(len(common_components) / (len(components1) + len(components2) - len(common_components)) * 100, 2) if components1 and components2 else 0
-    }
+    only_in_1 = [json.loads(item) for item in set1 - set2]
+    only_in_2 = [json.loads(item) for item in set2 - set1]
 
     return jsonify({
-        "sbom1_meta": sbom1_meta,
-        "sbom2_meta": sbom2_meta,
-        "comparison_stats": comparison_stats,
-        "common_components": common_components[:100],  # Limit to 100 for performance
-        "only_in_first": only_in_first[:100],
-        "only_in_second": only_in_second[:100],
-        "sbom1_licenses": licenses1,
-        "sbom2_licenses": licenses2
+        "only_in_first": only_in_1,
+        "only_in_second": only_in_2
+    })
+
+# Compare two SBOMs based on common terms, ignoring schema
+@app.route('/api/compare-terms', methods=['POST'])
+def compare_sbom_terms():
+    data = request.get_json()
+    sbom1 = data.get('sbom1')
+    sbom2 = data.get('sbom2')
+
+    path1 = os.path.join(SBOM_DIR, sbom1)
+    path2 = os.path.join(SBOM_DIR, sbom2)
+
+    if not file_exists(path1) or not file_exists(path2):
+        return jsonify({"error": "One or both files not found"}), 404
+
+    # Extract text from both SBOMs
+    try:
+        content1 = load_file(path1)
+        content2 = load_file(path2)
+        
+        if not content1 or not content2:
+            return jsonify({"error": "Failed to load one or both SBOM files"}), 500
+            
+        content1_json = json.dumps(json.loads(content1))
+        content2_json = json.dumps(json.loads(content2))
+    except json.JSONDecodeError:
+        return jsonify({"error": "Invalid JSON in one or both files"}), 400
+
+    # Extract significant terms (words that aren't common JSON syntax)
+    def extract_terms(content):
+        # Remove common JSON syntax
+        text = re.sub(r'[{}\[\],:""]', ' ', content)
+        # Split into words, lowercase, and remove short terms
+        words = [word.lower() for word in text.split() if len(word) > 3]
+        return Counter(words)
+
+    terms1 = extract_terms(content1_json)
+    terms2 = extract_terms(content2_json)
+    
+    # Find common terms and their frequencies
+    common_terms = {}
+    for term in set(terms1.keys()) & set(terms2.keys()):
+        common_terms[term] = {
+            "file1_count": terms1[term],
+            "file2_count": terms2[term],
+            "total": terms1[term] + terms2[term]
+        }
+    
+    # Find unique terms in each file
+    unique_to_file1 = {term: terms1[term] for term in terms1 if term not in terms2}
+    unique_to_file2 = {term: terms2[term] for term in terms2 if term not in terms1}
+    
+    # Sort results by frequency
+    sorted_common = sorted(
+        common_terms.items(), 
+        key=lambda x: x[1]["total"], 
+        reverse=True
+    )[:50]  # Limit to top 50 common terms
+    
+    sorted_unique1 = sorted(
+        unique_to_file1.items(), 
+        key=lambda x: x[1], 
+        reverse=True
+    )[:25]  # Limit to top 25 unique terms
+    
+    sorted_unique2 = sorted(
+        unique_to_file2.items(), 
+        key=lambda x: x[1], 
+        reverse=True
+    )[:25]  # Limit to top 25 unique terms
+    
+    return jsonify({
+        "common_terms": dict(sorted_common),
+        "unique_to_first": dict(sorted_unique1),
+        "unique_to_second": dict(sorted_unique2),
+        "similarity_score": len(common_terms) / (len(terms1) + len(terms2) - len(common_terms)) if (len(terms1) + len(terms2) - len(common_terms)) > 0 else 0
     })
 
 # Search for SBOMs by various criteria including fuzzy matching

@@ -1,57 +1,51 @@
 #!/bin/bash
 set -e
 
-# Project ID
-PROJECT_ID=scenic-block-458718-t0
+# Set variables
+PROJECT_ID=$(gcloud config get-value project)
+SERVICE_NAME="sbom-finder"
+REGION="us-central1"
+BUCKET_NAME="sbom-finder-storage"
 
-# Pull the latest image
-docker pull us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest || {
-  echo "Image not found in Artifact Registry, trying Container Registry as fallback..."
-  docker pull gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest || {
-    echo "No Docker images found. You need to build and push an image first."
-    echo "Try: docker build -t us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest ."
-    echo "And: docker push us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest"
+# Check if project ID is set
+if [ -z "$PROJECT_ID" ]; then
+    echo "Error: No project ID set. Run 'gcloud config set project YOUR_PROJECT_ID'"
     exit 1
-  }
-}
-
-# Stop and remove the existing container
-docker stop sbom-finder || true
-docker rm sbom-finder || true
-
-# Ensure directories exist 
-mkdir -p /mnt/sbom-data/sbom_files
-mkdir -p /mnt/sbom-data/uploads
-mkdir -p /mnt/sbom-data/sbom_files/SBOM
-chmod -R 777 /mnt/sbom-data
-
-# Run the new container with volumes mounted
-echo "Starting the container..."
-docker run -d \
-  --name sbom-finder \
-  -p 80:8080 \
-  -v /mnt/sbom-data:/data \
-  -v /mnt/sbom-data/sbom_files:/app/sbom_files \
-  -v /mnt/sbom-data/uploads:/app/uploads \
-  -e SQLITE_PATH=/data/sboms.db \
-  --restart unless-stopped \
-  us-east4-docker.pkg.dev/$PROJECT_ID/sbom-finder/sbom-server:latest || \
-  docker run -d \
-    --name sbom-finder \
-    -p 80:8080 \
-    -v /mnt/sbom-data:/data \
-    -v /mnt/sbom-data/sbom_files:/app/sbom_files \
-    -v /mnt/sbom-data/uploads:/app/uploads \
-    -e SQLITE_PATH=/data/sboms.db \
-    --restart unless-stopped \
-    gcr.io/$PROJECT_ID/sbom-finder:sbom-server-us-east4-latest
-
-# Initialize database if it doesn't exist
-if [ ! -f /mnt/sbom-data/sboms.db ]; then
-  echo "Initializing database..."
-  docker exec sbom-finder python -c "from app import db; db.create_all()"
 fi
 
-# Verify container is running
-docker ps | grep sbom-finder
-echo "Deployment completed successfully!" 
+echo "Deploying to project: $PROJECT_ID"
+
+# Create a Cloud Storage bucket for SBOM files if it doesn't exist
+if ! gsutil ls gs://$BUCKET_NAME > /dev/null 2>&1; then
+    echo "Creating Cloud Storage bucket: $BUCKET_NAME"
+    gsutil mb -p $PROJECT_ID -l $REGION gs://$BUCKET_NAME
+    gsutil iam ch allUsers:objectViewer gs://$BUCKET_NAME
+else
+    echo "Cloud Storage bucket $BUCKET_NAME already exists"
+fi
+
+# Create directories in the bucket
+echo "Creating directories in the bucket"
+touch empty.txt
+gsutil cp empty.txt gs://$BUCKET_NAME/sbom_files/
+gsutil cp empty.txt gs://$BUCKET_NAME/sbom_files/SBOM/
+gsutil cp empty.txt gs://$BUCKET_NAME/uploads/
+rm empty.txt
+
+# Build and push the container
+echo "Building and pushing container image..."
+gcloud builds submit --tag gcr.io/$PROJECT_ID/$SERVICE_NAME
+
+# Deploy to Cloud Run
+echo "Deploying to Cloud Run..."
+gcloud run deploy $SERVICE_NAME \
+    --image gcr.io/$PROJECT_ID/$SERVICE_NAME \
+    --platform managed \
+    --region $REGION \
+    --allow-unauthenticated \
+    --memory 1Gi \
+    --set-env-vars="BUCKET_NAME=$BUCKET_NAME" \
+    --service-account="$SERVICE_NAME-sa@$PROJECT_ID.iam.gserviceaccount.com"
+
+echo "Deployment completed! Your service URL is:"
+gcloud run services describe $SERVICE_NAME --platform managed --region $REGION --format="value(status.url)" 
