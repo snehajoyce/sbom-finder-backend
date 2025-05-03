@@ -83,7 +83,7 @@ jobs:
     - name: Create deploy script
       run: |
         # Save service account key to file for VM authentication
-        echo '${{ secrets.GCP_SA_KEY }}' > service-account-key.json
+        echo "${{ secrets.GCP_SA_KEY }}" > service-account-key.json
         
         echo '#!/bin/bash' > deploy.sh
         echo 'set -e' >> deploy.sh
