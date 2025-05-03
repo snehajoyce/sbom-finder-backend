@@ -9,22 +9,30 @@ jobs:
   build-and-deploy:
     name: Build and Deploy to us-east4
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    # Authenticate to Google Cloud
+    - id: 'auth'
+      name: 'Authenticate to Google Cloud'
+      uses: 'google-github-actions/auth@v1'
+      with:
+        credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
     - name: Set up Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
-        service_account_key: ${{ secrets.GCP_SA_KEY }}
-        export_default_credentials: true
 
     # Configure Docker to use the gcloud command-line tool as a credential helper
-    - name: Configure Docker for GCR
+    - name: Configure Docker for Artifact Registry
       run: |
-        gcloud auth configure-docker
+        gcloud auth configure-docker --quiet
         
     # Build the Docker image and tag with GCR path
     - name: Build Docker image
@@ -53,6 +61,10 @@ jobs:
     # Push the Docker image to Google Container Registry
     - name: Push Docker image to GCR
       run: |
+        # Print authentication status before push
+        gcloud auth list
+        
+        # Push images
         docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-${{ github.sha }}
         docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/sbom-finder:sbom-server-us-east4-latest
 
