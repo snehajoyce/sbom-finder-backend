@@ -74,4 +74,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Resources
 
 - [CISA SBOM Information](https://www.cisa.gov/sbom)
-- [NIST Software Security in Supply Chains](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) 
+- [NIST Software Security in Supply Chains](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1) # Triggering workflow
