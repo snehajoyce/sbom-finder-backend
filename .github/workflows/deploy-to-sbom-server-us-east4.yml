@@ -113,7 +113,7 @@ jobs:
         echo 'mkdir -p /mnt/sbom-data/sbom_files' >> deploy.sh
         echo 'mkdir -p /mnt/sbom-data/uploads' >> deploy.sh
         echo 'mkdir -p /mnt/sbom-data/sbom_files/SBOM' >> deploy.sh
-        echo 'chmod -R 777 /mnt/sbom-data' >> deploy.sh
+        echo 'sudo chmod -R 777 /mnt/sbom-data' >> deploy.sh
         echo '' >> deploy.sh
         echo '# Run the new container with volumes mounted' >> deploy.sh
         echo 'docker run -d \\' >> deploy.sh
