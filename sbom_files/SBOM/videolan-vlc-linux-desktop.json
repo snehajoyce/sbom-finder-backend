@@ -1,0 +1,1003 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:35c0c16656561e04c574849d7ff475c9",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:53.515208",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:videolan/vlc@5.15.80",
+      "name": "vlc",
+      "version": "5.15.80",
+      "supplier": {
+        "name": "videolan"
+      },
+      "cpe": "cpe:2.3:a:videolan:vlc:5.15.80:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vlc-util-client@6.11.16",
+      "name": "vlc-util-client",
+      "version": "6.11.16",
+      "purl": "pkg:generic/vlc-util-client@6.11.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vlc-core-base@9.18.77",
+      "name": "vlc-core-base",
+      "version": "9.18.77",
+      "purl": "pkg:generic/vlc-core-base@9.18.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-vlc-api@10.10.22",
+      "name": "plugin-vlc-api",
+      "version": "10.10.22",
+      "purl": "pkg:generic/plugin-vlc-api@10.10.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/vlc-core-api@4.2.79",
+      "name": "vlc-core-api",
+      "version": "4.2.79",
+      "purl": "pkg:generic/vlc-core-api@4.2.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vlc-api-server@8.1.81",
+      "name": "vlc-api-server",
+      "version": "8.1.81",
+      "purl": "pkg:generic/vlc-api-server@8.1.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/util-vlc-js@10.4.68",
+      "name": "util-vlc-js",
+      "version": "10.4.68",
+      "purl": "pkg:generic/util-vlc-js@10.4.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/vlc-api-api@10.9.71",
+      "name": "vlc-api-api",
+      "version": "10.9.71",
+      "purl": "pkg:generic/vlc-api-api@10.9.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-vlc@6.6.30",
+      "name": "service-vlc",
+      "version": "6.6.30",
+      "purl": "pkg:generic/service-vlc@6.6.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vlc-framework-js@7.18.34",
+      "name": "vlc-framework-js",
+      "version": "7.18.34",
+      "purl": "pkg:generic/vlc-framework-js@7.18.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-vlc-server@10.9.27",
+      "name": "service-vlc-server",
+      "version": "10.9.27",
+      "purl": "pkg:generic/service-vlc-server@10.9.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vlc-util@6.11.13",
+      "name": "vlc-util",
+      "version": "6.11.13",
+      "purl": "pkg:generic/vlc-util@6.11.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-vlc-lib@10.14.12",
+      "name": "service-vlc-lib",
+      "version": "10.14.12",
+      "purl": "pkg:generic/service-vlc-lib@10.14.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/vlc-service-core@6.7.20",
+      "name": "vlc-service-core",
+      "version": "6.7.20",
+      "purl": "pkg:generic/vlc-service-core@6.7.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lib-vlc-lib@1.16.72",
+      "name": "lib-vlc-lib",
+      "version": "1.16.72",
+      "purl": "pkg:generic/lib-vlc-lib@1.16.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/vlc-core-js@4.19.62",
+      "name": "vlc-core-js",
+      "version": "4.19.62",
+      "purl": "pkg:generic/vlc-core-js@4.19.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-vlc-server@5.15.70",
+      "name": "api-vlc-server",
+      "version": "5.15.70",
+      "purl": "pkg:generic/api-vlc-server@5.15.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-vlc-lib@10.1.87",
+      "name": "engine-vlc-lib",
+      "version": "10.1.87",
+      "purl": "pkg:generic/engine-vlc-lib@10.1.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vlc-sdk-lib@7.2.72",
+      "name": "vlc-sdk-lib",
+      "version": "7.2.72",
+      "purl": "pkg:generic/vlc-sdk-lib@7.2.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/vlc-api-js@3.18.93",
+      "name": "vlc-api-js",
+      "version": "3.18.93",
+      "purl": "pkg:generic/vlc-api-js@3.18.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-vlc-client@2.19.20",
+      "name": "lib-vlc-client",
+      "version": "2.19.20",
+      "purl": "pkg:generic/lib-vlc-client@2.19.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-vlc-utils@9.11.51",
+      "name": "lib-vlc-utils",
+      "version": "9.11.51",
+      "purl": "pkg:generic/lib-vlc-utils@9.11.51",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/vlc-framework-server@8.11.1",
+      "name": "vlc-framework-server",
+      "version": "8.11.1",
+      "purl": "pkg:generic/vlc-framework-server@8.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-vlc-utils@10.17.54",
+      "name": "module-vlc-utils",
+      "version": "10.17.54",
+      "purl": "pkg:generic/module-vlc-utils@10.17.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-vlc-common@8.20.33",
+      "name": "module-vlc-common",
+      "version": "8.20.33",
+      "purl": "pkg:generic/module-vlc-common@8.20.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/vlc-module-common@8.16.29",
+      "name": "vlc-module-common",
+      "version": "8.16.29",
+      "purl": "pkg:generic/vlc-module-common@8.16.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-vlc-base@5.16.6",
+      "name": "lib-vlc-base",
+      "version": "5.16.6",
+      "purl": "pkg:generic/lib-vlc-base@5.16.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/service-vlc-api@7.0.20",
+      "name": "service-vlc-api",
+      "version": "7.0.20",
+      "purl": "pkg:generic/service-vlc-api@7.0.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-vlc-common@8.16.23",
+      "name": "service-vlc-common",
+      "version": "8.16.23",
+      "purl": "pkg:generic/service-vlc-common@8.16.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-vlc-base@3.13.26",
+      "name": "module-vlc-base",
+      "version": "3.13.26",
+      "purl": "pkg:generic/module-vlc-base@3.13.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-vlc-common@5.11.1",
+      "name": "api-vlc-common",
+      "version": "5.11.1",
+      "purl": "pkg:generic/api-vlc-common@5.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-vlc-lib@8.16.56",
+      "name": "api-vlc-lib",
+      "version": "8.16.56",
+      "purl": "pkg:generic/api-vlc-lib@8.16.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/engine-vlc-js@10.7.97",
+      "name": "engine-vlc-js",
+      "version": "10.7.97",
+      "purl": "pkg:generic/engine-vlc-js@10.7.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/vlc-plugin-js@4.7.59",
+      "name": "vlc-plugin-js",
+      "version": "4.7.59",
+      "purl": "pkg:generic/vlc-plugin-js@4.7.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lib-vlc@1.16.43",
+      "name": "lib-vlc",
+      "version": "1.16.43",
+      "purl": "pkg:generic/lib-vlc@1.16.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vlc-plugin@9.16.69",
+      "name": "vlc-plugin",
+      "version": "9.16.69",
+      "purl": "pkg:generic/vlc-plugin@9.16.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vlc-engine-js@1.1.29",
+      "name": "vlc-engine-js",
+      "version": "1.1.29",
+      "purl": "pkg:generic/vlc-engine-js@1.1.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-vlc@9.20.75",
+      "name": "framework-vlc",
+      "version": "9.20.75",
+      "purl": "pkg:generic/framework-vlc@9.20.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-vlc-server@3.5.21",
+      "name": "module-vlc-server",
+      "version": "3.5.21",
+      "purl": "pkg:generic/module-vlc-server@3.5.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/vlc-framework-api@1.11.80",
+      "name": "vlc-framework-api",
+      "version": "1.11.80",
+      "purl": "pkg:generic/vlc-framework-api@1.11.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/vlc-plugin-common@9.7.21",
+      "name": "vlc-plugin-common",
+      "version": "9.7.21",
+      "purl": "pkg:generic/vlc-plugin-common@9.7.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/vlc-engine-client@5.3.54",
+      "name": "vlc-engine-client",
+      "version": "5.3.54",
+      "purl": "pkg:generic/vlc-engine-client@5.3.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/vlc-sdk-client@8.10.37",
+      "name": "vlc-sdk-client",
+      "version": "8.10.37",
+      "purl": "pkg:generic/vlc-sdk-client@8.10.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vlc-sdk@8.0.27",
+      "name": "vlc-sdk",
+      "version": "8.0.27",
+      "purl": "pkg:generic/vlc-sdk@8.0.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-vlc-api@4.9.33",
+      "name": "sdk-vlc-api",
+      "version": "4.9.33",
+      "purl": "pkg:generic/sdk-vlc-api@4.9.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/vlc-engine-lib@5.4.83",
+      "name": "vlc-engine-lib",
+      "version": "5.4.83",
+      "purl": "pkg:generic/vlc-engine-lib@5.4.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

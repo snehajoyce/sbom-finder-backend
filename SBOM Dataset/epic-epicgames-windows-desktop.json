@@ -1,0 +1,318 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:a6173bc1319344068b7bb376466cd54b",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:56.811990",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:epic/epicgames@1.11.15",
+      "name": "epicgames",
+      "version": "1.11.15",
+      "supplier": {
+        "name": "epic"
+      },
+      "cpe": "cpe:2.3:a:epic:epicgames:1.11.15:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-epicgames-base@4.4.76",
+      "name": "engine-epicgames-base",
+      "version": "4.4.76",
+      "purl": "pkg:generic/engine-epicgames-base@4.4.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/epicgames-module-utils@6.10.23",
+      "name": "epicgames-module-utils",
+      "version": "6.10.23",
+      "purl": "pkg:generic/epicgames-module-utils@6.10.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/epicgames-sdk@10.4.48",
+      "name": "epicgames-sdk",
+      "version": "10.4.48",
+      "purl": "pkg:generic/epicgames-sdk@10.4.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-epicgames-common@4.0.62",
+      "name": "core-epicgames-common",
+      "version": "4.0.62",
+      "purl": "pkg:generic/core-epicgames-common@4.0.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/epicgames-framework-base@9.6.83",
+      "name": "epicgames-framework-base",
+      "version": "9.6.83",
+      "purl": "pkg:generic/epicgames-framework-base@9.6.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/epicgames-lib-js@7.8.36",
+      "name": "epicgames-lib-js",
+      "version": "7.8.36",
+      "purl": "pkg:generic/epicgames-lib-js@7.8.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/epicgames-api-server@10.15.73",
+      "name": "epicgames-api-server",
+      "version": "10.15.73",
+      "purl": "pkg:generic/epicgames-api-server@10.15.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-epicgames-utils@4.11.5",
+      "name": "module-epicgames-utils",
+      "version": "4.11.5",
+      "purl": "pkg:generic/module-epicgames-utils@4.11.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/service-epicgames-utils@8.20.22",
+      "name": "service-epicgames-utils",
+      "version": "8.20.22",
+      "purl": "pkg:generic/service-epicgames-utils@8.20.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/epicgames-sdk-common@6.13.91",
+      "name": "epicgames-sdk-common",
+      "version": "6.13.91",
+      "purl": "pkg:generic/epicgames-sdk-common@6.13.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/core-epicgames-utils@9.1.13",
+      "name": "core-epicgames-utils",
+      "version": "9.1.13",
+      "purl": "pkg:generic/core-epicgames-utils@9.1.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/epicgames-engine-lib@10.11.70",
+      "name": "epicgames-engine-lib",
+      "version": "10.11.70",
+      "purl": "pkg:generic/epicgames-engine-lib@10.11.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/epicgames-plugin-core@2.14.18",
+      "name": "epicgames-plugin-core",
+      "version": "2.14.18",
+      "purl": "pkg:generic/epicgames-plugin-core@2.14.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-25T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:7aa2cda95e9f1a5142f9a3ad189916bb",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:58.808803",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/skype@10.12.64",
+      "name": "skype",
+      "version": "10.12.64",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:skype:10.12.64:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/skype-plugin-common@5.2.53",
+      "name": "skype-plugin-common",
+      "version": "5.2.53",
+      "purl": "pkg:generic/skype-plugin-common@5.2.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-skype-core@7.10.88",
+      "name": "framework-skype-core",
+      "version": "7.10.88",
+      "purl": "pkg:generic/framework-skype-core@7.10.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/api-skype@10.7.69",
+      "name": "api-skype",
+      "version": "10.7.69",
+      "purl": "pkg:generic/api-skype@10.7.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/engine-skype-lib@4.17.43",
+      "name": "engine-skype-lib",
+      "version": "4.17.43",
+      "purl": "pkg:generic/engine-skype-lib@4.17.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-skype-server@3.11.78",
+      "name": "module-skype-server",
+      "version": "3.11.78",
+      "purl": "pkg:generic/module-skype-server@3.11.78",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/skype-sdk-base@10.13.6",
+      "name": "skype-sdk-base",
+      "version": "10.13.6",
+      "purl": "pkg:generic/skype-sdk-base@10.13.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-skype-client@1.19.28",
+      "name": "plugin-skype-client",
+      "version": "1.19.28",
+      "purl": "pkg:generic/plugin-skype-client@1.19.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-26T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

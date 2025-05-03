@@ -1,0 +1,308 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:05811d7614680e5b1e46adbb96e34ed9",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:56.213171",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:jetbrains/intellijidea@2.5.87",
+      "name": "intellijidea",
+      "version": "2.5.87",
+      "supplier": {
+        "name": "jetbrains"
+      },
+      "cpe": "cpe:2.3:a:jetbrains:intellijidea:2.5.87:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/intellijidea-service-lib@3.15.82",
+      "name": "intellijidea-service-lib",
+      "version": "3.15.82",
+      "purl": "pkg:generic/intellijidea-service-lib@3.15.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/intellijidea-plugin-js@6.16.41",
+      "name": "intellijidea-plugin-js",
+      "version": "6.16.41",
+      "purl": "pkg:generic/intellijidea-plugin-js@6.16.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/intellijidea-service-common@8.19.71",
+      "name": "intellijidea-service-common",
+      "version": "8.19.71",
+      "purl": "pkg:generic/intellijidea-service-common@8.19.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/intellijidea-framework-core@9.16.9",
+      "name": "intellijidea-framework-core",
+      "version": "9.16.9",
+      "purl": "pkg:generic/intellijidea-framework-core@9.16.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/service-intellijidea@1.17.37",
+      "name": "service-intellijidea",
+      "version": "1.17.37",
+      "purl": "pkg:generic/service-intellijidea@1.17.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/intellijidea-service-api@5.2.86",
+      "name": "intellijidea-service-api",
+      "version": "5.2.86",
+      "purl": "pkg:generic/intellijidea-service-api@5.2.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-intellijidea-server@4.4.57",
+      "name": "sdk-intellijidea-server",
+      "version": "4.4.57",
+      "purl": "pkg:generic/sdk-intellijidea-server@4.4.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-intellijidea-js@3.9.30",
+      "name": "util-intellijidea-js",
+      "version": "3.9.30",
+      "purl": "pkg:generic/util-intellijidea-js@3.9.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/intellijidea-service-server@4.15.82",
+      "name": "intellijidea-service-server",
+      "version": "4.15.82",
+      "purl": "pkg:generic/intellijidea-service-server@4.15.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/intellijidea-core-core@6.6.96",
+      "name": "intellijidea-core-core",
+      "version": "6.6.96",
+      "purl": "pkg:generic/intellijidea-core-core@6.6.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/module-intellijidea-client@2.1.43",
+      "name": "module-intellijidea-client",
+      "version": "2.1.43",
+      "purl": "pkg:generic/module-intellijidea-client@2.1.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/intellijidea-module-server@4.2.98",
+      "name": "intellijidea-module-server",
+      "version": "4.2.98",
+      "purl": "pkg:generic/intellijidea-module-server@4.2.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/intellijidea-lib-client@4.17.81",
+      "name": "intellijidea-lib-client",
+      "version": "4.17.81",
+      "purl": "pkg:generic/intellijidea-lib-client@4.17.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

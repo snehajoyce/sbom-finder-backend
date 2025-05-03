@@ -1,0 +1,1038 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:d0543ca1b1cca5fbb38f3f1d4f3aa511",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:53.823076",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:xbmc/kodi@1.4.74",
+      "name": "kodi",
+      "version": "1.4.74",
+      "supplier": {
+        "name": "xbmc"
+      },
+      "cpe": "cpe:2.3:a:xbmc:kodi:1.4.74:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/kodi-plugin-common@4.19.35",
+      "name": "kodi-plugin-common",
+      "version": "4.19.35",
+      "purl": "pkg:generic/kodi-plugin-common@4.19.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/plugin-kodi-js@3.1.61",
+      "name": "plugin-kodi-js",
+      "version": "3.1.61",
+      "purl": "pkg:generic/plugin-kodi-js@3.1.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-kodi-client@1.6.1",
+      "name": "engine-kodi-client",
+      "version": "1.6.1",
+      "purl": "pkg:generic/engine-kodi-client@1.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/lib-kodi-js@1.0.89",
+      "name": "lib-kodi-js",
+      "version": "1.0.89",
+      "purl": "pkg:generic/lib-kodi-js@1.0.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-kodi-core@7.20.51",
+      "name": "module-kodi-core",
+      "version": "7.20.51",
+      "purl": "pkg:generic/module-kodi-core@7.20.51",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/kodi-util-server@2.14.56",
+      "name": "kodi-util-server",
+      "version": "2.14.56",
+      "purl": "pkg:generic/kodi-util-server@2.14.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/kodi-util-js@9.9.17",
+      "name": "kodi-util-js",
+      "version": "9.9.17",
+      "purl": "pkg:generic/kodi-util-js@9.9.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/kodi-sdk-js@1.5.49",
+      "name": "kodi-sdk-js",
+      "version": "1.5.49",
+      "purl": "pkg:generic/kodi-sdk-js@1.5.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/kodi-api-base@1.12.89",
+      "name": "kodi-api-base",
+      "version": "1.12.89",
+      "purl": "pkg:generic/kodi-api-base@1.12.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-kodi-core@10.7.91",
+      "name": "api-kodi-core",
+      "version": "10.7.91",
+      "purl": "pkg:generic/api-kodi-core@10.7.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/kodi-util-client@3.12.31",
+      "name": "kodi-util-client",
+      "version": "3.12.31",
+      "purl": "pkg:generic/kodi-util-client@3.12.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-kodi-js@8.1.62",
+      "name": "framework-kodi-js",
+      "version": "8.1.62",
+      "purl": "pkg:generic/framework-kodi-js@8.1.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-kodi-common@5.0.71",
+      "name": "util-kodi-common",
+      "version": "5.0.71",
+      "purl": "pkg:generic/util-kodi-common@5.0.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/kodi-sdk-lib@7.10.61",
+      "name": "kodi-sdk-lib",
+      "version": "7.10.61",
+      "purl": "pkg:generic/kodi-sdk-lib@7.10.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/kodi-lib-js@4.20.72",
+      "name": "kodi-lib-js",
+      "version": "4.20.72",
+      "purl": "pkg:generic/kodi-lib-js@4.20.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-kodi-client@3.14.69",
+      "name": "util-kodi-client",
+      "version": "3.14.69",
+      "purl": "pkg:generic/util-kodi-client@3.14.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lib-kodi-api@3.9.96",
+      "name": "lib-kodi-api",
+      "version": "3.9.96",
+      "purl": "pkg:generic/lib-kodi-api@3.9.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/kodi-api-api@6.20.44",
+      "name": "kodi-api-api",
+      "version": "6.20.44",
+      "purl": "pkg:generic/kodi-api-api@6.20.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-kodi-server@8.14.4",
+      "name": "core-kodi-server",
+      "version": "8.14.4",
+      "purl": "pkg:generic/core-kodi-server@8.14.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/kodi-sdk-common@9.1.37",
+      "name": "kodi-sdk-common",
+      "version": "9.1.37",
+      "purl": "pkg:generic/kodi-sdk-common@9.1.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/kodi-engine-base@10.11.14",
+      "name": "kodi-engine-base",
+      "version": "10.11.14",
+      "purl": "pkg:generic/kodi-engine-base@10.11.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/kodi-framework-common@5.8.10",
+      "name": "kodi-framework-common",
+      "version": "5.8.10",
+      "purl": "pkg:generic/kodi-framework-common@5.8.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/kodi-api-utils@1.9.65",
+      "name": "kodi-api-utils",
+      "version": "1.9.65",
+      "purl": "pkg:generic/kodi-api-utils@1.9.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-kodi-utils@10.2.97",
+      "name": "service-kodi-utils",
+      "version": "10.2.97",
+      "purl": "pkg:generic/service-kodi-utils@10.2.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-kodi-base@5.10.94",
+      "name": "plugin-kodi-base",
+      "version": "5.10.94",
+      "purl": "pkg:generic/plugin-kodi-base@5.10.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/kodi-sdk-core@8.19.60",
+      "name": "kodi-sdk-core",
+      "version": "8.19.60",
+      "purl": "pkg:generic/kodi-sdk-core@8.19.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-kodi-api@6.10.61",
+      "name": "util-kodi-api",
+      "version": "6.10.61",
+      "purl": "pkg:generic/util-kodi-api@6.10.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/kodi-core@10.17.13",
+      "name": "kodi-core",
+      "version": "10.17.13",
+      "purl": "pkg:generic/kodi-core@10.17.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-kodi-js@2.4.58",
+      "name": "engine-kodi-js",
+      "version": "2.4.58",
+      "purl": "pkg:generic/engine-kodi-js@2.4.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/kodi-module-server@4.13.18",
+      "name": "kodi-module-server",
+      "version": "4.13.18",
+      "purl": "pkg:generic/kodi-module-server@4.13.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/kodi-lib-server@9.12.64",
+      "name": "kodi-lib-server",
+      "version": "9.12.64",
+      "purl": "pkg:generic/kodi-lib-server@9.12.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/kodi-api-core@6.6.0",
+      "name": "kodi-api-core",
+      "version": "6.6.0",
+      "purl": "pkg:generic/kodi-api-core@6.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lib-kodi-base@4.20.81",
+      "name": "lib-kodi-base",
+      "version": "4.20.81",
+      "purl": "pkg:generic/lib-kodi-base@4.20.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/kodi-framework-client@2.17.77",
+      "name": "kodi-framework-client",
+      "version": "2.17.77",
+      "purl": "pkg:generic/kodi-framework-client@2.17.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/kodi-lib-client@3.13.99",
+      "name": "kodi-lib-client",
+      "version": "3.13.99",
+      "purl": "pkg:generic/kodi-lib-client@3.13.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-kodi-base@10.7.56",
+      "name": "service-kodi-base",
+      "version": "10.7.56",
+      "purl": "pkg:generic/service-kodi-base@10.7.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/kodi-plugin-utils@2.3.60",
+      "name": "kodi-plugin-utils",
+      "version": "2.3.60",
+      "purl": "pkg:generic/kodi-plugin-utils@2.3.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-kodi-api@2.3.37",
+      "name": "api-kodi-api",
+      "version": "2.3.37",
+      "purl": "pkg:generic/api-kodi-api@2.3.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-kodi-client@7.17.3",
+      "name": "module-kodi-client",
+      "version": "7.17.3",
+      "purl": "pkg:generic/module-kodi-client@7.17.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/kodi-framework-utils@3.17.16",
+      "name": "kodi-framework-utils",
+      "version": "3.17.16",
+      "purl": "pkg:generic/kodi-framework-utils@3.17.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/kodi-engine-common@7.12.53",
+      "name": "kodi-engine-common",
+      "version": "7.12.53",
+      "purl": "pkg:generic/kodi-engine-common@7.12.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-kodi-base@3.14.80",
+      "name": "util-kodi-base",
+      "version": "3.14.80",
+      "purl": "pkg:generic/util-kodi-base@3.14.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/kodi-engine-js@5.11.75",
+      "name": "kodi-engine-js",
+      "version": "5.11.75",
+      "purl": "pkg:generic/kodi-engine-js@5.11.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-kodi-js@3.7.44",
+      "name": "api-kodi-js",
+      "version": "3.7.44",
+      "purl": "pkg:generic/api-kodi-js@3.7.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-kodi-lib@6.2.37",
+      "name": "sdk-kodi-lib",
+      "version": "6.2.37",
+      "purl": "pkg:generic/sdk-kodi-lib@6.2.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/api-kodi-lib@10.17.91",
+      "name": "api-kodi-lib",
+      "version": "10.17.91",
+      "purl": "pkg:generic/api-kodi-lib@10.17.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-15T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

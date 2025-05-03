@@ -1,0 +1,648 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:2442ff2480173dae270692ad32fd54ef",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:56.258317",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:eclipse/eclipse@10.13.39",
+      "name": "eclipse",
+      "version": "10.13.39",
+      "supplier": {
+        "name": "eclipse"
+      },
+      "cpe": "cpe:2.3:a:eclipse:eclipse:10.13.39:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-eclipse-utils@6.3.98",
+      "name": "core-eclipse-utils",
+      "version": "6.3.98",
+      "purl": "pkg:generic/core-eclipse-utils@6.3.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/eclipse-plugin-api@2.7.88",
+      "name": "eclipse-plugin-api",
+      "version": "2.7.88",
+      "purl": "pkg:generic/eclipse-plugin-api@2.7.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/plugin-eclipse-common@5.5.11",
+      "name": "plugin-eclipse-common",
+      "version": "5.5.11",
+      "purl": "pkg:generic/plugin-eclipse-common@5.5.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-eclipse-core@4.1.42",
+      "name": "lib-eclipse-core",
+      "version": "4.1.42",
+      "purl": "pkg:generic/lib-eclipse-core@4.1.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/eclipse-util-base@10.5.49",
+      "name": "eclipse-util-base",
+      "version": "10.5.49",
+      "purl": "pkg:generic/eclipse-util-base@10.5.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/eclipse-service-common@4.11.82",
+      "name": "eclipse-service-common",
+      "version": "4.11.82",
+      "purl": "pkg:generic/eclipse-service-common@4.11.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-eclipse-base@5.7.95",
+      "name": "plugin-eclipse-base",
+      "version": "5.7.95",
+      "purl": "pkg:generic/plugin-eclipse-base@5.7.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-eclipse-utils@2.5.46",
+      "name": "util-eclipse-utils",
+      "version": "2.5.46",
+      "purl": "pkg:generic/util-eclipse-utils@2.5.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-eclipse-server@8.19.76",
+      "name": "plugin-eclipse-server",
+      "version": "8.19.76",
+      "purl": "pkg:generic/plugin-eclipse-server@8.19.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-eclipse-js@7.12.12",
+      "name": "sdk-eclipse-js",
+      "version": "7.12.12",
+      "purl": "pkg:generic/sdk-eclipse-js@7.12.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/core-eclipse-api@8.8.92",
+      "name": "core-eclipse-api",
+      "version": "8.8.92",
+      "purl": "pkg:generic/core-eclipse-api@8.8.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/eclipse-framework-core@6.6.6",
+      "name": "eclipse-framework-core",
+      "version": "6.6.6",
+      "purl": "pkg:generic/eclipse-framework-core@6.6.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/eclipse-plugin-common@2.17.16",
+      "name": "eclipse-plugin-common",
+      "version": "2.17.16",
+      "purl": "pkg:generic/eclipse-plugin-common@2.17.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/util-eclipse-lib@7.20.79",
+      "name": "util-eclipse-lib",
+      "version": "7.20.79",
+      "purl": "pkg:generic/util-eclipse-lib@7.20.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-eclipse@8.17.38",
+      "name": "engine-eclipse",
+      "version": "8.17.38",
+      "purl": "pkg:generic/engine-eclipse@8.17.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/util-eclipse-core@10.6.92",
+      "name": "util-eclipse-core",
+      "version": "10.6.92",
+      "purl": "pkg:generic/util-eclipse-core@10.6.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-eclipse-base@10.6.29",
+      "name": "api-eclipse-base",
+      "version": "10.6.29",
+      "purl": "pkg:generic/api-eclipse-base@10.6.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-eclipse-api@9.20.86",
+      "name": "module-eclipse-api",
+      "version": "9.20.86",
+      "purl": "pkg:generic/module-eclipse-api@9.20.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/engine-eclipse-server@7.16.2",
+      "name": "engine-eclipse-server",
+      "version": "7.16.2",
+      "purl": "pkg:generic/engine-eclipse-server@7.16.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/eclipse-core-base@3.19.27",
+      "name": "eclipse-core-base",
+      "version": "3.19.27",
+      "purl": "pkg:generic/eclipse-core-base@3.19.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/eclipse-sdk-api@1.14.22",
+      "name": "eclipse-sdk-api",
+      "version": "1.14.22",
+      "purl": "pkg:generic/eclipse-sdk-api@1.14.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-eclipse@2.16.41",
+      "name": "lib-eclipse",
+      "version": "2.16.41",
+      "purl": "pkg:generic/lib-eclipse@2.16.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/eclipse-core@5.1.51",
+      "name": "eclipse-core",
+      "version": "5.1.51",
+      "purl": "pkg:generic/eclipse-core@5.1.51",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/eclipse-lib-client@1.5.58",
+      "name": "eclipse-lib-client",
+      "version": "1.5.58",
+      "purl": "pkg:generic/eclipse-lib-client@1.5.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/eclipse-util-js@6.3.65",
+      "name": "eclipse-util-js",
+      "version": "6.3.65",
+      "purl": "pkg:generic/eclipse-util-js@6.3.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/eclipse-module-js@7.9.99",
+      "name": "eclipse-module-js",
+      "version": "7.9.99",
+      "purl": "pkg:generic/eclipse-module-js@7.9.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/eclipse-api@1.14.84",
+      "name": "eclipse-api",
+      "version": "1.14.84",
+      "purl": "pkg:generic/eclipse-api@1.14.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/eclipse-api-server@6.18.29",
+      "name": "eclipse-api-server",
+      "version": "6.18.29",
+      "purl": "pkg:generic/eclipse-api-server@6.18.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-eclipse-utils@5.18.66",
+      "name": "api-eclipse-utils",
+      "version": "5.18.66",
+      "purl": "pkg:generic/api-eclipse-utils@5.18.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

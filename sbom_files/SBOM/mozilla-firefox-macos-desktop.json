@@ -1,0 +1,663 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:3a3686d53473aafe046bceb76fbadc10",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.041490",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:mozilla/firefox@8.12.16",
+      "name": "firefox",
+      "version": "8.12.16",
+      "supplier": {
+        "name": "mozilla"
+      },
+      "cpe": "cpe:2.3:a:mozilla:firefox:8.12.16:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/firefox-lib-lib@9.12.2",
+      "name": "firefox-lib-lib",
+      "version": "9.12.2",
+      "purl": "pkg:generic/firefox-lib-lib@9.12.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/sdk-firefox-js@2.1.88",
+      "name": "sdk-firefox-js",
+      "version": "2.1.88",
+      "purl": "pkg:generic/sdk-firefox-js@2.1.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/util-firefox-client@5.14.75",
+      "name": "util-firefox-client",
+      "version": "5.14.75",
+      "purl": "pkg:generic/util-firefox-client@5.14.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/firefox-module-server@3.13.40",
+      "name": "firefox-module-server",
+      "version": "3.13.40",
+      "purl": "pkg:generic/firefox-module-server@3.13.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/firefox-core-base@6.0.13",
+      "name": "firefox-core-base",
+      "version": "6.0.13",
+      "purl": "pkg:generic/firefox-core-base@6.0.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/firefox-framework@1.14.52",
+      "name": "firefox-framework",
+      "version": "1.14.52",
+      "purl": "pkg:generic/firefox-framework@1.14.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/firefox-module-lib@2.8.72",
+      "name": "firefox-module-lib",
+      "version": "2.8.72",
+      "purl": "pkg:generic/firefox-module-lib@2.8.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/firefox-engine-common@4.2.34",
+      "name": "firefox-engine-common",
+      "version": "4.2.34",
+      "purl": "pkg:generic/firefox-engine-common@4.2.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/firefox-lib-common@9.6.83",
+      "name": "firefox-lib-common",
+      "version": "9.6.83",
+      "purl": "pkg:generic/firefox-lib-common@9.6.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/firefox-module@4.5.48",
+      "name": "firefox-module",
+      "version": "4.5.48",
+      "purl": "pkg:generic/firefox-module@4.5.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-firefox-common@2.3.26",
+      "name": "service-firefox-common",
+      "version": "2.3.26",
+      "purl": "pkg:generic/service-firefox-common@2.3.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-firefox-js@5.10.89",
+      "name": "engine-firefox-js",
+      "version": "5.10.89",
+      "purl": "pkg:generic/engine-firefox-js@5.10.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-firefox-server@3.20.54",
+      "name": "framework-firefox-server",
+      "version": "3.20.54",
+      "purl": "pkg:generic/framework-firefox-server@3.20.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/core-firefox-common@1.5.91",
+      "name": "core-firefox-common",
+      "version": "1.5.91",
+      "purl": "pkg:generic/core-firefox-common@1.5.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-firefox-js@5.7.58",
+      "name": "util-firefox-js",
+      "version": "5.7.58",
+      "purl": "pkg:generic/util-firefox-js@5.7.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/firefox-plugin-core@3.7.65",
+      "name": "firefox-plugin-core",
+      "version": "3.7.65",
+      "purl": "pkg:generic/firefox-plugin-core@3.7.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/util-firefox-core@5.4.21",
+      "name": "util-firefox-core",
+      "version": "5.4.21",
+      "purl": "pkg:generic/util-firefox-core@5.4.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/firefox-engine-client@3.17.61",
+      "name": "firefox-engine-client",
+      "version": "3.17.61",
+      "purl": "pkg:generic/firefox-engine-client@3.17.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/firefox-engine-utils@6.13.25",
+      "name": "firefox-engine-utils",
+      "version": "6.13.25",
+      "purl": "pkg:generic/firefox-engine-utils@6.13.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-firefox-common@6.3.47",
+      "name": "lib-firefox-common",
+      "version": "6.3.47",
+      "purl": "pkg:generic/lib-firefox-common@6.3.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-firefox-common@10.16.42",
+      "name": "util-firefox-common",
+      "version": "10.16.42",
+      "purl": "pkg:generic/util-firefox-common@10.16.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-firefox-server@5.6.66",
+      "name": "plugin-firefox-server",
+      "version": "5.6.66",
+      "purl": "pkg:generic/plugin-firefox-server@5.6.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/sdk-firefox-api@9.13.70",
+      "name": "sdk-firefox-api",
+      "version": "9.13.70",
+      "purl": "pkg:generic/sdk-firefox-api@9.13.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-firefox-base@2.10.24",
+      "name": "module-firefox-base",
+      "version": "2.10.24",
+      "purl": "pkg:generic/module-firefox-base@2.10.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lib-firefox-server@2.9.43",
+      "name": "lib-firefox-server",
+      "version": "2.9.43",
+      "purl": "pkg:generic/lib-firefox-server@2.9.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/firefox-sdk-lib@1.4.31",
+      "name": "firefox-sdk-lib",
+      "version": "1.4.31",
+      "purl": "pkg:generic/firefox-sdk-lib@1.4.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/firefox-core-utils@1.15.85",
+      "name": "firefox-core-utils",
+      "version": "1.15.85",
+      "purl": "pkg:generic/firefox-core-utils@1.15.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-firefox-core@2.0.20",
+      "name": "lib-firefox-core",
+      "version": "2.0.20",
+      "purl": "pkg:generic/lib-firefox-core@2.0.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/plugin-firefox-api@3.6.50",
+      "name": "plugin-firefox-api",
+      "version": "3.6.50",
+      "purl": "pkg:generic/plugin-firefox-api@3.6.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-firefox@4.12.86",
+      "name": "service-firefox",
+      "version": "4.12.86",
+      "purl": "pkg:generic/service-firefox@4.12.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-27T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

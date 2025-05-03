@@ -1,0 +1,1033 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:e9efc964e2066cba14d1b1b92d1fa3fb",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:59.182573",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:zoom/zoom@7.7.44",
+      "name": "zoom",
+      "version": "7.7.44",
+      "supplier": {
+        "name": "zoom"
+      },
+      "cpe": "cpe:2.3:a:zoom:zoom:7.7.44:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/zoom-service-utils@4.11.0",
+      "name": "zoom-service-utils",
+      "version": "4.11.0",
+      "purl": "pkg:generic/zoom-service-utils@4.11.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/zoom-core-lib@8.8.84",
+      "name": "zoom-core-lib",
+      "version": "8.8.84",
+      "purl": "pkg:generic/zoom-core-lib@8.8.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-zoom-base@8.16.36",
+      "name": "plugin-zoom-base",
+      "version": "8.16.36",
+      "purl": "pkg:generic/plugin-zoom-base@8.16.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/zoom-plugin@10.12.21",
+      "name": "zoom-plugin",
+      "version": "10.12.21",
+      "purl": "pkg:generic/zoom-plugin@10.12.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/zoom-engine-client@10.1.56",
+      "name": "zoom-engine-client",
+      "version": "10.1.56",
+      "purl": "pkg:generic/zoom-engine-client@10.1.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/zoom-engine-server@10.19.91",
+      "name": "zoom-engine-server",
+      "version": "10.19.91",
+      "purl": "pkg:generic/zoom-engine-server@10.19.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-zoom-base@8.18.24",
+      "name": "core-zoom-base",
+      "version": "8.18.24",
+      "purl": "pkg:generic/core-zoom-base@8.18.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-zoom-base@5.20.39",
+      "name": "module-zoom-base",
+      "version": "5.20.39",
+      "purl": "pkg:generic/module-zoom-base@5.20.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/zoom-core-base@8.18.29",
+      "name": "zoom-core-base",
+      "version": "8.18.29",
+      "purl": "pkg:generic/zoom-core-base@8.18.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-zoom-common@9.18.62",
+      "name": "service-zoom-common",
+      "version": "9.18.62",
+      "purl": "pkg:generic/service-zoom-common@9.18.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/zoom-plugin-core@8.20.29",
+      "name": "zoom-plugin-core",
+      "version": "8.20.29",
+      "purl": "pkg:generic/zoom-plugin-core@8.20.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-zoom-api@8.4.26",
+      "name": "framework-zoom-api",
+      "version": "8.4.26",
+      "purl": "pkg:generic/framework-zoom-api@8.4.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-zoom-common@1.5.30",
+      "name": "api-zoom-common",
+      "version": "1.5.30",
+      "purl": "pkg:generic/api-zoom-common@1.5.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/zoom-service@2.12.83",
+      "name": "zoom-service",
+      "version": "2.12.83",
+      "purl": "pkg:generic/zoom-service@2.12.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-zoom-api@5.20.42",
+      "name": "lib-zoom-api",
+      "version": "5.20.42",
+      "purl": "pkg:generic/lib-zoom-api@5.20.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/zoom-service-js@8.13.14",
+      "name": "zoom-service-js",
+      "version": "8.13.14",
+      "purl": "pkg:generic/zoom-service-js@8.13.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-zoom-client@10.6.16",
+      "name": "util-zoom-client",
+      "version": "10.6.16",
+      "purl": "pkg:generic/util-zoom-client@10.6.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/zoom-service-common@5.14.81",
+      "name": "zoom-service-common",
+      "version": "5.14.81",
+      "purl": "pkg:generic/zoom-service-common@5.14.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/zoom-module-server@3.16.98",
+      "name": "zoom-module-server",
+      "version": "3.16.98",
+      "purl": "pkg:generic/zoom-module-server@3.16.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/zoom-framework-server@10.19.73",
+      "name": "zoom-framework-server",
+      "version": "10.19.73",
+      "purl": "pkg:generic/zoom-framework-server@10.19.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/zoom-util-js@3.10.95",
+      "name": "zoom-util-js",
+      "version": "3.10.95",
+      "purl": "pkg:generic/zoom-util-js@3.10.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-zoom-js@3.19.67",
+      "name": "module-zoom-js",
+      "version": "3.19.67",
+      "purl": "pkg:generic/module-zoom-js@3.19.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/zoom-api-lib@7.15.69",
+      "name": "zoom-api-lib",
+      "version": "7.15.69",
+      "purl": "pkg:generic/zoom-api-lib@7.15.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/zoom-sdk@3.3.58",
+      "name": "zoom-sdk",
+      "version": "3.3.58",
+      "purl": "pkg:generic/zoom-sdk@3.3.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-zoom-base@4.5.36",
+      "name": "sdk-zoom-base",
+      "version": "4.5.36",
+      "purl": "pkg:generic/sdk-zoom-base@4.5.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/zoom-util-api@1.19.73",
+      "name": "zoom-util-api",
+      "version": "1.19.73",
+      "purl": "pkg:generic/zoom-util-api@1.19.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/zoom-lib-base@4.12.22",
+      "name": "zoom-lib-base",
+      "version": "4.12.22",
+      "purl": "pkg:generic/zoom-lib-base@4.12.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-zoom-server@5.6.2",
+      "name": "engine-zoom-server",
+      "version": "5.6.2",
+      "purl": "pkg:generic/engine-zoom-server@5.6.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/zoom-plugin-client@6.18.82",
+      "name": "zoom-plugin-client",
+      "version": "6.18.82",
+      "purl": "pkg:generic/zoom-plugin-client@6.18.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/zoom-sdk-core@9.8.46",
+      "name": "zoom-sdk-core",
+      "version": "9.8.46",
+      "purl": "pkg:generic/zoom-sdk-core@9.8.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-zoom-core@9.5.23",
+      "name": "lib-zoom-core",
+      "version": "9.5.23",
+      "purl": "pkg:generic/lib-zoom-core@9.5.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-zoom-lib@6.15.85",
+      "name": "api-zoom-lib",
+      "version": "6.15.85",
+      "purl": "pkg:generic/api-zoom-lib@6.15.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-zoom-server@7.14.52",
+      "name": "util-zoom-server",
+      "version": "7.14.52",
+      "purl": "pkg:generic/util-zoom-server@7.14.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-zoom-lib@3.1.18",
+      "name": "core-zoom-lib",
+      "version": "3.1.18",
+      "purl": "pkg:generic/core-zoom-lib@3.1.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/zoom-lib-js@5.14.69",
+      "name": "zoom-lib-js",
+      "version": "5.14.69",
+      "purl": "pkg:generic/zoom-lib-js@5.14.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/zoom-api-common@3.11.53",
+      "name": "zoom-api-common",
+      "version": "3.11.53",
+      "purl": "pkg:generic/zoom-api-common@3.11.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-zoom-client@5.0.95",
+      "name": "api-zoom-client",
+      "version": "5.0.95",
+      "purl": "pkg:generic/api-zoom-client@5.0.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-zoom-base@4.4.31",
+      "name": "lib-zoom-base",
+      "version": "4.4.31",
+      "purl": "pkg:generic/lib-zoom-base@4.4.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-zoom-common@3.13.87",
+      "name": "sdk-zoom-common",
+      "version": "3.13.87",
+      "purl": "pkg:generic/sdk-zoom-common@3.13.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/zoom-api-server@10.2.24",
+      "name": "zoom-api-server",
+      "version": "10.2.24",
+      "purl": "pkg:generic/zoom-api-server@10.2.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-zoom@5.7.88",
+      "name": "api-zoom",
+      "version": "5.7.88",
+      "purl": "pkg:generic/api-zoom@5.7.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-zoom-client@1.5.66",
+      "name": "plugin-zoom-client",
+      "version": "1.5.66",
+      "purl": "pkg:generic/plugin-zoom-client@1.5.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-zoom-core@1.17.61",
+      "name": "core-zoom-core",
+      "version": "1.17.61",
+      "purl": "pkg:generic/core-zoom-core@1.17.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/zoom-sdk-client@6.13.23",
+      "name": "zoom-sdk-client",
+      "version": "6.13.23",
+      "purl": "pkg:generic/zoom-sdk-client@6.13.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-zoom-utils@10.20.91",
+      "name": "core-zoom-utils",
+      "version": "10.20.91",
+      "purl": "pkg:generic/core-zoom-utils@10.20.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/sdk-zoom-client@8.6.82",
+      "name": "sdk-zoom-client",
+      "version": "8.6.82",
+      "purl": "pkg:generic/sdk-zoom-client@8.6.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-15T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

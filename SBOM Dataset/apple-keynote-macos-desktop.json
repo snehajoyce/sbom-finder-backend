@@ -1,0 +1,608 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:233be092fa736cd3afc8eac5a319bc4e",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:53.210831",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:apple/keynote@6.8.58",
+      "name": "keynote",
+      "version": "6.8.58",
+      "supplier": {
+        "name": "apple"
+      },
+      "cpe": "cpe:2.3:a:apple:keynote:6.8.58:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/keynote-api-api@9.1.25",
+      "name": "keynote-api-api",
+      "version": "9.1.25",
+      "purl": "pkg:generic/keynote-api-api@9.1.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/plugin-keynote-base@9.20.99",
+      "name": "plugin-keynote-base",
+      "version": "9.20.99",
+      "purl": "pkg:generic/plugin-keynote-base@9.20.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/keynote-framework-utils@3.15.97",
+      "name": "keynote-framework-utils",
+      "version": "3.15.97",
+      "purl": "pkg:generic/keynote-framework-utils@3.15.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/keynote-module-base@9.1.85",
+      "name": "keynote-module-base",
+      "version": "9.1.85",
+      "purl": "pkg:generic/keynote-module-base@9.1.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/api-keynote-common@2.9.30",
+      "name": "api-keynote-common",
+      "version": "2.9.30",
+      "purl": "pkg:generic/api-keynote-common@2.9.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/keynote-engine-api@5.10.53",
+      "name": "keynote-engine-api",
+      "version": "5.10.53",
+      "purl": "pkg:generic/keynote-engine-api@5.10.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/keynote-sdk-common@7.13.58",
+      "name": "keynote-sdk-common",
+      "version": "7.13.58",
+      "purl": "pkg:generic/keynote-sdk-common@7.13.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-keynote-js@5.7.22",
+      "name": "plugin-keynote-js",
+      "version": "5.7.22",
+      "purl": "pkg:generic/plugin-keynote-js@5.7.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-keynote-api@10.10.29",
+      "name": "sdk-keynote-api",
+      "version": "10.10.29",
+      "purl": "pkg:generic/sdk-keynote-api@10.10.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/keynote-service-api@7.12.58",
+      "name": "keynote-service-api",
+      "version": "7.12.58",
+      "purl": "pkg:generic/keynote-service-api@7.12.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/keynote-engine-base@9.7.73",
+      "name": "keynote-engine-base",
+      "version": "9.7.73",
+      "purl": "pkg:generic/keynote-engine-base@9.7.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/keynote-engine-client@6.14.77",
+      "name": "keynote-engine-client",
+      "version": "6.14.77",
+      "purl": "pkg:generic/keynote-engine-client@6.14.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/keynote-util-js@5.10.49",
+      "name": "keynote-util-js",
+      "version": "5.10.49",
+      "purl": "pkg:generic/keynote-util-js@5.10.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-keynote-client@4.13.87",
+      "name": "core-keynote-client",
+      "version": "4.13.87",
+      "purl": "pkg:generic/core-keynote-client@4.13.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/engine-keynote-utils@3.1.93",
+      "name": "engine-keynote-utils",
+      "version": "3.1.93",
+      "purl": "pkg:generic/engine-keynote-utils@3.1.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/service-keynote@10.11.39",
+      "name": "service-keynote",
+      "version": "10.11.39",
+      "purl": "pkg:generic/service-keynote@10.11.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/keynote-engine-common@3.13.72",
+      "name": "keynote-engine-common",
+      "version": "3.13.72",
+      "purl": "pkg:generic/keynote-engine-common@3.13.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/keynote-plugin-api@9.19.69",
+      "name": "keynote-plugin-api",
+      "version": "9.19.69",
+      "purl": "pkg:generic/keynote-plugin-api@9.19.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-keynote-server@1.20.16",
+      "name": "core-keynote-server",
+      "version": "1.20.16",
+      "purl": "pkg:generic/core-keynote-server@1.20.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/service-keynote-common@3.11.12",
+      "name": "service-keynote-common",
+      "version": "3.11.12",
+      "purl": "pkg:generic/service-keynote-common@3.11.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/keynote-sdk-client@8.19.20",
+      "name": "keynote-sdk-client",
+      "version": "8.19.20",
+      "purl": "pkg:generic/keynote-sdk-client@8.19.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/keynote-service-utils@10.13.38",
+      "name": "keynote-service-utils",
+      "version": "10.13.38",
+      "purl": "pkg:generic/keynote-service-utils@10.13.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-keynote-api@9.11.15",
+      "name": "api-keynote-api",
+      "version": "9.11.15",
+      "purl": "pkg:generic/api-keynote-api@9.11.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-keynote@5.16.53",
+      "name": "plugin-keynote",
+      "version": "5.16.53",
+      "purl": "pkg:generic/plugin-keynote@5.16.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lib-keynote-utils@1.12.42",
+      "name": "lib-keynote-utils",
+      "version": "1.12.42",
+      "purl": "pkg:generic/lib-keynote-utils@1.12.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/keynote-lib-utils@3.6.25",
+      "name": "keynote-lib-utils",
+      "version": "3.6.25",
+      "purl": "pkg:generic/keynote-lib-utils@3.6.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-11T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

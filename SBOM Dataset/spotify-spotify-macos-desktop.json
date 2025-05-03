@@ -1,0 +1,463 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:08b80d17f0f2dc69d26d8cde185ae155",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:54.221178",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:spotify/spotify@8.1.89",
+      "name": "spotify",
+      "version": "8.1.89",
+      "supplier": {
+        "name": "spotify"
+      },
+      "cpe": "cpe:2.3:a:spotify:spotify:8.1.89:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/spotify-api-lib@2.5.87",
+      "name": "spotify-api-lib",
+      "version": "2.5.87",
+      "purl": "pkg:generic/spotify-api-lib@2.5.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/service-spotify@6.8.65",
+      "name": "service-spotify",
+      "version": "6.8.65",
+      "purl": "pkg:generic/service-spotify@6.8.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/spotify-sdk@10.5.6",
+      "name": "spotify-sdk",
+      "version": "10.5.6",
+      "purl": "pkg:generic/spotify-sdk@10.5.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-spotify-lib@4.17.61",
+      "name": "framework-spotify-lib",
+      "version": "4.17.61",
+      "purl": "pkg:generic/framework-spotify-lib@4.17.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/spotify-service-server@6.3.47",
+      "name": "spotify-service-server",
+      "version": "6.3.47",
+      "purl": "pkg:generic/spotify-service-server@6.3.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-spotify-server@10.17.45",
+      "name": "sdk-spotify-server",
+      "version": "10.17.45",
+      "purl": "pkg:generic/sdk-spotify-server@10.17.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/spotify-module-js@10.8.85",
+      "name": "spotify-module-js",
+      "version": "10.8.85",
+      "purl": "pkg:generic/spotify-module-js@10.8.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/spotify-engine-client@3.13.60",
+      "name": "spotify-engine-client",
+      "version": "3.13.60",
+      "purl": "pkg:generic/spotify-engine-client@3.13.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/spotify-api-js@1.13.9",
+      "name": "spotify-api-js",
+      "version": "1.13.9",
+      "purl": "pkg:generic/spotify-api-js@1.13.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/spotify-lib-client@4.14.62",
+      "name": "spotify-lib-client",
+      "version": "4.14.62",
+      "purl": "pkg:generic/spotify-lib-client@4.14.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/engine-spotify-common@8.6.82",
+      "name": "engine-spotify-common",
+      "version": "8.6.82",
+      "purl": "pkg:generic/engine-spotify-common@8.6.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/spotify-plugin-base@5.6.67",
+      "name": "spotify-plugin-base",
+      "version": "5.6.67",
+      "purl": "pkg:generic/spotify-plugin-base@5.6.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/spotify-framework-common@9.12.90",
+      "name": "spotify-framework-common",
+      "version": "9.12.90",
+      "purl": "pkg:generic/spotify-framework-common@9.12.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-spotify-common@4.8.67",
+      "name": "api-spotify-common",
+      "version": "4.8.67",
+      "purl": "pkg:generic/api-spotify-common@4.8.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/spotify-sdk-js@8.5.66",
+      "name": "spotify-sdk-js",
+      "version": "8.5.66",
+      "purl": "pkg:generic/spotify-sdk-js@8.5.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/service-spotify-lib@5.14.43",
+      "name": "service-spotify-lib",
+      "version": "5.14.43",
+      "purl": "pkg:generic/service-spotify-lib@5.14.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/sdk-spotify-core@4.16.94",
+      "name": "sdk-spotify-core",
+      "version": "4.16.94",
+      "purl": "pkg:generic/sdk-spotify-core@4.16.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-spotify-client@6.15.12",
+      "name": "plugin-spotify-client",
+      "version": "6.15.12",
+      "purl": "pkg:generic/plugin-spotify-client@6.15.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-spotify-base@6.8.24",
+      "name": "engine-spotify-base",
+      "version": "6.8.24",
+      "purl": "pkg:generic/engine-spotify-base@6.8.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-spotify-utils@4.6.27",
+      "name": "module-spotify-utils",
+      "version": "4.6.27",
+      "purl": "pkg:generic/module-spotify-utils@4.6.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-13T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

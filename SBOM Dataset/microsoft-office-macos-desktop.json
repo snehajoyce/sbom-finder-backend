@@ -1,0 +1,1063 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:fa1b47f5540a2d3b1a6299837f1faadb",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.726177",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/office@1.10.10",
+      "name": "office",
+      "version": "1.10.10",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:office:1.10.10:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/office-engine-server@5.9.8",
+      "name": "office-engine-server",
+      "version": "5.9.8",
+      "purl": "pkg:generic/office-engine-server@5.9.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/office-service-lib@8.9.3",
+      "name": "office-service-lib",
+      "version": "8.9.3",
+      "purl": "pkg:generic/office-service-lib@8.9.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/lib-office-core@1.6.90",
+      "name": "lib-office-core",
+      "version": "1.6.90",
+      "purl": "pkg:generic/lib-office-core@1.6.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/office-module-core@5.8.80",
+      "name": "office-module-core",
+      "version": "5.8.80",
+      "purl": "pkg:generic/office-module-core@5.8.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-office-common@2.1.62",
+      "name": "module-office-common",
+      "version": "2.1.62",
+      "purl": "pkg:generic/module-office-common@2.1.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-office-lib@1.3.21",
+      "name": "module-office-lib",
+      "version": "1.3.21",
+      "purl": "pkg:generic/module-office-lib@1.3.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/office-service-common@9.18.19",
+      "name": "office-service-common",
+      "version": "9.18.19",
+      "purl": "pkg:generic/office-service-common@9.18.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/office-plugin-server@9.10.46",
+      "name": "office-plugin-server",
+      "version": "9.10.46",
+      "purl": "pkg:generic/office-plugin-server@9.10.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/core-office-common@4.13.93",
+      "name": "core-office-common",
+      "version": "4.13.93",
+      "purl": "pkg:generic/core-office-common@4.13.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-office-api@7.4.6",
+      "name": "sdk-office-api",
+      "version": "7.4.6",
+      "purl": "pkg:generic/sdk-office-api@7.4.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-office-server@3.7.92",
+      "name": "plugin-office-server",
+      "version": "3.7.92",
+      "purl": "pkg:generic/plugin-office-server@3.7.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/office-lib-base@6.9.69",
+      "name": "office-lib-base",
+      "version": "6.9.69",
+      "purl": "pkg:generic/office-lib-base@6.9.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/office-engine-lib@5.12.83",
+      "name": "office-engine-lib",
+      "version": "5.12.83",
+      "purl": "pkg:generic/office-engine-lib@5.12.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/module-office-server@8.14.33",
+      "name": "module-office-server",
+      "version": "8.14.33",
+      "purl": "pkg:generic/module-office-server@8.14.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/office-service@5.9.63",
+      "name": "office-service",
+      "version": "5.9.63",
+      "purl": "pkg:generic/office-service@5.9.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/util-office-base@5.13.29",
+      "name": "util-office-base",
+      "version": "5.13.29",
+      "purl": "pkg:generic/util-office-base@5.13.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/office-module-base@1.4.56",
+      "name": "office-module-base",
+      "version": "1.4.56",
+      "purl": "pkg:generic/office-module-base@1.4.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/office-api-client@3.0.3",
+      "name": "office-api-client",
+      "version": "3.0.3",
+      "purl": "pkg:generic/office-api-client@3.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/office-framework-base@1.14.64",
+      "name": "office-framework-base",
+      "version": "1.14.64",
+      "purl": "pkg:generic/office-framework-base@1.14.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-office-api@8.1.25",
+      "name": "util-office-api",
+      "version": "8.1.25",
+      "purl": "pkg:generic/util-office-api@8.1.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/office-lib-client@6.4.14",
+      "name": "office-lib-client",
+      "version": "6.4.14",
+      "purl": "pkg:generic/office-lib-client@6.4.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lib-office-client@2.17.92",
+      "name": "lib-office-client",
+      "version": "2.17.92",
+      "purl": "pkg:generic/lib-office-client@2.17.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lib-office-utils@2.16.30",
+      "name": "lib-office-utils",
+      "version": "2.16.30",
+      "purl": "pkg:generic/lib-office-utils@2.16.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/office-api-lib@6.6.41",
+      "name": "office-api-lib",
+      "version": "6.6.41",
+      "purl": "pkg:generic/office-api-lib@6.6.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/office-api@7.16.39",
+      "name": "office-api",
+      "version": "7.16.39",
+      "purl": "pkg:generic/office-api@7.16.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/service-office-base@5.11.45",
+      "name": "service-office-base",
+      "version": "5.11.45",
+      "purl": "pkg:generic/service-office-base@5.11.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lib-office@6.3.63",
+      "name": "lib-office",
+      "version": "6.3.63",
+      "purl": "pkg:generic/lib-office@6.3.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-office@3.17.26",
+      "name": "core-office",
+      "version": "3.17.26",
+      "purl": "pkg:generic/core-office@3.17.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/office-module-js@2.11.40",
+      "name": "office-module-js",
+      "version": "2.11.40",
+      "purl": "pkg:generic/office-module-js@2.11.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/engine-office-api@3.13.6",
+      "name": "engine-office-api",
+      "version": "3.13.6",
+      "purl": "pkg:generic/engine-office-api@3.13.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/office-module-common@8.11.86",
+      "name": "office-module-common",
+      "version": "8.11.86",
+      "purl": "pkg:generic/office-module-common@8.11.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/office-plugin-core@7.9.99",
+      "name": "office-plugin-core",
+      "version": "7.9.99",
+      "purl": "pkg:generic/office-plugin-core@7.9.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-office-common@1.12.54",
+      "name": "framework-office-common",
+      "version": "1.12.54",
+      "purl": "pkg:generic/framework-office-common@1.12.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-office-js@2.12.6",
+      "name": "lib-office-js",
+      "version": "2.12.6",
+      "purl": "pkg:generic/lib-office-js@2.12.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-office-client@5.1.71",
+      "name": "module-office-client",
+      "version": "5.1.71",
+      "purl": "pkg:generic/module-office-client@5.1.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/office-engine-api@8.2.8",
+      "name": "office-engine-api",
+      "version": "8.2.8",
+      "purl": "pkg:generic/office-engine-api@8.2.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-office@1.5.88",
+      "name": "framework-office",
+      "version": "1.5.88",
+      "purl": "pkg:generic/framework-office@1.5.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/office-framework-api@4.7.52",
+      "name": "office-framework-api",
+      "version": "4.7.52",
+      "purl": "pkg:generic/office-framework-api@4.7.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/office-api-base@9.14.95",
+      "name": "office-api-base",
+      "version": "9.14.95",
+      "purl": "pkg:generic/office-api-base@9.14.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/office-service-base@10.10.45",
+      "name": "office-service-base",
+      "version": "10.10.45",
+      "purl": "pkg:generic/office-service-base@10.10.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-office-common@1.6.89",
+      "name": "util-office-common",
+      "version": "1.6.89",
+      "purl": "pkg:generic/util-office-common@1.6.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-office-api@8.2.50",
+      "name": "api-office-api",
+      "version": "8.2.50",
+      "purl": "pkg:generic/api-office-api@8.2.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/office-plugin-api@1.5.60",
+      "name": "office-plugin-api",
+      "version": "1.5.60",
+      "purl": "pkg:generic/office-plugin-api@1.5.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-office-server@6.4.4",
+      "name": "sdk-office-server",
+      "version": "6.4.4",
+      "purl": "pkg:generic/sdk-office-server@6.4.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/office-core-core@6.19.11",
+      "name": "office-core-core",
+      "version": "6.19.11",
+      "purl": "pkg:generic/office-core-core@6.19.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-office-client@6.2.33",
+      "name": "core-office-client",
+      "version": "6.2.33",
+      "purl": "pkg:generic/core-office-client@6.2.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/office-engine-base@9.20.34",
+      "name": "office-engine-base",
+      "version": "9.20.34",
+      "purl": "pkg:generic/office-engine-base@9.20.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/office-util-client@1.4.52",
+      "name": "office-util-client",
+      "version": "1.4.52",
+      "purl": "pkg:generic/office-util-client@1.4.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/framework-office-js@2.3.13",
+      "name": "framework-office-js",
+      "version": "2.3.13",
+      "purl": "pkg:generic/framework-office-js@2.3.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-02T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

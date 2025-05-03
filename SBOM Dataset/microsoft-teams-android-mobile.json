@@ -1,0 +1,423 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:e13e3973b7575f6029953facd651e03a",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:59.039639",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/teams@8.9.49",
+      "name": "teams",
+      "version": "8.9.49",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:teams:8.9.49:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/api-teams-utils@8.4.46",
+      "name": "api-teams-utils",
+      "version": "8.4.46",
+      "purl": "pkg:generic/api-teams-utils@8.4.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-teams-js@10.16.26",
+      "name": "sdk-teams-js",
+      "version": "10.16.26",
+      "purl": "pkg:generic/sdk-teams-js@10.16.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-teams-base@5.13.16",
+      "name": "module-teams-base",
+      "version": "5.13.16",
+      "purl": "pkg:generic/module-teams-base@5.13.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/teams-util-js@4.18.85",
+      "name": "teams-util-js",
+      "version": "4.18.85",
+      "purl": "pkg:generic/teams-util-js@4.18.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-teams-base@4.16.88",
+      "name": "api-teams-base",
+      "version": "4.16.88",
+      "purl": "pkg:generic/api-teams-base@4.16.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/teams-sdk-server@4.16.65",
+      "name": "teams-sdk-server",
+      "version": "4.16.65",
+      "purl": "pkg:generic/teams-sdk-server@4.16.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-teams-utils@5.6.31",
+      "name": "plugin-teams-utils",
+      "version": "5.6.31",
+      "purl": "pkg:generic/plugin-teams-utils@5.6.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/teams-module-common@10.15.28",
+      "name": "teams-module-common",
+      "version": "10.15.28",
+      "purl": "pkg:generic/teams-module-common@10.15.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-teams-client@6.1.68",
+      "name": "module-teams-client",
+      "version": "6.1.68",
+      "purl": "pkg:generic/module-teams-client@6.1.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/teams-core-server@4.7.21",
+      "name": "teams-core-server",
+      "version": "4.7.21",
+      "purl": "pkg:generic/teams-core-server@4.7.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-teams-lib@9.6.29",
+      "name": "service-teams-lib",
+      "version": "9.6.29",
+      "purl": "pkg:generic/service-teams-lib@9.6.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/teams-sdk-utils@3.7.92",
+      "name": "teams-sdk-utils",
+      "version": "3.7.92",
+      "purl": "pkg:generic/teams-sdk-utils@3.7.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/teams-util-server@4.14.72",
+      "name": "teams-util-server",
+      "version": "4.14.72",
+      "purl": "pkg:generic/teams-util-server@4.14.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teams-module-client@7.20.73",
+      "name": "teams-module-client",
+      "version": "7.20.73",
+      "purl": "pkg:generic/teams-module-client@7.20.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-teams-lib@1.5.69",
+      "name": "engine-teams-lib",
+      "version": "1.5.69",
+      "purl": "pkg:generic/engine-teams-lib@1.5.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teams-plugin-api@9.15.67",
+      "name": "teams-plugin-api",
+      "version": "9.15.67",
+      "purl": "pkg:generic/teams-plugin-api@9.15.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-teams-api@8.9.45",
+      "name": "module-teams-api",
+      "version": "8.9.45",
+      "purl": "pkg:generic/module-teams-api@8.9.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/teams-engine@1.17.47",
+      "name": "teams-engine",
+      "version": "1.17.47",
+      "purl": "pkg:generic/teams-engine@1.17.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-17T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

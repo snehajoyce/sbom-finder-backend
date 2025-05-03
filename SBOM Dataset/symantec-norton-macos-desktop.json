@@ -1,0 +1,483 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:211df78e08c14581fd06874a72518ab1",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:57.691115",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:symantec/norton@4.10.69",
+      "name": "norton",
+      "version": "4.10.69",
+      "supplier": {
+        "name": "symantec"
+      },
+      "cpe": "cpe:2.3:a:symantec:norton:4.10.69:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/norton-plugin-js@5.1.22",
+      "name": "norton-plugin-js",
+      "version": "5.1.22",
+      "purl": "pkg:generic/norton-plugin-js@5.1.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/norton-core-client@7.12.10",
+      "name": "norton-core-client",
+      "version": "7.12.10",
+      "purl": "pkg:generic/norton-core-client@7.12.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/norton-framework-server@10.9.26",
+      "name": "norton-framework-server",
+      "version": "10.9.26",
+      "purl": "pkg:generic/norton-framework-server@10.9.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/norton-lib-utils@6.2.87",
+      "name": "norton-lib-utils",
+      "version": "6.2.87",
+      "purl": "pkg:generic/norton-lib-utils@6.2.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/sdk-norton-server@8.18.10",
+      "name": "sdk-norton-server",
+      "version": "8.18.10",
+      "purl": "pkg:generic/sdk-norton-server@8.18.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-norton-api@9.7.46",
+      "name": "engine-norton-api",
+      "version": "9.7.46",
+      "purl": "pkg:generic/engine-norton-api@9.7.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/framework-norton-common@5.7.82",
+      "name": "framework-norton-common",
+      "version": "5.7.82",
+      "purl": "pkg:generic/framework-norton-common@5.7.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/norton-sdk-js@8.16.58",
+      "name": "norton-sdk-js",
+      "version": "8.16.58",
+      "purl": "pkg:generic/norton-sdk-js@8.16.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/norton-api-server@6.11.77",
+      "name": "norton-api-server",
+      "version": "6.11.77",
+      "purl": "pkg:generic/norton-api-server@6.11.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/norton-sdk-lib@9.13.59",
+      "name": "norton-sdk-lib",
+      "version": "9.13.59",
+      "purl": "pkg:generic/norton-sdk-lib@9.13.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/norton-service-server@5.4.97",
+      "name": "norton-service-server",
+      "version": "5.4.97",
+      "purl": "pkg:generic/norton-service-server@5.4.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/norton-service@4.13.35",
+      "name": "norton-service",
+      "version": "4.13.35",
+      "purl": "pkg:generic/norton-service@4.13.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/norton-plugin-core@10.10.29",
+      "name": "norton-plugin-core",
+      "version": "10.10.29",
+      "purl": "pkg:generic/norton-plugin-core@10.10.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/norton-util-core@7.1.97",
+      "name": "norton-util-core",
+      "version": "7.1.97",
+      "purl": "pkg:generic/norton-util-core@7.1.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/plugin-norton@10.15.54",
+      "name": "plugin-norton",
+      "version": "10.15.54",
+      "purl": "pkg:generic/plugin-norton@10.15.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-norton@4.7.12",
+      "name": "framework-norton",
+      "version": "4.7.12",
+      "purl": "pkg:generic/framework-norton@4.7.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/norton-core-common@5.0.37",
+      "name": "norton-core-common",
+      "version": "5.0.37",
+      "purl": "pkg:generic/norton-core-common@5.0.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/norton-engine-client@9.16.12",
+      "name": "norton-engine-client",
+      "version": "9.16.12",
+      "purl": "pkg:generic/norton-engine-client@9.16.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/norton-core-server@10.7.21",
+      "name": "norton-core-server",
+      "version": "10.7.21",
+      "purl": "pkg:generic/norton-core-server@10.7.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-norton-api@6.10.27",
+      "name": "plugin-norton-api",
+      "version": "6.10.27",
+      "purl": "pkg:generic/plugin-norton-api@6.10.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-norton-client@2.8.45",
+      "name": "util-norton-client",
+      "version": "2.8.45",
+      "purl": "pkg:generic/util-norton-client@2.8.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-25T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

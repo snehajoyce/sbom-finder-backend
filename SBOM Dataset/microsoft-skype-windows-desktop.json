@@ -1,0 +1,753 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:d8b8d27c4dce7f0d9a36007f55e483c1",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:58.673676",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/skype@5.14.41",
+      "name": "skype",
+      "version": "5.14.41",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:skype:5.14.41:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-skype-js@6.16.95",
+      "name": "api-skype-js",
+      "version": "6.16.95",
+      "purl": "pkg:generic/api-skype-js@6.16.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-skype-base@9.6.26",
+      "name": "framework-skype-base",
+      "version": "9.6.26",
+      "purl": "pkg:generic/framework-skype-base@9.6.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/core-skype-base@8.3.43",
+      "name": "core-skype-base",
+      "version": "8.3.43",
+      "purl": "pkg:generic/core-skype-base@8.3.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-skype-js@3.6.16",
+      "name": "module-skype-js",
+      "version": "3.6.16",
+      "purl": "pkg:generic/module-skype-js@3.6.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-skype-lib@1.19.57",
+      "name": "engine-skype-lib",
+      "version": "1.19.57",
+      "purl": "pkg:generic/engine-skype-lib@1.19.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/skype-service-utils@6.1.19",
+      "name": "skype-service-utils",
+      "version": "6.1.19",
+      "purl": "pkg:generic/skype-service-utils@6.1.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/skype-core-server@5.14.41",
+      "name": "skype-core-server",
+      "version": "5.14.41",
+      "purl": "pkg:generic/skype-core-server@5.14.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-skype-utils@8.2.48",
+      "name": "sdk-skype-utils",
+      "version": "8.2.48",
+      "purl": "pkg:generic/sdk-skype-utils@8.2.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-skype-api@9.4.91",
+      "name": "sdk-skype-api",
+      "version": "9.4.91",
+      "purl": "pkg:generic/sdk-skype-api@9.4.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/skype-lib@7.20.29",
+      "name": "skype-lib",
+      "version": "7.20.29",
+      "purl": "pkg:generic/skype-lib@7.20.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-skype-api@5.6.37",
+      "name": "engine-skype-api",
+      "version": "5.6.37",
+      "purl": "pkg:generic/engine-skype-api@5.6.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/skype-api@10.11.73",
+      "name": "skype-api",
+      "version": "10.11.73",
+      "purl": "pkg:generic/skype-api@10.11.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/skype-core-base@5.4.68",
+      "name": "skype-core-base",
+      "version": "5.4.68",
+      "purl": "pkg:generic/skype-core-base@5.4.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/skype-core@8.18.49",
+      "name": "skype-core",
+      "version": "8.18.49",
+      "purl": "pkg:generic/skype-core@8.18.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/skype-sdk-common@3.0.91",
+      "name": "skype-sdk-common",
+      "version": "3.0.91",
+      "purl": "pkg:generic/skype-sdk-common@3.0.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-skype-common@8.6.99",
+      "name": "service-skype-common",
+      "version": "8.6.99",
+      "purl": "pkg:generic/service-skype-common@8.6.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/skype-service-common@7.15.28",
+      "name": "skype-service-common",
+      "version": "7.15.28",
+      "purl": "pkg:generic/skype-service-common@7.15.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-skype-server@10.1.94",
+      "name": "lib-skype-server",
+      "version": "10.1.94",
+      "purl": "pkg:generic/lib-skype-server@10.1.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/skype-plugin-js@3.7.53",
+      "name": "skype-plugin-js",
+      "version": "3.7.53",
+      "purl": "pkg:generic/skype-plugin-js@3.7.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-skype-core@9.10.45",
+      "name": "sdk-skype-core",
+      "version": "9.10.45",
+      "purl": "pkg:generic/sdk-skype-core@9.10.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/skype-module-api@5.5.21",
+      "name": "skype-module-api",
+      "version": "5.5.21",
+      "purl": "pkg:generic/skype-module-api@5.5.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-skype-utils@1.10.64",
+      "name": "util-skype-utils",
+      "version": "1.10.64",
+      "purl": "pkg:generic/util-skype-utils@1.10.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/skype-util-client@10.6.8",
+      "name": "skype-util-client",
+      "version": "10.6.8",
+      "purl": "pkg:generic/skype-util-client@10.6.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-skype-api@6.7.95",
+      "name": "framework-skype-api",
+      "version": "6.7.95",
+      "purl": "pkg:generic/framework-skype-api@6.7.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-06-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/api-skype@1.15.20",
+      "name": "api-skype",
+      "version": "1.15.20",
+      "purl": "pkg:generic/api-skype@1.15.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/module-skype@7.7.49",
+      "name": "module-skype",
+      "version": "7.7.49",
+      "purl": "pkg:generic/module-skype@7.7.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/util-skype-common@5.2.79",
+      "name": "util-skype-common",
+      "version": "5.2.79",
+      "purl": "pkg:generic/util-skype-common@5.2.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-skype@10.19.14",
+      "name": "core-skype",
+      "version": "10.19.14",
+      "purl": "pkg:generic/core-skype@10.19.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-skype-lib@5.13.17",
+      "name": "util-skype-lib",
+      "version": "5.13.17",
+      "purl": "pkg:generic/util-skype-lib@5.13.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/skype-sdk-api@10.8.24",
+      "name": "skype-sdk-api",
+      "version": "10.8.24",
+      "purl": "pkg:generic/skype-sdk-api@10.8.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/skype-service@10.19.69",
+      "name": "skype-service",
+      "version": "10.19.69",
+      "purl": "pkg:generic/skype-service@10.19.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-skype@5.12.62",
+      "name": "framework-skype",
+      "version": "5.12.62",
+      "purl": "pkg:generic/framework-skype@5.12.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/plugin-skype-client@10.4.46",
+      "name": "plugin-skype-client",
+      "version": "10.4.46",
+      "purl": "pkg:generic/plugin-skype-client@10.4.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-28T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

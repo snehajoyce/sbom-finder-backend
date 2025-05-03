@@ -1,0 +1,1073 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:37e4058925489f68a16669e1fd4570ab",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.196174",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:google/chrome@2.8.67",
+      "name": "chrome",
+      "version": "2.8.67",
+      "supplier": {
+        "name": "google"
+      },
+      "cpe": "cpe:2.3:a:google:chrome:2.8.67:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-chrome-utils@4.6.65",
+      "name": "api-chrome-utils",
+      "version": "4.6.65",
+      "purl": "pkg:generic/api-chrome-utils@4.6.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-framework-lib@3.8.83",
+      "name": "chrome-framework-lib",
+      "version": "3.8.83",
+      "purl": "pkg:generic/chrome-framework-lib@3.8.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-chrome-js@4.8.33",
+      "name": "service-chrome-js",
+      "version": "4.8.33",
+      "purl": "pkg:generic/service-chrome-js@4.8.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/chrome-service-core@9.4.45",
+      "name": "chrome-service-core",
+      "version": "9.4.45",
+      "purl": "pkg:generic/chrome-service-core@9.4.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-chrome-core@5.14.2",
+      "name": "core-chrome-core",
+      "version": "5.14.2",
+      "purl": "pkg:generic/core-chrome-core@5.14.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-chrome-lib@5.12.86",
+      "name": "lib-chrome-lib",
+      "version": "5.12.86",
+      "purl": "pkg:generic/lib-chrome-lib@5.12.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-chrome-server@4.19.10",
+      "name": "api-chrome-server",
+      "version": "4.19.10",
+      "purl": "pkg:generic/api-chrome-server@4.19.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/chrome-framework-api@1.0.0",
+      "name": "chrome-framework-api",
+      "version": "1.0.0",
+      "purl": "pkg:generic/chrome-framework-api@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/module-chrome-common@6.6.13",
+      "name": "module-chrome-common",
+      "version": "6.6.13",
+      "purl": "pkg:generic/module-chrome-common@6.6.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/core-chrome-js@9.8.68",
+      "name": "core-chrome-js",
+      "version": "9.8.68",
+      "purl": "pkg:generic/core-chrome-js@9.8.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-chrome-base@3.20.28",
+      "name": "core-chrome-base",
+      "version": "3.20.28",
+      "purl": "pkg:generic/core-chrome-base@3.20.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/chrome-sdk@5.19.98",
+      "name": "chrome-sdk",
+      "version": "5.19.98",
+      "purl": "pkg:generic/chrome-sdk@5.19.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/chrome-util-lib@4.15.53",
+      "name": "chrome-util-lib",
+      "version": "4.15.53",
+      "purl": "pkg:generic/chrome-util-lib@4.15.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-chrome-api@2.8.4",
+      "name": "plugin-chrome-api",
+      "version": "2.8.4",
+      "purl": "pkg:generic/plugin-chrome-api@2.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-chrome-lib@3.6.7",
+      "name": "util-chrome-lib",
+      "version": "3.6.7",
+      "purl": "pkg:generic/util-chrome-lib@3.6.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-core-js@4.16.36",
+      "name": "chrome-core-js",
+      "version": "4.16.36",
+      "purl": "pkg:generic/chrome-core-js@4.16.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/chrome-module@3.3.0",
+      "name": "chrome-module",
+      "version": "3.3.0",
+      "purl": "pkg:generic/chrome-module@3.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-chrome-js@8.4.3",
+      "name": "api-chrome-js",
+      "version": "8.4.3",
+      "purl": "pkg:generic/api-chrome-js@8.4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/chrome-service-client@7.18.93",
+      "name": "chrome-service-client",
+      "version": "7.18.93",
+      "purl": "pkg:generic/chrome-service-client@7.18.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/chrome-service@1.20.91",
+      "name": "chrome-service",
+      "version": "1.20.91",
+      "purl": "pkg:generic/chrome-service@1.20.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/chrome-core-client@10.3.6",
+      "name": "chrome-core-client",
+      "version": "10.3.6",
+      "purl": "pkg:generic/chrome-core-client@10.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/chrome-lib-server@10.15.59",
+      "name": "chrome-lib-server",
+      "version": "10.15.59",
+      "purl": "pkg:generic/chrome-lib-server@10.15.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-chrome-base@10.11.63",
+      "name": "engine-chrome-base",
+      "version": "10.11.63",
+      "purl": "pkg:generic/engine-chrome-base@10.11.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-chrome-client@4.4.1",
+      "name": "service-chrome-client",
+      "version": "4.4.1",
+      "purl": "pkg:generic/service-chrome-client@4.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/chrome-module-api@1.14.84",
+      "name": "chrome-module-api",
+      "version": "1.14.84",
+      "purl": "pkg:generic/chrome-module-api@1.14.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-service-js@8.9.14",
+      "name": "chrome-service-js",
+      "version": "8.9.14",
+      "purl": "pkg:generic/chrome-service-js@8.9.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/chrome-engine-lib@1.10.20",
+      "name": "chrome-engine-lib",
+      "version": "1.10.20",
+      "purl": "pkg:generic/chrome-engine-lib@1.10.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/chrome-api-js@5.15.63",
+      "name": "chrome-api-js",
+      "version": "5.15.63",
+      "purl": "pkg:generic/chrome-api-js@5.15.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-chrome-api@2.12.91",
+      "name": "core-chrome-api",
+      "version": "2.12.91",
+      "purl": "pkg:generic/core-chrome-api@2.12.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/chrome-util@10.2.21",
+      "name": "chrome-util",
+      "version": "10.2.21",
+      "purl": "pkg:generic/chrome-util@10.2.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/chrome-lib-api@8.2.79",
+      "name": "chrome-lib-api",
+      "version": "8.2.79",
+      "purl": "pkg:generic/chrome-lib-api@8.2.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-chrome-server@2.16.22",
+      "name": "framework-chrome-server",
+      "version": "2.16.22",
+      "purl": "pkg:generic/framework-chrome-server@2.16.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/plugin-chrome-client@7.18.57",
+      "name": "plugin-chrome-client",
+      "version": "7.18.57",
+      "purl": "pkg:generic/plugin-chrome-client@7.18.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-chrome-common@2.19.45",
+      "name": "service-chrome-common",
+      "version": "2.19.45",
+      "purl": "pkg:generic/service-chrome-common@2.19.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-plugin-lib@1.9.31",
+      "name": "chrome-plugin-lib",
+      "version": "1.9.31",
+      "purl": "pkg:generic/chrome-plugin-lib@1.9.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-lib-utils@7.7.61",
+      "name": "chrome-lib-utils",
+      "version": "7.7.61",
+      "purl": "pkg:generic/chrome-lib-utils@7.7.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-chrome-server@8.19.82",
+      "name": "sdk-chrome-server",
+      "version": "8.19.82",
+      "purl": "pkg:generic/sdk-chrome-server@8.19.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/service-chrome-api@1.8.1",
+      "name": "service-chrome-api",
+      "version": "1.8.1",
+      "purl": "pkg:generic/service-chrome-api@1.8.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-chrome-common@6.9.69",
+      "name": "plugin-chrome-common",
+      "version": "6.9.69",
+      "purl": "pkg:generic/plugin-chrome-common@6.9.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/chrome-sdk-server@7.18.66",
+      "name": "chrome-sdk-server",
+      "version": "7.18.66",
+      "purl": "pkg:generic/chrome-sdk-server@7.18.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/chrome-api-utils@7.14.72",
+      "name": "chrome-api-utils",
+      "version": "7.14.72",
+      "purl": "pkg:generic/chrome-api-utils@7.14.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/chrome-service-api@6.20.70",
+      "name": "chrome-service-api",
+      "version": "6.20.70",
+      "purl": "pkg:generic/chrome-service-api@6.20.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-chrome-lib@7.15.96",
+      "name": "engine-chrome-lib",
+      "version": "7.15.96",
+      "purl": "pkg:generic/engine-chrome-lib@7.15.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-chrome-client@8.12.70",
+      "name": "api-chrome-client",
+      "version": "8.12.70",
+      "purl": "pkg:generic/api-chrome-client@8.12.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-chrome-core@7.18.83",
+      "name": "sdk-chrome-core",
+      "version": "7.18.83",
+      "purl": "pkg:generic/sdk-chrome-core@7.18.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/chrome-engine-server@9.14.20",
+      "name": "chrome-engine-server",
+      "version": "9.14.20",
+      "purl": "pkg:generic/chrome-engine-server@9.14.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/chrome-util-client@4.20.51",
+      "name": "chrome-util-client",
+      "version": "4.20.51",
+      "purl": "pkg:generic/chrome-util-client@4.20.51",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-chrome-lib@10.4.6",
+      "name": "service-chrome-lib",
+      "version": "10.4.6",
+      "purl": "pkg:generic/service-chrome-lib@10.4.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-24T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

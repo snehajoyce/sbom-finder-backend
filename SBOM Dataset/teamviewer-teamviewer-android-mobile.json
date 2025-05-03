@@ -1,0 +1,178 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:4a930217b6482d3e7799d82b8464c3fc",
+  "metadata": {
+    "timestamp": "2025-05-03T00:57:00.819881",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:teamviewer/teamviewer@6.2.54",
+      "name": "teamviewer",
+      "version": "6.2.54",
+      "supplier": {
+        "name": "teamviewer"
+      },
+      "cpe": "cpe:2.3:a:teamviewer:teamviewer:6.2.54:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/teamviewer-framework-api@8.18.88",
+      "name": "teamviewer-framework-api",
+      "version": "8.18.88",
+      "purl": "pkg:generic/teamviewer-framework-api@8.18.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/teamviewer-service-lib@3.12.74",
+      "name": "teamviewer-service-lib",
+      "version": "3.12.74",
+      "purl": "pkg:generic/teamviewer-service-lib@3.12.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/teamviewer-plugin-core@7.7.38",
+      "name": "teamviewer-plugin-core",
+      "version": "7.7.38",
+      "purl": "pkg:generic/teamviewer-plugin-core@7.7.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/teamviewer-core-server@8.13.57",
+      "name": "teamviewer-core-server",
+      "version": "8.13.57",
+      "purl": "pkg:generic/teamviewer-core-server@8.13.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/engine-teamviewer-client@9.11.17",
+      "name": "engine-teamviewer-client",
+      "version": "9.11.17",
+      "purl": "pkg:generic/engine-teamviewer-client@9.11.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/teamviewer-service-base@1.4.88",
+      "name": "teamviewer-service-base",
+      "version": "1.4.88",
+      "purl": "pkg:generic/teamviewer-service-base@1.4.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-teamviewer-api@4.2.61",
+      "name": "core-teamviewer-api",
+      "version": "4.2.61",
+      "purl": "pkg:generic/core-teamviewer-api@4.2.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-15T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:86863d9ff1b5bfc41af488d7137c968b",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:58.276179",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:kaspersky/kaspersky@3.2.76",
+      "name": "kaspersky",
+      "version": "3.2.76",
+      "supplier": {
+        "name": "kaspersky"
+      },
+      "cpe": "cpe:2.3:a:kaspersky:kaspersky:3.2.76:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "android"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/kaspersky-service-client@7.20.45",
+      "name": "kaspersky-service-client",
+      "version": "7.20.45",
+      "purl": "pkg:generic/kaspersky-service-client@7.20.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-kaspersky@7.16.89",
+      "name": "service-kaspersky",
+      "version": "7.16.89",
+      "purl": "pkg:generic/service-kaspersky@7.16.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-kaspersky@1.5.32",
+      "name": "lib-kaspersky",
+      "version": "1.5.32",
+      "purl": "pkg:generic/lib-kaspersky@1.5.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/kaspersky-util-base@2.17.52",
+      "name": "kaspersky-util-base",
+      "version": "2.17.52",
+      "purl": "pkg:generic/kaspersky-util-base@2.17.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/kaspersky-engine-js@6.8.35",
+      "name": "kaspersky-engine-js",
+      "version": "6.8.35",
+      "purl": "pkg:generic/kaspersky-engine-js@6.8.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/kaspersky-engine-api@4.11.66",
+      "name": "kaspersky-engine-api",
+      "version": "4.11.66",
+      "purl": "pkg:generic/kaspersky-engine-api@4.11.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-kaspersky-utils@4.3.2",
+      "name": "sdk-kaspersky-utils",
+      "version": "4.3.2",
+      "purl": "pkg:generic/sdk-kaspersky-utils@4.3.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-kaspersky-client@10.14.6",
+      "name": "lib-kaspersky-client",
+      "version": "10.14.6",
+      "purl": "pkg:generic/lib-kaspersky-client@10.14.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/kaspersky-sdk-utils@4.0.3",
+      "name": "kaspersky-sdk-utils",
+      "version": "4.0.3",
+      "purl": "pkg:generic/kaspersky-sdk-utils@4.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-02T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

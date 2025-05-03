@@ -1,0 +1,407 @@
+2025-05-03 01:05:23,051 [INFO] Windows directory created/verified: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM
+2025-05-03 01:05:23,052 [INFO] Starting SBOM generation process using Syft
+2025-05-03 01:05:23,052 [INFO] Checking if Syft is installed...
+2025-05-03 01:05:23,164 [INFO] Syft is already installed
+2025-05-03 01:05:47,268 [INFO] Will process 56 applications
+2025-05-03 01:05:47,269 [INFO] Generating SBOM for firefox (mozilla) on windows
+2025-05-03 01:05:47,394 [INFO] Found similar application at /snap/bin/firefox, using it as base
+2025-05-03 01:06:09,389 [INFO] SBOM for firefox saved to ./SBOM Dataset/firefox_windows_20250503_sbom.json
+2025-05-03 01:06:09,395 [INFO] Updated SBOM metadata for firefox
+2025-05-03 01:06:09,396 [INFO] Backed up SBOM to ./sbom_files/firefox_windows_20250503_sbom.json
+2025-05-03 01:06:09,398 [INFO] Backed up SBOM to /root/local_sbom_backup/firefox_windows_20250503_sbom.json
+2025-05-03 01:06:09,446 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/firefox_windows_20250503_sbom.json
+2025-05-03 01:06:09,447 [INFO] Generating SBOM for firefox (mozilla) on linux
+2025-05-03 01:06:09,604 [INFO] Found similar application at /snap/bin/firefox, using it as base
+2025-05-03 01:06:23,250 [INFO] SBOM for firefox saved to ./SBOM Dataset/firefox_linux_20250503_sbom.json
+2025-05-03 01:06:23,256 [INFO] Updated SBOM metadata for firefox
+2025-05-03 01:06:23,258 [INFO] Backed up SBOM to ./sbom_files/firefox_linux_20250503_sbom.json
+2025-05-03 01:06:23,259 [INFO] Backed up SBOM to /root/local_sbom_backup/firefox_linux_20250503_sbom.json
+2025-05-03 01:06:23,315 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/firefox_linux_20250503_sbom.json
+2025-05-03 01:06:23,316 [INFO] Generating SBOM for firefox (mozilla) on macos
+2025-05-03 01:06:23,494 [INFO] Found similar application at /snap/bin/firefox, using it as base
+2025-05-03 01:06:34,736 [INFO] SBOM for firefox saved to ./SBOM Dataset/firefox_macos_20250503_sbom.json
+2025-05-03 01:06:34,743 [INFO] Updated SBOM metadata for firefox
+2025-05-03 01:06:34,744 [INFO] Backed up SBOM to ./sbom_files/firefox_macos_20250503_sbom.json
+2025-05-03 01:06:34,745 [INFO] Backed up SBOM to /root/local_sbom_backup/firefox_macos_20250503_sbom.json
+2025-05-03 01:06:34,795 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/firefox_macos_20250503_sbom.json
+2025-05-03 01:06:34,796 [INFO] Generating SBOM for chrome (google) on windows
+2025-05-03 01:06:35,019 [INFO] No similar application found, creating template for chrome
+2025-05-03 01:06:35,021 [INFO] SBOM for chrome saved to ./SBOM Dataset/chrome_windows_20250503_sbom.json
+2025-05-03 01:06:35,023 [INFO] Updated SBOM metadata for chrome
+2025-05-03 01:06:35,024 [INFO] Backed up SBOM to ./sbom_files/chrome_windows_20250503_sbom.json
+2025-05-03 01:06:35,027 [INFO] Backed up SBOM to /root/local_sbom_backup/chrome_windows_20250503_sbom.json
+2025-05-03 01:06:35,076 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/chrome_windows_20250503_sbom.json
+2025-05-03 01:06:35,077 [INFO] Generating SBOM for chrome (google) on linux
+2025-05-03 01:06:35,481 [INFO] No similar application found, creating template for chrome
+2025-05-03 01:06:35,485 [INFO] SBOM for chrome saved to ./SBOM Dataset/chrome_linux_20250503_sbom.json
+2025-05-03 01:06:35,488 [INFO] Updated SBOM metadata for chrome
+2025-05-03 01:06:35,489 [INFO] Backed up SBOM to ./sbom_files/chrome_linux_20250503_sbom.json
+2025-05-03 01:06:35,490 [INFO] Backed up SBOM to /root/local_sbom_backup/chrome_linux_20250503_sbom.json
+2025-05-03 01:06:35,580 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/chrome_linux_20250503_sbom.json
+2025-05-03 01:06:35,581 [INFO] Generating SBOM for chrome (google) on macos
+2025-05-03 01:06:35,797 [INFO] No similar application found, creating template for chrome
+2025-05-03 01:06:35,799 [INFO] SBOM for chrome saved to ./SBOM Dataset/chrome_macos_20250503_sbom.json
+2025-05-03 01:06:35,801 [INFO] Updated SBOM metadata for chrome
+2025-05-03 01:06:35,804 [INFO] Backed up SBOM to ./sbom_files/chrome_macos_20250503_sbom.json
+2025-05-03 01:06:35,809 [INFO] Backed up SBOM to /root/local_sbom_backup/chrome_macos_20250503_sbom.json
+2025-05-03 01:06:35,878 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/chrome_macos_20250503_sbom.json
+2025-05-03 01:06:35,878 [INFO] Generating SBOM for edge (microsoft) on windows
+2025-05-03 01:06:36,095 [INFO] No similar application found, creating template for edge
+2025-05-03 01:06:36,099 [INFO] SBOM for edge saved to ./SBOM Dataset/edge_windows_20250503_sbom.json
+2025-05-03 01:06:36,102 [INFO] Updated SBOM metadata for edge
+2025-05-03 01:06:36,104 [INFO] Backed up SBOM to ./sbom_files/edge_windows_20250503_sbom.json
+2025-05-03 01:06:36,112 [INFO] Backed up SBOM to /root/local_sbom_backup/edge_windows_20250503_sbom.json
+2025-05-03 01:06:36,192 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/edge_windows_20250503_sbom.json
+2025-05-03 01:06:36,192 [INFO] Generating SBOM for office (microsoft) on windows
+2025-05-03 01:06:36,673 [INFO] No similar application found, creating template for office
+2025-05-03 01:06:36,677 [INFO] SBOM for office saved to ./SBOM Dataset/office_windows_20250503_sbom.json
+2025-05-03 01:06:36,687 [INFO] Updated SBOM metadata for office
+2025-05-03 01:06:36,688 [INFO] Backed up SBOM to ./sbom_files/office_windows_20250503_sbom.json
+2025-05-03 01:06:36,690 [INFO] Backed up SBOM to /root/local_sbom_backup/office_windows_20250503_sbom.json
+2025-05-03 01:06:36,769 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/office_windows_20250503_sbom.json
+2025-05-03 01:06:36,769 [INFO] Generating SBOM for office (microsoft) on macos
+2025-05-03 01:06:37,084 [INFO] No similar application found, creating template for office
+2025-05-03 01:06:37,088 [INFO] SBOM for office saved to ./SBOM Dataset/office_macos_20250503_sbom.json
+2025-05-03 01:06:37,091 [INFO] Updated SBOM metadata for office
+2025-05-03 01:06:37,093 [INFO] Backed up SBOM to ./sbom_files/office_macos_20250503_sbom.json
+2025-05-03 01:06:37,094 [INFO] Backed up SBOM to /root/local_sbom_backup/office_macos_20250503_sbom.json
+2025-05-03 01:06:37,176 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/office_macos_20250503_sbom.json
+2025-05-03 01:06:37,177 [INFO] Generating SBOM for libreoffice (libreoffice) on windows
+2025-05-03 01:06:37,545 [INFO] No similar application found, creating template for libreoffice
+2025-05-03 01:06:37,547 [INFO] SBOM for libreoffice saved to ./SBOM Dataset/libreoffice_windows_20250503_sbom.json
+2025-05-03 01:06:37,551 [INFO] Updated SBOM metadata for libreoffice
+2025-05-03 01:06:37,555 [INFO] Backed up SBOM to ./sbom_files/libreoffice_windows_20250503_sbom.json
+2025-05-03 01:06:37,556 [INFO] Backed up SBOM to /root/local_sbom_backup/libreoffice_windows_20250503_sbom.json
+2025-05-03 01:06:37,657 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/libreoffice_windows_20250503_sbom.json
+2025-05-03 01:06:37,658 [INFO] Generating SBOM for libreoffice (libreoffice) on linux
+2025-05-03 01:06:37,972 [INFO] No similar application found, creating template for libreoffice
+2025-05-03 01:06:37,978 [INFO] SBOM for libreoffice saved to ./SBOM Dataset/libreoffice_linux_20250503_sbom.json
+2025-05-03 01:06:37,982 [INFO] Updated SBOM metadata for libreoffice
+2025-05-03 01:06:37,984 [INFO] Backed up SBOM to ./sbom_files/libreoffice_linux_20250503_sbom.json
+2025-05-03 01:06:37,984 [INFO] Backed up SBOM to /root/local_sbom_backup/libreoffice_linux_20250503_sbom.json
+2025-05-03 01:06:38,067 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/libreoffice_linux_20250503_sbom.json
+2025-05-03 01:06:38,068 [INFO] Generating SBOM for libreoffice (libreoffice) on macos
+2025-05-03 01:06:38,463 [INFO] No similar application found, creating template for libreoffice
+2025-05-03 01:06:38,467 [INFO] SBOM for libreoffice saved to ./SBOM Dataset/libreoffice_macos_20250503_sbom.json
+2025-05-03 01:06:38,470 [INFO] Updated SBOM metadata for libreoffice
+2025-05-03 01:06:38,473 [INFO] Backed up SBOM to ./sbom_files/libreoffice_macos_20250503_sbom.json
+2025-05-03 01:06:38,474 [INFO] Backed up SBOM to /root/local_sbom_backup/libreoffice_macos_20250503_sbom.json
+2025-05-03 01:06:38,543 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/libreoffice_macos_20250503_sbom.json
+2025-05-03 01:06:38,544 [INFO] Generating SBOM for vlc (videolan) on windows
+2025-05-03 01:06:38,772 [INFO] No similar application found, creating template for vlc
+2025-05-03 01:06:38,775 [INFO] SBOM for vlc saved to ./SBOM Dataset/vlc_windows_20250503_sbom.json
+2025-05-03 01:06:38,778 [INFO] Updated SBOM metadata for vlc
+2025-05-03 01:06:38,780 [INFO] Backed up SBOM to ./sbom_files/vlc_windows_20250503_sbom.json
+2025-05-03 01:06:38,784 [INFO] Backed up SBOM to /root/local_sbom_backup/vlc_windows_20250503_sbom.json
+2025-05-03 01:06:38,893 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vlc_windows_20250503_sbom.json
+2025-05-03 01:06:38,894 [INFO] Generating SBOM for vlc (videolan) on linux
+2025-05-03 01:06:39,157 [INFO] No similar application found, creating template for vlc
+2025-05-03 01:06:39,164 [INFO] SBOM for vlc saved to ./SBOM Dataset/vlc_linux_20250503_sbom.json
+2025-05-03 01:06:39,169 [INFO] Updated SBOM metadata for vlc
+2025-05-03 01:06:39,171 [INFO] Backed up SBOM to ./sbom_files/vlc_linux_20250503_sbom.json
+2025-05-03 01:06:39,173 [INFO] Backed up SBOM to /root/local_sbom_backup/vlc_linux_20250503_sbom.json
+2025-05-03 01:06:39,357 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vlc_linux_20250503_sbom.json
+2025-05-03 01:06:39,358 [INFO] Generating SBOM for vlc (videolan) on macos
+2025-05-03 01:06:39,886 [INFO] No similar application found, creating template for vlc
+2025-05-03 01:06:39,888 [INFO] SBOM for vlc saved to ./SBOM Dataset/vlc_macos_20250503_sbom.json
+2025-05-03 01:06:39,890 [INFO] Updated SBOM metadata for vlc
+2025-05-03 01:06:39,896 [INFO] Backed up SBOM to ./sbom_files/vlc_macos_20250503_sbom.json
+2025-05-03 01:06:39,923 [INFO] Backed up SBOM to /root/local_sbom_backup/vlc_macos_20250503_sbom.json
+2025-05-03 01:06:40,053 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vlc_macos_20250503_sbom.json
+2025-05-03 01:06:40,054 [INFO] Generating SBOM for spotify (spotify) on windows
+2025-05-03 01:06:40,350 [INFO] No similar application found, creating template for spotify
+2025-05-03 01:06:40,353 [INFO] SBOM for spotify saved to ./SBOM Dataset/spotify_windows_20250503_sbom.json
+2025-05-03 01:06:40,356 [INFO] Updated SBOM metadata for spotify
+2025-05-03 01:06:40,357 [INFO] Backed up SBOM to ./sbom_files/spotify_windows_20250503_sbom.json
+2025-05-03 01:06:40,359 [INFO] Backed up SBOM to /root/local_sbom_backup/spotify_windows_20250503_sbom.json
+2025-05-03 01:06:40,403 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/spotify_windows_20250503_sbom.json
+2025-05-03 01:06:40,404 [INFO] Generating SBOM for spotify (spotify) on linux
+2025-05-03 01:06:40,648 [INFO] No similar application found, creating template for spotify
+2025-05-03 01:06:40,653 [INFO] SBOM for spotify saved to ./SBOM Dataset/spotify_linux_20250503_sbom.json
+2025-05-03 01:06:40,655 [INFO] Updated SBOM metadata for spotify
+2025-05-03 01:06:40,657 [INFO] Backed up SBOM to ./sbom_files/spotify_linux_20250503_sbom.json
+2025-05-03 01:06:40,658 [INFO] Backed up SBOM to /root/local_sbom_backup/spotify_linux_20250503_sbom.json
+2025-05-03 01:06:40,717 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/spotify_linux_20250503_sbom.json
+2025-05-03 01:06:40,718 [INFO] Generating SBOM for spotify (spotify) on macos
+2025-05-03 01:06:41,063 [INFO] No similar application found, creating template for spotify
+2025-05-03 01:06:41,066 [INFO] SBOM for spotify saved to ./SBOM Dataset/spotify_macos_20250503_sbom.json
+2025-05-03 01:06:41,069 [INFO] Updated SBOM metadata for spotify
+2025-05-03 01:06:41,082 [INFO] Backed up SBOM to ./sbom_files/spotify_macos_20250503_sbom.json
+2025-05-03 01:06:41,086 [INFO] Backed up SBOM to /root/local_sbom_backup/spotify_macos_20250503_sbom.json
+2025-05-03 01:06:41,191 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/spotify_macos_20250503_sbom.json
+2025-05-03 01:06:41,193 [INFO] Generating SBOM for photoshop (adobe) on windows
+2025-05-03 01:06:41,563 [INFO] No similar application found, creating template for photoshop
+2025-05-03 01:06:41,568 [INFO] SBOM for photoshop saved to ./SBOM Dataset/photoshop_windows_20250503_sbom.json
+2025-05-03 01:06:41,572 [INFO] Updated SBOM metadata for photoshop
+2025-05-03 01:06:41,576 [INFO] Backed up SBOM to ./sbom_files/photoshop_windows_20250503_sbom.json
+2025-05-03 01:06:41,578 [INFO] Backed up SBOM to /root/local_sbom_backup/photoshop_windows_20250503_sbom.json
+2025-05-03 01:06:41,672 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/photoshop_windows_20250503_sbom.json
+2025-05-03 01:06:41,673 [INFO] Generating SBOM for photoshop (adobe) on macos
+2025-05-03 01:06:41,955 [INFO] No similar application found, creating template for photoshop
+2025-05-03 01:06:41,957 [INFO] SBOM for photoshop saved to ./SBOM Dataset/photoshop_macos_20250503_sbom.json
+2025-05-03 01:06:41,960 [INFO] Updated SBOM metadata for photoshop
+2025-05-03 01:06:41,962 [INFO] Backed up SBOM to ./sbom_files/photoshop_macos_20250503_sbom.json
+2025-05-03 01:06:41,967 [INFO] Backed up SBOM to /root/local_sbom_backup/photoshop_macos_20250503_sbom.json
+2025-05-03 01:06:42,069 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/photoshop_macos_20250503_sbom.json
+2025-05-03 01:06:42,069 [INFO] Generating SBOM for gimp (gimp) on windows
+2025-05-03 01:06:42,342 [INFO] No similar application found, creating template for gimp
+2025-05-03 01:06:42,344 [INFO] SBOM for gimp saved to ./SBOM Dataset/gimp_windows_20250503_sbom.json
+2025-05-03 01:06:42,346 [INFO] Updated SBOM metadata for gimp
+2025-05-03 01:06:42,347 [INFO] Backed up SBOM to ./sbom_files/gimp_windows_20250503_sbom.json
+2025-05-03 01:06:42,348 [INFO] Backed up SBOM to /root/local_sbom_backup/gimp_windows_20250503_sbom.json
+2025-05-03 01:06:42,410 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/gimp_windows_20250503_sbom.json
+2025-05-03 01:06:42,411 [INFO] Generating SBOM for gimp (gimp) on linux
+2025-05-03 01:06:42,708 [INFO] No similar application found, creating template for gimp
+2025-05-03 01:06:42,718 [INFO] SBOM for gimp saved to ./SBOM Dataset/gimp_linux_20250503_sbom.json
+2025-05-03 01:06:42,721 [INFO] Updated SBOM metadata for gimp
+2025-05-03 01:06:42,722 [INFO] Backed up SBOM to ./sbom_files/gimp_linux_20250503_sbom.json
+2025-05-03 01:06:42,758 [INFO] Backed up SBOM to /root/local_sbom_backup/gimp_linux_20250503_sbom.json
+2025-05-03 01:06:42,870 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/gimp_linux_20250503_sbom.json
+2025-05-03 01:06:42,871 [INFO] Generating SBOM for gimp (gimp) on macos
+2025-05-03 01:06:43,266 [INFO] No similar application found, creating template for gimp
+2025-05-03 01:06:43,270 [INFO] SBOM for gimp saved to ./SBOM Dataset/gimp_macos_20250503_sbom.json
+2025-05-03 01:06:43,272 [INFO] Updated SBOM metadata for gimp
+2025-05-03 01:06:43,274 [INFO] Backed up SBOM to ./sbom_files/gimp_macos_20250503_sbom.json
+2025-05-03 01:06:43,290 [INFO] Backed up SBOM to /root/local_sbom_backup/gimp_macos_20250503_sbom.json
+2025-05-03 01:06:43,356 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/gimp_macos_20250503_sbom.json
+2025-05-03 01:06:43,356 [INFO] Generating SBOM for vscode (microsoft) on windows
+2025-05-03 01:06:43,587 [INFO] No similar application found, creating template for vscode
+2025-05-03 01:06:43,590 [INFO] SBOM for vscode saved to ./SBOM Dataset/vscode_windows_20250503_sbom.json
+2025-05-03 01:06:43,593 [INFO] Updated SBOM metadata for vscode
+2025-05-03 01:06:43,594 [INFO] Backed up SBOM to ./sbom_files/vscode_windows_20250503_sbom.json
+2025-05-03 01:06:43,595 [INFO] Backed up SBOM to /root/local_sbom_backup/vscode_windows_20250503_sbom.json
+2025-05-03 01:06:43,652 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vscode_windows_20250503_sbom.json
+2025-05-03 01:06:43,652 [INFO] Generating SBOM for vscode (microsoft) on linux
+2025-05-03 01:06:43,871 [INFO] No similar application found, creating template for vscode
+2025-05-03 01:06:43,874 [INFO] SBOM for vscode saved to ./SBOM Dataset/vscode_linux_20250503_sbom.json
+2025-05-03 01:06:43,876 [INFO] Updated SBOM metadata for vscode
+2025-05-03 01:06:43,879 [INFO] Backed up SBOM to ./sbom_files/vscode_linux_20250503_sbom.json
+2025-05-03 01:06:43,881 [INFO] Backed up SBOM to /root/local_sbom_backup/vscode_linux_20250503_sbom.json
+2025-05-03 01:06:43,963 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vscode_linux_20250503_sbom.json
+2025-05-03 01:06:43,964 [INFO] Generating SBOM for vscode (microsoft) on macos
+2025-05-03 01:06:44,268 [INFO] No similar application found, creating template for vscode
+2025-05-03 01:06:44,271 [INFO] SBOM for vscode saved to ./SBOM Dataset/vscode_macos_20250503_sbom.json
+2025-05-03 01:06:44,274 [INFO] Updated SBOM metadata for vscode
+2025-05-03 01:06:44,275 [INFO] Backed up SBOM to ./sbom_files/vscode_macos_20250503_sbom.json
+2025-05-03 01:06:44,284 [INFO] Backed up SBOM to /root/local_sbom_backup/vscode_macos_20250503_sbom.json
+2025-05-03 01:06:44,383 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/vscode_macos_20250503_sbom.json
+2025-05-03 01:06:44,383 [INFO] Generating SBOM for intellij (jetbrains) on windows
+2025-05-03 01:06:44,687 [INFO] No similar application found, creating template for intellij
+2025-05-03 01:06:44,690 [INFO] SBOM for intellij saved to ./SBOM Dataset/intellij_windows_20250503_sbom.json
+2025-05-03 01:06:44,694 [INFO] Updated SBOM metadata for intellij
+2025-05-03 01:06:44,695 [INFO] Backed up SBOM to ./sbom_files/intellij_windows_20250503_sbom.json
+2025-05-03 01:06:44,696 [INFO] Backed up SBOM to /root/local_sbom_backup/intellij_windows_20250503_sbom.json
+2025-05-03 01:06:44,816 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/intellij_windows_20250503_sbom.json
+2025-05-03 01:06:44,817 [INFO] Generating SBOM for intellij (jetbrains) on linux
+2025-05-03 01:06:45,079 [INFO] No similar application found, creating template for intellij
+2025-05-03 01:06:45,080 [INFO] SBOM for intellij saved to ./SBOM Dataset/intellij_linux_20250503_sbom.json
+2025-05-03 01:06:45,082 [INFO] Updated SBOM metadata for intellij
+2025-05-03 01:06:45,084 [INFO] Backed up SBOM to ./sbom_files/intellij_linux_20250503_sbom.json
+2025-05-03 01:06:45,085 [INFO] Backed up SBOM to /root/local_sbom_backup/intellij_linux_20250503_sbom.json
+2025-05-03 01:06:45,145 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/intellij_linux_20250503_sbom.json
+2025-05-03 01:06:45,146 [INFO] Generating SBOM for intellij (jetbrains) on macos
+2025-05-03 01:06:45,399 [INFO] No similar application found, creating template for intellij
+2025-05-03 01:06:45,402 [INFO] SBOM for intellij saved to ./SBOM Dataset/intellij_macos_20250503_sbom.json
+2025-05-03 01:06:45,404 [INFO] Updated SBOM metadata for intellij
+2025-05-03 01:06:45,410 [INFO] Backed up SBOM to ./sbom_files/intellij_macos_20250503_sbom.json
+2025-05-03 01:06:45,416 [INFO] Backed up SBOM to /root/local_sbom_backup/intellij_macos_20250503_sbom.json
+2025-05-03 01:06:45,502 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/intellij_macos_20250503_sbom.json
+2025-05-03 01:06:45,503 [INFO] Generating SBOM for steam (valve) on windows
+2025-05-03 01:06:45,694 [INFO] No similar application found, creating template for steam
+2025-05-03 01:06:45,696 [INFO] SBOM for steam saved to ./SBOM Dataset/steam_windows_20250503_sbom.json
+2025-05-03 01:06:45,698 [INFO] Updated SBOM metadata for steam
+2025-05-03 01:06:45,700 [INFO] Backed up SBOM to ./sbom_files/steam_windows_20250503_sbom.json
+2025-05-03 01:06:45,720 [INFO] Backed up SBOM to /root/local_sbom_backup/steam_windows_20250503_sbom.json
+2025-05-03 01:06:45,786 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/steam_windows_20250503_sbom.json
+2025-05-03 01:06:45,787 [INFO] Generating SBOM for steam (valve) on linux
+2025-05-03 01:06:46,168 [INFO] No similar application found, creating template for steam
+2025-05-03 01:06:46,170 [INFO] SBOM for steam saved to ./SBOM Dataset/steam_linux_20250503_sbom.json
+2025-05-03 01:06:46,172 [INFO] Updated SBOM metadata for steam
+2025-05-03 01:06:46,173 [INFO] Backed up SBOM to ./sbom_files/steam_linux_20250503_sbom.json
+2025-05-03 01:06:46,179 [INFO] Backed up SBOM to /root/local_sbom_backup/steam_linux_20250503_sbom.json
+2025-05-03 01:06:46,372 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/steam_linux_20250503_sbom.json
+2025-05-03 01:06:46,373 [INFO] Generating SBOM for steam (valve) on macos
+2025-05-03 01:06:46,649 [INFO] No similar application found, creating template for steam
+2025-05-03 01:06:46,652 [INFO] SBOM for steam saved to ./SBOM Dataset/steam_macos_20250503_sbom.json
+2025-05-03 01:06:46,655 [INFO] Updated SBOM metadata for steam
+2025-05-03 01:06:46,656 [INFO] Backed up SBOM to ./sbom_files/steam_macos_20250503_sbom.json
+2025-05-03 01:06:46,657 [INFO] Backed up SBOM to /root/local_sbom_backup/steam_macos_20250503_sbom.json
+2025-05-03 01:06:46,724 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/steam_macos_20250503_sbom.json
+2025-05-03 01:06:46,725 [INFO] Generating SBOM for epicgames (epic) on windows
+2025-05-03 01:06:46,998 [INFO] No similar application found, creating template for epicgames
+2025-05-03 01:06:47,002 [INFO] SBOM for epicgames saved to ./SBOM Dataset/epicgames_windows_20250503_sbom.json
+2025-05-03 01:06:47,005 [INFO] Updated SBOM metadata for epicgames
+2025-05-03 01:06:47,008 [INFO] Backed up SBOM to ./sbom_files/epicgames_windows_20250503_sbom.json
+2025-05-03 01:06:47,017 [INFO] Backed up SBOM to /root/local_sbom_backup/epicgames_windows_20250503_sbom.json
+2025-05-03 01:06:47,091 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/epicgames_windows_20250503_sbom.json
+2025-05-03 01:06:47,093 [INFO] Generating SBOM for epicgames (epic) on macos
+2025-05-03 01:06:47,345 [INFO] No similar application found, creating template for epicgames
+2025-05-03 01:06:47,347 [INFO] SBOM for epicgames saved to ./SBOM Dataset/epicgames_macos_20250503_sbom.json
+2025-05-03 01:06:47,350 [INFO] Updated SBOM metadata for epicgames
+2025-05-03 01:06:47,352 [INFO] Backed up SBOM to ./sbom_files/epicgames_macos_20250503_sbom.json
+2025-05-03 01:06:47,353 [INFO] Backed up SBOM to /root/local_sbom_backup/epicgames_macos_20250503_sbom.json
+2025-05-03 01:06:47,415 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/epicgames_macos_20250503_sbom.json
+2025-05-03 01:06:47,416 [INFO] Generating SBOM for avast (avast) on windows
+2025-05-03 01:06:47,647 [INFO] No similar application found, creating template for avast
+2025-05-03 01:06:47,650 [INFO] SBOM for avast saved to ./SBOM Dataset/avast_windows_20250503_sbom.json
+2025-05-03 01:06:47,652 [INFO] Updated SBOM metadata for avast
+2025-05-03 01:06:47,654 [INFO] Backed up SBOM to ./sbom_files/avast_windows_20250503_sbom.json
+2025-05-03 01:06:47,655 [INFO] Backed up SBOM to /root/local_sbom_backup/avast_windows_20250503_sbom.json
+2025-05-03 01:06:47,741 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/avast_windows_20250503_sbom.json
+2025-05-03 01:06:47,741 [INFO] Generating SBOM for avast (avast) on macos
+2025-05-03 01:06:48,373 [INFO] No similar application found, creating template for avast
+2025-05-03 01:06:48,376 [INFO] SBOM for avast saved to ./SBOM Dataset/avast_macos_20250503_sbom.json
+2025-05-03 01:06:48,378 [INFO] Updated SBOM metadata for avast
+2025-05-03 01:06:48,388 [INFO] Backed up SBOM to ./sbom_files/avast_macos_20250503_sbom.json
+2025-05-03 01:06:48,389 [INFO] Backed up SBOM to /root/local_sbom_backup/avast_macos_20250503_sbom.json
+2025-05-03 01:06:48,530 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/avast_macos_20250503_sbom.json
+2025-05-03 01:06:48,531 [INFO] Generating SBOM for bitdefender (bitdefender) on windows
+2025-05-03 01:06:49,024 [INFO] No similar application found, creating template for bitdefender
+2025-05-03 01:06:49,029 [INFO] SBOM for bitdefender saved to ./SBOM Dataset/bitdefender_windows_20250503_sbom.json
+2025-05-03 01:06:49,032 [INFO] Updated SBOM metadata for bitdefender
+2025-05-03 01:06:49,039 [INFO] Backed up SBOM to ./sbom_files/bitdefender_windows_20250503_sbom.json
+2025-05-03 01:06:49,043 [INFO] Backed up SBOM to /root/local_sbom_backup/bitdefender_windows_20250503_sbom.json
+2025-05-03 01:06:49,111 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/bitdefender_windows_20250503_sbom.json
+2025-05-03 01:06:49,112 [INFO] Generating SBOM for bitdefender (bitdefender) on macos
+2025-05-03 01:06:49,445 [INFO] No similar application found, creating template for bitdefender
+2025-05-03 01:06:49,449 [INFO] SBOM for bitdefender saved to ./SBOM Dataset/bitdefender_macos_20250503_sbom.json
+2025-05-03 01:06:49,462 [INFO] Updated SBOM metadata for bitdefender
+2025-05-03 01:06:49,465 [INFO] Backed up SBOM to ./sbom_files/bitdefender_macos_20250503_sbom.json
+2025-05-03 01:06:49,468 [INFO] Backed up SBOM to /root/local_sbom_backup/bitdefender_macos_20250503_sbom.json
+2025-05-03 01:06:49,597 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/bitdefender_macos_20250503_sbom.json
+2025-05-03 01:06:49,598 [INFO] Generating SBOM for teams (microsoft) on windows
+2025-05-03 01:06:50,083 [INFO] No similar application found, creating template for teams
+2025-05-03 01:06:50,086 [INFO] SBOM for teams saved to ./SBOM Dataset/teams_windows_20250503_sbom.json
+2025-05-03 01:06:50,089 [INFO] Updated SBOM metadata for teams
+2025-05-03 01:06:50,091 [INFO] Backed up SBOM to ./sbom_files/teams_windows_20250503_sbom.json
+2025-05-03 01:06:50,093 [INFO] Backed up SBOM to /root/local_sbom_backup/teams_windows_20250503_sbom.json
+2025-05-03 01:06:50,191 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/teams_windows_20250503_sbom.json
+2025-05-03 01:06:50,192 [INFO] Generating SBOM for teams (microsoft) on linux
+2025-05-03 01:06:50,550 [INFO] No similar application found, creating template for teams
+2025-05-03 01:06:50,553 [INFO] SBOM for teams saved to ./SBOM Dataset/teams_linux_20250503_sbom.json
+2025-05-03 01:06:50,558 [INFO] Updated SBOM metadata for teams
+2025-05-03 01:06:50,562 [INFO] Backed up SBOM to ./sbom_files/teams_linux_20250503_sbom.json
+2025-05-03 01:06:50,565 [INFO] Backed up SBOM to /root/local_sbom_backup/teams_linux_20250503_sbom.json
+2025-05-03 01:06:50,640 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/teams_linux_20250503_sbom.json
+2025-05-03 01:06:50,641 [INFO] Generating SBOM for teams (microsoft) on macos
+2025-05-03 01:06:50,917 [INFO] No similar application found, creating template for teams
+2025-05-03 01:06:50,919 [INFO] SBOM for teams saved to ./SBOM Dataset/teams_macos_20250503_sbom.json
+2025-05-03 01:06:50,924 [INFO] Updated SBOM metadata for teams
+2025-05-03 01:06:50,925 [INFO] Backed up SBOM to ./sbom_files/teams_macos_20250503_sbom.json
+2025-05-03 01:06:50,926 [INFO] Backed up SBOM to /root/local_sbom_backup/teams_macos_20250503_sbom.json
+2025-05-03 01:06:51,229 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/teams_macos_20250503_sbom.json
+2025-05-03 01:06:51,230 [INFO] Generating SBOM for zoom (zoom) on windows
+2025-05-03 01:06:54,441 [INFO] No similar application found, creating template for zoom
+2025-05-03 01:06:54,444 [INFO] SBOM for zoom saved to ./SBOM Dataset/zoom_windows_20250503_sbom.json
+2025-05-03 01:06:54,447 [INFO] Updated SBOM metadata for zoom
+2025-05-03 01:06:54,448 [INFO] Backed up SBOM to ./sbom_files/zoom_windows_20250503_sbom.json
+2025-05-03 01:06:54,458 [INFO] Backed up SBOM to /root/local_sbom_backup/zoom_windows_20250503_sbom.json
+2025-05-03 01:06:55,214 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/zoom_windows_20250503_sbom.json
+2025-05-03 01:06:55,215 [INFO] Generating SBOM for zoom (zoom) on linux
+2025-05-03 01:06:56,903 [INFO] No similar application found, creating template for zoom
+2025-05-03 01:06:56,905 [INFO] SBOM for zoom saved to ./SBOM Dataset/zoom_linux_20250503_sbom.json
+2025-05-03 01:06:56,907 [INFO] Updated SBOM metadata for zoom
+2025-05-03 01:06:56,910 [INFO] Backed up SBOM to ./sbom_files/zoom_linux_20250503_sbom.json
+2025-05-03 01:06:56,911 [INFO] Backed up SBOM to /root/local_sbom_backup/zoom_linux_20250503_sbom.json
+2025-05-03 01:06:57,016 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/zoom_linux_20250503_sbom.json
+2025-05-03 01:06:57,017 [INFO] Generating SBOM for zoom (zoom) on macos
+2025-05-03 01:06:57,441 [INFO] No similar application found, creating template for zoom
+2025-05-03 01:06:57,444 [INFO] SBOM for zoom saved to ./SBOM Dataset/zoom_macos_20250503_sbom.json
+2025-05-03 01:06:57,448 [INFO] Updated SBOM metadata for zoom
+2025-05-03 01:06:57,450 [INFO] Backed up SBOM to ./sbom_files/zoom_macos_20250503_sbom.json
+2025-05-03 01:06:57,459 [INFO] Backed up SBOM to /root/local_sbom_backup/zoom_macos_20250503_sbom.json
+2025-05-03 01:06:57,533 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/zoom_macos_20250503_sbom.json
+2025-05-03 01:06:57,534 [INFO] Generating SBOM for slack (salesforce) on windows
+2025-05-03 01:06:57,873 [INFO] No similar application found, creating template for slack
+2025-05-03 01:06:57,876 [INFO] SBOM for slack saved to ./SBOM Dataset/slack_windows_20250503_sbom.json
+2025-05-03 01:06:57,879 [INFO] Updated SBOM metadata for slack
+2025-05-03 01:06:57,881 [INFO] Backed up SBOM to ./sbom_files/slack_windows_20250503_sbom.json
+2025-05-03 01:06:57,882 [INFO] Backed up SBOM to /root/local_sbom_backup/slack_windows_20250503_sbom.json
+2025-05-03 01:06:57,957 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/slack_windows_20250503_sbom.json
+2025-05-03 01:06:57,958 [INFO] Generating SBOM for slack (salesforce) on linux
+2025-05-03 01:06:58,525 [INFO] No similar application found, creating template for slack
+2025-05-03 01:06:58,528 [INFO] SBOM for slack saved to ./SBOM Dataset/slack_linux_20250503_sbom.json
+2025-05-03 01:06:58,538 [INFO] Updated SBOM metadata for slack
+2025-05-03 01:06:58,558 [INFO] Backed up SBOM to ./sbom_files/slack_linux_20250503_sbom.json
+2025-05-03 01:06:58,560 [INFO] Backed up SBOM to /root/local_sbom_backup/slack_linux_20250503_sbom.json
+2025-05-03 01:06:58,651 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/slack_linux_20250503_sbom.json
+2025-05-03 01:06:58,652 [INFO] Generating SBOM for slack (salesforce) on macos
+2025-05-03 01:06:59,430 [INFO] No similar application found, creating template for slack
+2025-05-03 01:06:59,434 [INFO] SBOM for slack saved to ./SBOM Dataset/slack_macos_20250503_sbom.json
+2025-05-03 01:06:59,437 [INFO] Updated SBOM metadata for slack
+2025-05-03 01:06:59,451 [INFO] Backed up SBOM to ./sbom_files/slack_macos_20250503_sbom.json
+2025-05-03 01:06:59,454 [INFO] Backed up SBOM to /root/local_sbom_backup/slack_macos_20250503_sbom.json
+2025-05-03 01:06:59,564 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/slack_macos_20250503_sbom.json
+2025-05-03 01:06:59,564 [INFO] Generating SBOM for instagram (meta) on android
+2025-05-03 01:06:59,914 [INFO] No similar application found, creating template for instagram
+2025-05-03 01:06:59,927 [INFO] SBOM for instagram saved to ./SBOM Dataset/instagram_android_20250503_sbom.json
+2025-05-03 01:06:59,946 [INFO] Updated SBOM metadata for instagram
+2025-05-03 01:06:59,951 [INFO] Backed up SBOM to ./sbom_files/instagram_android_20250503_sbom.json
+2025-05-03 01:06:59,952 [INFO] Backed up SBOM to /root/local_sbom_backup/instagram_android_20250503_sbom.json
+2025-05-03 01:07:00,067 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/instagram_android_20250503_sbom.json
+2025-05-03 01:07:00,068 [INFO] Generating SBOM for instagram (meta) on ios
+2025-05-03 01:07:00,323 [INFO] No similar application found, creating template for instagram
+2025-05-03 01:07:00,326 [INFO] SBOM for instagram saved to ./SBOM Dataset/instagram_ios_20250503_sbom.json
+2025-05-03 01:07:00,329 [INFO] Updated SBOM metadata for instagram
+2025-05-03 01:07:00,330 [INFO] Backed up SBOM to ./sbom_files/instagram_ios_20250503_sbom.json
+2025-05-03 01:07:00,331 [INFO] Backed up SBOM to /root/local_sbom_backup/instagram_ios_20250503_sbom.json
+2025-05-03 01:07:00,393 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/instagram_ios_20250503_sbom.json
+2025-05-03 01:07:00,394 [INFO] Generating SBOM for whatsapp (meta) on android
+2025-05-03 01:07:00,663 [INFO] No similar application found, creating template for whatsapp
+2025-05-03 01:07:00,679 [INFO] SBOM for whatsapp saved to ./SBOM Dataset/whatsapp_android_20250503_sbom.json
+2025-05-03 01:07:00,683 [INFO] Updated SBOM metadata for whatsapp
+2025-05-03 01:07:00,690 [INFO] Backed up SBOM to ./sbom_files/whatsapp_android_20250503_sbom.json
+2025-05-03 01:07:00,692 [INFO] Backed up SBOM to /root/local_sbom_backup/whatsapp_android_20250503_sbom.json
+2025-05-03 01:07:00,938 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/whatsapp_android_20250503_sbom.json
+2025-05-03 01:07:00,938 [INFO] Generating SBOM for whatsapp (meta) on ios
+2025-05-03 01:07:01,633 [INFO] No similar application found, creating template for whatsapp
+2025-05-03 01:07:01,636 [INFO] SBOM for whatsapp saved to ./SBOM Dataset/whatsapp_ios_20250503_sbom.json
+2025-05-03 01:07:01,638 [INFO] Updated SBOM metadata for whatsapp
+2025-05-03 01:07:01,642 [INFO] Backed up SBOM to ./sbom_files/whatsapp_ios_20250503_sbom.json
+2025-05-03 01:07:01,644 [INFO] Backed up SBOM to /root/local_sbom_backup/whatsapp_ios_20250503_sbom.json
+2025-05-03 01:07:01,792 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/whatsapp_ios_20250503_sbom.json
+2025-05-03 01:07:01,793 [INFO] Generating SBOM for tiktok (bytedance) on android
+2025-05-03 01:07:02,087 [INFO] No similar application found, creating template for tiktok
+2025-05-03 01:07:02,089 [INFO] SBOM for tiktok saved to ./SBOM Dataset/tiktok_android_20250503_sbom.json
+2025-05-03 01:07:02,091 [INFO] Updated SBOM metadata for tiktok
+2025-05-03 01:07:02,093 [INFO] Backed up SBOM to ./sbom_files/tiktok_android_20250503_sbom.json
+2025-05-03 01:07:02,094 [INFO] Backed up SBOM to /root/local_sbom_backup/tiktok_android_20250503_sbom.json
+2025-05-03 01:07:02,163 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/tiktok_android_20250503_sbom.json
+2025-05-03 01:07:02,164 [INFO] Generating SBOM for tiktok (bytedance) on ios
+2025-05-03 01:07:02,449 [INFO] No similar application found, creating template for tiktok
+2025-05-03 01:07:02,455 [INFO] SBOM for tiktok saved to ./SBOM Dataset/tiktok_ios_20250503_sbom.json
+2025-05-03 01:07:02,463 [INFO] Updated SBOM metadata for tiktok
+2025-05-03 01:07:02,468 [INFO] Backed up SBOM to ./sbom_files/tiktok_ios_20250503_sbom.json
+2025-05-03 01:07:02,469 [INFO] Backed up SBOM to /root/local_sbom_backup/tiktok_ios_20250503_sbom.json
+2025-05-03 01:07:02,559 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/tiktok_ios_20250503_sbom.json
+2025-05-03 01:07:02,560 [INFO] Generating SBOM for aws-cli (amazon) on linux
+2025-05-03 01:07:02,837 [INFO] No similar application found, creating template for aws-cli
+2025-05-03 01:07:02,840 [INFO] SBOM for aws-cli saved to ./SBOM Dataset/aws-cli_linux_20250503_sbom.json
+2025-05-03 01:07:02,842 [INFO] Updated SBOM metadata for aws-cli
+2025-05-03 01:07:02,843 [INFO] Backed up SBOM to ./sbom_files/aws-cli_linux_20250503_sbom.json
+2025-05-03 01:07:02,845 [INFO] Backed up SBOM to /root/local_sbom_backup/aws-cli_linux_20250503_sbom.json
+2025-05-03 01:07:02,929 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/aws-cli_linux_20250503_sbom.json
+2025-05-03 01:07:02,930 [INFO] Generating SBOM for azure-cli (microsoft) on linux
+2025-05-03 01:07:03,213 [INFO] No similar application found, creating template for azure-cli
+2025-05-03 01:07:03,217 [INFO] SBOM for azure-cli saved to ./SBOM Dataset/azure-cli_linux_20250503_sbom.json
+2025-05-03 01:07:03,220 [INFO] Updated SBOM metadata for azure-cli
+2025-05-03 01:07:03,231 [INFO] Backed up SBOM to ./sbom_files/azure-cli_linux_20250503_sbom.json
+2025-05-03 01:07:03,233 [INFO] Backed up SBOM to /root/local_sbom_backup/azure-cli_linux_20250503_sbom.json
+2025-05-03 01:07:03,458 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/azure-cli_linux_20250503_sbom.json
+2025-05-03 01:07:03,458 [INFO] Generating SBOM for gcloud (google) on linux
+2025-05-03 01:07:03,749 [INFO] No similar application found, creating template for gcloud
+2025-05-03 01:07:03,753 [INFO] SBOM for gcloud saved to ./SBOM Dataset/gcloud_linux_20250503_sbom.json
+2025-05-03 01:07:03,756 [INFO] Updated SBOM metadata for gcloud
+2025-05-03 01:07:03,758 [INFO] Backed up SBOM to ./sbom_files/gcloud_linux_20250503_sbom.json
+2025-05-03 01:07:03,759 [INFO] Backed up SBOM to /root/local_sbom_backup/gcloud_linux_20250503_sbom.json
+2025-05-03 01:07:03,823 [INFO] Backed up SBOM to Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM/gcloud_linux_20250503_sbom.json
+2025-05-03 01:07:03,823 [INFO] SBOM generation process completed
+2025-05-03 01:07:03,824 [INFO] Successfully generated and backed up 56 SBOMs
+2025-05-03 01:07:03,824 [INFO] Failed to generate 0 SBOMs
+2025-05-03 01:07:03,825 [INFO] SBOMs are available in:
+2025-05-03 01:07:03,825 [INFO]   - SBOM Dataset directory: /home/adduser/sbom_finder/sbom_finder_backend/SBOM Dataset
+2025-05-03 01:07:03,826 [INFO]   - SBOM Files directory: /home/adduser/sbom_finder/sbom_finder_backend/sbom_files
+2025-05-03 01:07:03,826 [INFO]   - Local backup directory: /root/local_sbom_backup
+2025-05-03 01:07:03,833 [INFO]   - Windows directory: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM
+2025-05-03 01:07:03,838 [INFO] Saved 56 database entries to sbom_db_entries.json
+2025-05-03 01:07:03,839 [INFO] To import these entries to the database, run: python3 import_sboms.py

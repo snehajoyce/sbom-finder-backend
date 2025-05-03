@@ -1,0 +1,878 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:ceaddcfdc5fc8669102cd114cda64afb",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:55.724343",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/vscode@9.14.35",
+      "name": "vscode",
+      "version": "9.14.35",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:vscode:9.14.35:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/vscode-framework-common@4.20.9",
+      "name": "vscode-framework-common",
+      "version": "4.20.9",
+      "purl": "pkg:generic/vscode-framework-common@4.20.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-vscode-utils@6.20.96",
+      "name": "core-vscode-utils",
+      "version": "6.20.96",
+      "purl": "pkg:generic/core-vscode-utils@6.20.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-vscode-base@4.4.5",
+      "name": "framework-vscode-base",
+      "version": "4.4.5",
+      "purl": "pkg:generic/framework-vscode-base@4.4.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lib-vscode@1.16.60",
+      "name": "lib-vscode",
+      "version": "1.16.60",
+      "purl": "pkg:generic/lib-vscode@1.16.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/vscode-engine-common@6.10.81",
+      "name": "vscode-engine-common",
+      "version": "6.10.81",
+      "purl": "pkg:generic/vscode-engine-common@6.10.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-vscode-js@7.8.7",
+      "name": "lib-vscode-js",
+      "version": "7.8.7",
+      "purl": "pkg:generic/lib-vscode-js@7.8.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/vscode-sdk-js@2.18.47",
+      "name": "vscode-sdk-js",
+      "version": "2.18.47",
+      "purl": "pkg:generic/vscode-sdk-js@2.18.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lib-vscode-api@7.1.57",
+      "name": "lib-vscode-api",
+      "version": "7.1.57",
+      "purl": "pkg:generic/lib-vscode-api@7.1.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-vscode@2.4.61",
+      "name": "core-vscode",
+      "version": "2.4.61",
+      "purl": "pkg:generic/core-vscode@2.4.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/api-vscode@3.16.41",
+      "name": "api-vscode",
+      "version": "3.16.41",
+      "purl": "pkg:generic/api-vscode@3.16.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-10-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vscode-plugin-utils@6.11.92",
+      "name": "vscode-plugin-utils",
+      "version": "6.11.92",
+      "purl": "pkg:generic/vscode-plugin-utils@6.11.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-vscode@4.9.42",
+      "name": "framework-vscode",
+      "version": "4.9.42",
+      "purl": "pkg:generic/framework-vscode@4.9.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/vscode-service-utils@2.10.13",
+      "name": "vscode-service-utils",
+      "version": "2.10.13",
+      "purl": "pkg:generic/vscode-service-utils@2.10.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vscode-module-client@1.6.68",
+      "name": "vscode-module-client",
+      "version": "1.6.68",
+      "purl": "pkg:generic/vscode-module-client@1.6.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vscode-service-common@4.9.95",
+      "name": "vscode-service-common",
+      "version": "4.9.95",
+      "purl": "pkg:generic/vscode-service-common@4.9.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/util-vscode@3.0.35",
+      "name": "util-vscode",
+      "version": "3.0.35",
+      "purl": "pkg:generic/util-vscode@3.0.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-vscode-server@6.1.82",
+      "name": "lib-vscode-server",
+      "version": "6.1.82",
+      "purl": "pkg:generic/lib-vscode-server@6.1.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/vscode-framework-core@1.5.15",
+      "name": "vscode-framework-core",
+      "version": "1.5.15",
+      "purl": "pkg:generic/vscode-framework-core@1.5.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/module-vscode-lib@10.15.88",
+      "name": "module-vscode-lib",
+      "version": "10.15.88",
+      "purl": "pkg:generic/module-vscode-lib@10.15.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vscode-lib-base@10.3.97",
+      "name": "vscode-lib-base",
+      "version": "10.3.97",
+      "purl": "pkg:generic/vscode-lib-base@10.3.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vscode-sdk-common@8.1.7",
+      "name": "vscode-sdk-common",
+      "version": "8.1.7",
+      "purl": "pkg:generic/vscode-sdk-common@8.1.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/vscode-lib-api@10.2.59",
+      "name": "vscode-lib-api",
+      "version": "10.2.59",
+      "purl": "pkg:generic/vscode-lib-api@10.2.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vscode-core-server@1.7.95",
+      "name": "vscode-core-server",
+      "version": "1.7.95",
+      "purl": "pkg:generic/vscode-core-server@1.7.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/vscode-framework-base@5.8.15",
+      "name": "vscode-framework-base",
+      "version": "5.8.15",
+      "purl": "pkg:generic/vscode-framework-base@5.8.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/vscode-service-api@10.18.47",
+      "name": "vscode-service-api",
+      "version": "10.18.47",
+      "purl": "pkg:generic/vscode-service-api@10.18.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-vscode-server@6.7.76",
+      "name": "module-vscode-server",
+      "version": "6.7.76",
+      "purl": "pkg:generic/module-vscode-server@6.7.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/service-vscode-utils@4.14.74",
+      "name": "service-vscode-utils",
+      "version": "4.14.74",
+      "purl": "pkg:generic/service-vscode-utils@4.14.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-vscode@5.11.58",
+      "name": "engine-vscode",
+      "version": "5.11.58",
+      "purl": "pkg:generic/engine-vscode@5.11.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lib-vscode-common@4.4.13",
+      "name": "lib-vscode-common",
+      "version": "4.4.13",
+      "purl": "pkg:generic/lib-vscode-common@4.4.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/vscode-plugin-api@9.5.70",
+      "name": "vscode-plugin-api",
+      "version": "9.5.70",
+      "purl": "pkg:generic/vscode-plugin-api@9.5.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/api-vscode-utils@9.13.63",
+      "name": "api-vscode-utils",
+      "version": "9.13.63",
+      "purl": "pkg:generic/api-vscode-utils@9.13.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-vscode-base@3.2.91",
+      "name": "lib-vscode-base",
+      "version": "3.2.91",
+      "purl": "pkg:generic/lib-vscode-base@3.2.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/core-vscode-client@6.16.50",
+      "name": "core-vscode-client",
+      "version": "6.16.50",
+      "purl": "pkg:generic/core-vscode-client@6.16.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/vscode-lib-utils@9.6.44",
+      "name": "vscode-lib-utils",
+      "version": "9.6.44",
+      "purl": "pkg:generic/vscode-lib-utils@9.6.44",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vscode-engine@7.8.95",
+      "name": "vscode-engine",
+      "version": "7.8.95",
+      "purl": "pkg:generic/vscode-engine@7.8.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-vscode-lib@9.5.3",
+      "name": "sdk-vscode-lib",
+      "version": "9.5.3",
+      "purl": "pkg:generic/sdk-vscode-lib@9.5.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-vscode-api@9.6.40",
+      "name": "core-vscode-api",
+      "version": "9.6.40",
+      "purl": "pkg:generic/core-vscode-api@9.6.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vscode-api-js@6.5.60",
+      "name": "vscode-api-js",
+      "version": "6.5.60",
+      "purl": "pkg:generic/vscode-api-js@6.5.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/vscode-util-base@8.14.79",
+      "name": "vscode-util-base",
+      "version": "8.14.79",
+      "purl": "pkg:generic/vscode-util-base@8.14.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-03T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

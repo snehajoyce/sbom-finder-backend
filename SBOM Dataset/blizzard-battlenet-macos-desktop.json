@@ -1,0 +1,353 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:175a3eb21d187490be232f692757b311",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:56.961365",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:blizzard/battlenet@5.9.5",
+      "name": "battlenet",
+      "version": "5.9.5",
+      "supplier": {
+        "name": "blizzard"
+      },
+      "cpe": "cpe:2.3:a:blizzard:battlenet:5.9.5:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-battlenet-client@3.15.7",
+      "name": "sdk-battlenet-client",
+      "version": "3.15.7",
+      "purl": "pkg:generic/sdk-battlenet-client@3.15.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/battlenet-core-lib@1.0.1",
+      "name": "battlenet-core-lib",
+      "version": "1.0.1",
+      "purl": "pkg:generic/battlenet-core-lib@1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-battlenet-server@4.13.95",
+      "name": "service-battlenet-server",
+      "version": "4.13.95",
+      "purl": "pkg:generic/service-battlenet-server@4.13.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-battlenet-client@5.9.89",
+      "name": "module-battlenet-client",
+      "version": "5.9.89",
+      "purl": "pkg:generic/module-battlenet-client@5.9.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/battlenet-lib-base@10.11.1",
+      "name": "battlenet-lib-base",
+      "version": "10.11.1",
+      "purl": "pkg:generic/battlenet-lib-base@10.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/battlenet-api-common@1.10.35",
+      "name": "battlenet-api-common",
+      "version": "1.10.35",
+      "purl": "pkg:generic/battlenet-api-common@1.10.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/engine-battlenet@3.12.71",
+      "name": "engine-battlenet",
+      "version": "3.12.71",
+      "purl": "pkg:generic/engine-battlenet@3.12.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/battlenet-module-lib@10.9.65",
+      "name": "battlenet-module-lib",
+      "version": "10.9.65",
+      "purl": "pkg:generic/battlenet-module-lib@10.9.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/battlenet-lib-utils@10.16.30",
+      "name": "battlenet-lib-utils",
+      "version": "10.16.30",
+      "purl": "pkg:generic/battlenet-lib-utils@10.16.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/sdk-battlenet-api@3.11.67",
+      "name": "sdk-battlenet-api",
+      "version": "3.11.67",
+      "purl": "pkg:generic/sdk-battlenet-api@3.11.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-battlenet-api@3.4.70",
+      "name": "module-battlenet-api",
+      "version": "3.4.70",
+      "purl": "pkg:generic/module-battlenet-api@3.4.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/battlenet-sdk-api@2.11.29",
+      "name": "battlenet-sdk-api",
+      "version": "2.11.29",
+      "purl": "pkg:generic/battlenet-sdk-api@2.11.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-battlenet-common@3.2.41",
+      "name": "core-battlenet-common",
+      "version": "3.2.41",
+      "purl": "pkg:generic/core-battlenet-common@3.2.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/battlenet-lib-core@3.3.25",
+      "name": "battlenet-lib-core",
+      "version": "3.3.25",
+      "purl": "pkg:generic/battlenet-lib-core@3.3.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/core-battlenet-utils@5.3.29",
+      "name": "core-battlenet-utils",
+      "version": "5.3.29",
+      "purl": "pkg:generic/core-battlenet-utils@5.3.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-04T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

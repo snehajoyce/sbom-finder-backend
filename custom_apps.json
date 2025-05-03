@@ -1,0 +1,81 @@
+[
+  {"name": "r-base", "category": "analytics", "package": "r-base", "supplier": "r-project"},
+  {"name": "jupyter-notebook", "category": "analytics", "package": "jupyter-notebook", "supplier": "jupyter"},
+  {"name": "octave", "category": "analytics", "package": "octave", "supplier": "gnu"},
+  
+  {"name": "supertux", "category": "games", "package": "supertux", "supplier": "supertux"},
+  {"name": "teeworlds", "category": "games", "package": "teeworlds", "supplier": "teeworlds"},
+  {"name": "0ad", "category": "games", "package": "0ad", "supplier": "wildfire-games"},
+  
+  {"name": "tensorflow", "category": "ai_tools", "package": "python3-tensorflow", "supplier": "google"},
+  {"name": "pytorch", "category": "ai_tools", "package": "python3-torch", "supplier": "pytorch"},
+  {"name": "nltk", "category": "ai_tools", "package": "python3-nltk", "supplier": "nltk"},
+  
+  {"name": "imagemagick", "category": "image_processing", "package": "imagemagick", "supplier": "imagemagick"},
+  {"name": "inkscape", "category": "image_processing", "package": "inkscape", "supplier": "inkscape"},
+  {"name": "darktable", "category": "image_processing", "package": "darktable", "supplier": "darktable"},
+  
+  {"name": "mercurial", "category": "version_control", "package": "mercurial", "supplier": "mercurial"},
+  {"name": "subversion", "category": "version_control", "package": "subversion", "supplier": "apache"},
+  {"name": "fossil", "category": "version_control", "package": "fossil", "supplier": "fossil-scm"},
+  
+  {"name": "aspell", "category": "text_processing", "package": "aspell", "supplier": "gnu"},
+  {"name": "wdiff", "category": "text_processing", "package": "wdiff", "supplier": "gnu"},
+  {"name": "poppler-utils", "category": "text_processing", "package": "poppler-utils", "supplier": "poppler"},
+  
+  {"name": "ntfs-3g", "category": "file_systems", "package": "ntfs-3g", "supplier": "tuxera"},
+  {"name": "exfat-utils", "category": "file_systems", "package": "exfatprogs", "supplier": "exfat"},
+  {"name": "btrfs-progs", "category": "file_systems", "package": "btrfs-progs", "supplier": "btrfs"},
+  
+  {"name": "prometheus", "category": "monitoring", "package": "prometheus", "supplier": "prometheus"},
+  {"name": "collectd", "category": "monitoring", "package": "collectd", "supplier": "collectd"},
+  {"name": "glances", "category": "monitoring", "package": "glances", "supplier": "glances"},
+  
+  {"name": "qemu", "category": "virtualization", "package": "qemu-kvm", "supplier": "qemu"},
+  {"name": "virtualbox", "category": "virtualization", "package": "virtualbox", "supplier": "oracle"},
+  {"name": "virt-manager", "category": "virtualization", "package": "virt-manager", "supplier": "redhat"},
+  
+  {"name": "terminator", "category": "terminals", "package": "terminator", "supplier": "terminator"},
+  {"name": "tilix", "category": "terminals", "package": "tilix", "supplier": "tilix"},
+  {"name": "kitty", "category": "terminals", "package": "kitty", "supplier": "kitty"},
+  
+  {"name": "blender", "category": "design_tools", "package": "blender", "supplier": "blender"},
+  {"name": "freecad", "category": "design_tools", "package": "freecad", "supplier": "freecad"},
+  {"name": "openscad", "category": "design_tools", "package": "openscad", "supplier": "openscad"},
+  
+  {"name": "calibre", "category": "productivity", "package": "calibre", "supplier": "calibre"},
+  {"name": "zotero", "category": "productivity", "package": "zotero", "supplier": "zotero"},
+  {"name": "keepassxc", "category": "productivity", "package": "keepassxc", "supplier": "keepassxc"},
+  
+  {"name": "vscode", "category": "development_tools", "package": "code", "supplier": "microsoft"},
+  {"name": "atom", "category": "development_tools", "package": "atom", "supplier": "github"},
+  {"name": "sublime-text", "category": "development_tools", "package": "sublime-text", "supplier": "sublime"},
+  
+  {"name": "obs-studio", "category": "streaming", "package": "obs-studio", "supplier": "obs"},
+  {"name": "streamtuner2", "category": "streaming", "package": "streamtuner2", "supplier": "streamtuner"},
+  {"name": "spotify", "category": "streaming", "package": "spotify-client", "supplier": "spotify"},
+  
+  {"name": "tor-browser", "category": "security_privacy", "package": "torbrowser-launcher", "supplier": "tor"},
+  {"name": "veracrypt", "category": "security_privacy", "package": "veracrypt", "supplier": "veracrypt"},
+  {"name": "gnupg", "category": "security_privacy", "package": "gnupg", "supplier": "gnu"},
+  
+  {"name": "gnucash", "category": "finance", "package": "gnucash", "supplier": "gnucash"},
+  {"name": "homebank", "category": "finance", "package": "homebank", "supplier": "homebank"},
+  {"name": "kmymoney", "category": "finance", "package": "kmymoney", "supplier": "kde"},
+  
+  {"name": "orca", "category": "accessibility", "package": "orca", "supplier": "gnome"},
+  {"name": "florence", "category": "accessibility", "package": "florence", "supplier": "florence"},
+  {"name": "onboard", "category": "accessibility", "package": "onboard", "supplier": "onboard"},
+  
+  {"name": "gparted", "category": "system_tools", "package": "gparted", "supplier": "gparted"},
+  {"name": "baobab", "category": "system_tools", "package": "baobab", "supplier": "gnome"},
+  {"name": "bleachbit", "category": "system_tools", "package": "bleachbit", "supplier": "bleachbit"},
+  
+  {"name": "filezilla", "category": "network_tools", "package": "filezilla", "supplier": "filezilla"},
+  {"name": "transmission", "category": "network_tools", "package": "transmission-gtk", "supplier": "transmission"},
+  {"name": "remmina", "category": "network_tools", "package": "remmina", "supplier": "remmina"},
+  
+  {"name": "steam", "category": "entertainment", "package": "steam", "supplier": "valve"},
+  {"name": "handbrake", "category": "entertainment", "package": "handbrake", "supplier": "handbrake"},
+  {"name": "mplayer", "category": "entertainment", "package": "mplayer", "supplier": "mplayer"}
+] 

@@ -1,0 +1,338 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:81f43c630d82233966bf02aa1b4e7df5",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:59.963452",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:discord/discord@8.2.13",
+      "name": "discord",
+      "version": "8.2.13",
+      "supplier": {
+        "name": "discord"
+      },
+      "cpe": "cpe:2.3:a:discord:discord:8.2.13:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-discord-client@5.1.78",
+      "name": "util-discord-client",
+      "version": "5.1.78",
+      "purl": "pkg:generic/util-discord-client@5.1.78",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/discord-framework-client@2.20.75",
+      "name": "discord-framework-client",
+      "version": "2.20.75",
+      "purl": "pkg:generic/discord-framework-client@2.20.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-02-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/util-discord-base@2.14.57",
+      "name": "util-discord-base",
+      "version": "2.14.57",
+      "purl": "pkg:generic/util-discord-base@2.14.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/discord-sdk-base@9.18.83",
+      "name": "discord-sdk-base",
+      "version": "9.18.83",
+      "purl": "pkg:generic/discord-sdk-base@9.18.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/engine-discord-common@3.13.46",
+      "name": "engine-discord-common",
+      "version": "3.13.46",
+      "purl": "pkg:generic/engine-discord-common@3.13.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/discord-lib-base@1.8.6",
+      "name": "discord-lib-base",
+      "version": "1.8.6",
+      "purl": "pkg:generic/discord-lib-base@1.8.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/plugin-discord-api@5.18.90",
+      "name": "plugin-discord-api",
+      "version": "5.18.90",
+      "purl": "pkg:generic/plugin-discord-api@5.18.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/discord-util-lib@1.4.34",
+      "name": "discord-util-lib",
+      "version": "1.4.34",
+      "purl": "pkg:generic/discord-util-lib@1.4.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/discord-lib-client@1.10.82",
+      "name": "discord-lib-client",
+      "version": "1.10.82",
+      "purl": "pkg:generic/discord-lib-client@1.10.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/discord-lib-server@4.20.54",
+      "name": "discord-lib-server",
+      "version": "4.20.54",
+      "purl": "pkg:generic/discord-lib-server@4.20.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/discord-util-js@5.16.10",
+      "name": "discord-util-js",
+      "version": "5.16.10",
+      "purl": "pkg:generic/discord-util-js@5.16.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/engine-discord-api@2.14.30",
+      "name": "engine-discord-api",
+      "version": "2.14.30",
+      "purl": "pkg:generic/engine-discord-api@2.14.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/api-discord-api@6.3.3",
+      "name": "api-discord-api",
+      "version": "6.3.3",
+      "purl": "pkg:generic/api-discord-api@6.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/discord-lib-lib@6.17.13",
+      "name": "discord-lib-lib",
+      "version": "6.17.13",
+      "purl": "pkg:generic/discord-lib-lib@6.17.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

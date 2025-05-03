@@ -1,0 +1,218 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:7978cc2885235bfd8ab294a0003af541",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:58.854187",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/skype@3.14.84",
+      "name": "skype",
+      "version": "3.14.84",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:skype:3.14.84:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/util-skype-base@4.5.87",
+      "name": "util-skype-base",
+      "version": "4.5.87",
+      "purl": "pkg:generic/util-skype-base@4.5.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/plugin-skype-js@7.7.7",
+      "name": "plugin-skype-js",
+      "version": "7.7.7",
+      "purl": "pkg:generic/plugin-skype-js@7.7.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/skype-lib-js@7.11.50",
+      "name": "skype-lib-js",
+      "version": "7.11.50",
+      "purl": "pkg:generic/skype-lib-js@7.11.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/skype-api-js@7.17.5",
+      "name": "skype-api-js",
+      "version": "7.17.5",
+      "purl": "pkg:generic/skype-api-js@7.17.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/skype-api-core@8.14.86",
+      "name": "skype-api-core",
+      "version": "8.14.86",
+      "purl": "pkg:generic/skype-api-core@8.14.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/skype-module-core@8.8.31",
+      "name": "skype-module-core",
+      "version": "8.8.31",
+      "purl": "pkg:generic/skype-module-core@8.8.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/api-skype-common@8.14.6",
+      "name": "api-skype-common",
+      "version": "8.14.6",
+      "purl": "pkg:generic/api-skype-common@8.14.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/skype-core-js@1.11.22",
+      "name": "skype-core-js",
+      "version": "1.11.22",
+      "purl": "pkg:generic/skype-core-js@1.11.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-14T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1013 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:702ebc32d37c7342f53a01c300ee6196",
+  "metadata": {
+    "timestamp": "2025-05-03T00:57:00.761374",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:teamviewer/teamviewer@3.8.33",
+      "name": "teamviewer",
+      "version": "3.8.33",
+      "supplier": {
+        "name": "teamviewer"
+      },
+      "cpe": "cpe:2.3:a:teamviewer:teamviewer:3.8.33:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "linux"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/teamviewer-engine-api@7.3.38",
+      "name": "teamviewer-engine-api",
+      "version": "7.3.38",
+      "purl": "pkg:generic/teamviewer-engine-api@7.3.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-teamviewer-utils@5.8.20",
+      "name": "core-teamviewer-utils",
+      "version": "5.8.20",
+      "purl": "pkg:generic/core-teamviewer-utils@5.8.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-teamviewer-common@7.13.43",
+      "name": "core-teamviewer-common",
+      "version": "7.13.43",
+      "purl": "pkg:generic/core-teamviewer-common@7.13.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/api-teamviewer-base@4.18.8",
+      "name": "api-teamviewer-base",
+      "version": "4.18.8",
+      "purl": "pkg:generic/api-teamviewer-base@4.18.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/teamviewer-api-utils@4.5.30",
+      "name": "teamviewer-api-utils",
+      "version": "4.5.30",
+      "purl": "pkg:generic/teamviewer-api-utils@4.5.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/teamviewer-plugin-base@5.4.79",
+      "name": "teamviewer-plugin-base",
+      "version": "5.4.79",
+      "purl": "pkg:generic/teamviewer-plugin-base@5.4.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/teamviewer-core-js@4.6.40",
+      "name": "teamviewer-core-js",
+      "version": "4.6.40",
+      "purl": "pkg:generic/teamviewer-core-js@4.6.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-service-common@4.12.9",
+      "name": "teamviewer-service-common",
+      "version": "4.12.9",
+      "purl": "pkg:generic/teamviewer-service-common@4.12.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/teamviewer-sdk-base@10.10.62",
+      "name": "teamviewer-sdk-base",
+      "version": "10.10.62",
+      "purl": "pkg:generic/teamviewer-sdk-base@10.10.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-api-lib@9.9.95",
+      "name": "teamviewer-api-lib",
+      "version": "9.9.95",
+      "purl": "pkg:generic/teamviewer-api-lib@9.9.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/core-teamviewer-core@1.3.95",
+      "name": "core-teamviewer-core",
+      "version": "1.3.95",
+      "purl": "pkg:generic/core-teamviewer-core@1.3.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-teamviewer-core@7.1.48",
+      "name": "util-teamviewer-core",
+      "version": "7.1.48",
+      "purl": "pkg:generic/util-teamviewer-core@7.1.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/teamviewer-util-api@6.19.65",
+      "name": "teamviewer-util-api",
+      "version": "6.19.65",
+      "purl": "pkg:generic/teamviewer-util-api@6.19.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-teamviewer-common@10.1.64",
+      "name": "api-teamviewer-common",
+      "version": "10.1.64",
+      "purl": "pkg:generic/api-teamviewer-common@10.1.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-teamviewer-base@9.9.65",
+      "name": "util-teamviewer-base",
+      "version": "9.9.65",
+      "purl": "pkg:generic/util-teamviewer-base@9.9.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/teamviewer-service@4.12.77",
+      "name": "teamviewer-service",
+      "version": "4.12.77",
+      "purl": "pkg:generic/teamviewer-service@4.12.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-01-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-teamviewer-client@9.18.47",
+      "name": "framework-teamviewer-client",
+      "version": "9.18.47",
+      "purl": "pkg:generic/framework-teamviewer-client@9.18.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-service-core@3.0.64",
+      "name": "teamviewer-service-core",
+      "version": "3.0.64",
+      "purl": "pkg:generic/teamviewer-service-core@3.0.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/teamviewer-engine-base@6.15.19",
+      "name": "teamviewer-engine-base",
+      "version": "6.15.19",
+      "purl": "pkg:generic/teamviewer-engine-base@6.15.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-teamviewer-api@1.20.37",
+      "name": "api-teamviewer-api",
+      "version": "1.20.37",
+      "purl": "pkg:generic/api-teamviewer-api@1.20.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-teamviewer-api@2.12.19",
+      "name": "engine-teamviewer-api",
+      "version": "2.12.19",
+      "purl": "pkg:generic/engine-teamviewer-api@2.12.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/teamviewer-plugin-server@6.6.92",
+      "name": "teamviewer-plugin-server",
+      "version": "6.6.92",
+      "purl": "pkg:generic/teamviewer-plugin-server@6.6.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/teamviewer-util-utils@3.12.22",
+      "name": "teamviewer-util-utils",
+      "version": "3.12.22",
+      "purl": "pkg:generic/teamviewer-util-utils@3.12.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lib-teamviewer@6.19.31",
+      "name": "lib-teamviewer",
+      "version": "6.19.31",
+      "purl": "pkg:generic/lib-teamviewer@6.19.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-sdk-client@8.14.57",
+      "name": "teamviewer-sdk-client",
+      "version": "8.14.57",
+      "purl": "pkg:generic/teamviewer-sdk-client@8.14.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-teamviewer-server@8.17.99",
+      "name": "plugin-teamviewer-server",
+      "version": "8.17.99",
+      "purl": "pkg:generic/plugin-teamviewer-server@8.17.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/teamviewer-engine-js@9.19.67",
+      "name": "teamviewer-engine-js",
+      "version": "9.19.67",
+      "purl": "pkg:generic/teamviewer-engine-js@9.19.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-teamviewer-common@3.10.45",
+      "name": "plugin-teamviewer-common",
+      "version": "3.10.45",
+      "purl": "pkg:generic/plugin-teamviewer-common@3.10.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lib-teamviewer-base@2.7.8",
+      "name": "lib-teamviewer-base",
+      "version": "2.7.8",
+      "purl": "pkg:generic/lib-teamviewer-base@2.7.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-teamviewer@9.7.40",
+      "name": "service-teamviewer",
+      "version": "9.7.40",
+      "purl": "pkg:generic/service-teamviewer@9.7.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-teamviewer-js@2.13.27",
+      "name": "framework-teamviewer-js",
+      "version": "2.13.27",
+      "purl": "pkg:generic/framework-teamviewer-js@2.13.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-sdk-js@2.16.4",
+      "name": "teamviewer-sdk-js",
+      "version": "2.16.4",
+      "purl": "pkg:generic/teamviewer-sdk-js@2.16.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-01-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/teamviewer-engine-server@6.15.79",
+      "name": "teamviewer-engine-server",
+      "version": "6.15.79",
+      "purl": "pkg:generic/teamviewer-engine-server@6.15.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-api-common@6.6.55",
+      "name": "teamviewer-api-common",
+      "version": "6.6.55",
+      "purl": "pkg:generic/teamviewer-api-common@6.6.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-03-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/module-teamviewer-common@10.8.98",
+      "name": "module-teamviewer-common",
+      "version": "10.8.98",
+      "purl": "pkg:generic/module-teamviewer-common@10.8.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/engine-teamviewer-base@4.6.34",
+      "name": "engine-teamviewer-base",
+      "version": "4.6.34",
+      "purl": "pkg:generic/engine-teamviewer-base@4.6.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/teamviewer-plugin-client@7.2.94",
+      "name": "teamviewer-plugin-client",
+      "version": "7.2.94",
+      "purl": "pkg:generic/teamviewer-plugin-client@7.2.94",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-teamviewer@5.4.70",
+      "name": "api-teamviewer",
+      "version": "5.4.70",
+      "purl": "pkg:generic/api-teamviewer@5.4.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-teamviewer-base@7.16.96",
+      "name": "module-teamviewer-base",
+      "version": "7.16.96",
+      "purl": "pkg:generic/module-teamviewer-base@7.16.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/teamviewer-api-client@10.13.68",
+      "name": "teamviewer-api-client",
+      "version": "10.13.68",
+      "purl": "pkg:generic/teamviewer-api-client@10.13.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/core-teamviewer-js@7.18.24",
+      "name": "core-teamviewer-js",
+      "version": "7.18.24",
+      "purl": "pkg:generic/core-teamviewer-js@7.18.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/teamviewer-module-common@6.12.72",
+      "name": "teamviewer-module-common",
+      "version": "6.12.72",
+      "purl": "pkg:generic/teamviewer-module-common@6.12.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-teamviewer-js@1.7.13",
+      "name": "module-teamviewer-js",
+      "version": "1.7.13",
+      "purl": "pkg:generic/module-teamviewer-js@1.7.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-teamviewer-utils@1.2.23",
+      "name": "util-teamviewer-utils",
+      "version": "1.2.23",
+      "purl": "pkg:generic/util-teamviewer-utils@1.2.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/framework-teamviewer-base@1.19.40",
+      "name": "framework-teamviewer-base",
+      "version": "1.19.40",
+      "purl": "pkg:generic/framework-teamviewer-base@1.19.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-06T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

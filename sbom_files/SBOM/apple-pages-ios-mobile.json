@@ -1,0 +1,178 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:ec997f0231f6740561cb8e8efd1a7a28",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:53.089475",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:apple/pages@8.0.74",
+      "name": "pages",
+      "version": "8.0.74",
+      "supplier": {
+        "name": "apple"
+      },
+      "cpe": "cpe:2.3:a:apple:pages:8.0.74:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-pages-core@4.3.41",
+      "name": "lib-pages-core",
+      "version": "4.3.41",
+      "purl": "pkg:generic/lib-pages-core@4.3.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/pages-service-core@10.13.17",
+      "name": "pages-service-core",
+      "version": "10.13.17",
+      "purl": "pkg:generic/pages-service-core@10.13.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/pages-module-utils@4.17.87",
+      "name": "pages-module-utils",
+      "version": "4.17.87",
+      "purl": "pkg:generic/pages-module-utils@4.17.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/pages-service-client@7.11.4",
+      "name": "pages-service-client",
+      "version": "7.11.4",
+      "purl": "pkg:generic/pages-service-client@7.11.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/framework-pages-server@5.13.82",
+      "name": "framework-pages-server",
+      "version": "5.13.82",
+      "purl": "pkg:generic/framework-pages-server@5.13.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/pages-util-server@3.1.47",
+      "name": "pages-util-server",
+      "version": "3.1.47",
+      "purl": "pkg:generic/pages-util-server@3.1.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/pages-lib-lib@10.4.3",
+      "name": "pages-lib-lib",
+      "version": "10.4.3",
+      "purl": "pkg:generic/pages-lib-lib@10.4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-26T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

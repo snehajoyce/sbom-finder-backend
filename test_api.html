@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBOM Finder API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .warning {
+            color: orange;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>SBOM Finder API Test</h1>
+    
+    <section>
+        <h2>Upload SBOM</h2>
+        <div class="form-container">
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="sbomFile">SBOM File (JSON):</label>
+                    <input type="file" id="sbomFile" name="file" accept=".json" required>
+                </div>
+                <div class="form-group">
+                    <label for="appName">Application Name:</label>
+                    <input type="text" id="appName" name="app_name" required>
+                    <small>This will be used to name the file in the dataset</small>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">Select Category</option>
+                        <option value="Web Browser">Web Browser</option>
+                        <option value="Media Player">Media Player</option>
+                        <option value="Office Suite">Office Suite</option>
+                        <option value="Game">Game</option>
+                        <option value="Development Tool">Development Tool</option>
+                        <option value="Utility">Utility</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="os">Operating System:</label>
+                    <select id="os" name="operating_system">
+                        <option value="">Select OS</option>
+                        <option value="Windows">Windows</option>
+                        <option value="macOS">macOS</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Cross-platform">Cross-platform</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appType">Application Type:</label>
+                    <select id="appType" name="app_binary_type">
+                        <option value="desktop">Desktop</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="web">Web</option>
+                        <option value="library">Library</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="supplier">Supplier:</label>
+                    <input type="text" id="supplier" name="supplier">
+                </div>
+                <div class="form-group">
+                    <label for="manufacturer">Manufacturer:</label>
+                    <input type="text" id="manufacturer" name="manufacturer">
+                </div>
+                <div class="form-group">
+                    <label for="version">Version:</label>
+                    <input type="text" id="version" name="version">
+                </div>
+                <button type="submit">Upload SBOM</button>
+                <div id="uploadLoader" class="loader hidden"></div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>API Tests</h2>
+        <button id="listMetadata">List SBOM Metadata</button>
+        <button id="diagnostics">Run Diagnostics</button>
+        <button id="statistics">Get Statistics</button>
+        <select id="sbomSelect">
+            <option value="">Select an SBOM to load</option>
+        </select>
+        <button id="loadSbom">Load Selected SBOM</button>
+    </section>
+
+    <section>
+        <h2>Results</h2>
+        <div id="status"></div>
+        <pre id="result"></pre>
+    </section>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5001';
+        let sbomsList = [];
+
+        // Upload form handling
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const fileInput = document.getElementById('sbomFile');
+            const uploadLoader = document.getElementById('uploadLoader');
+            
+            if (!fileInput.files.length) {
+                setError('Please select a file to upload');
+                return;
+            }
+            
+            try {
+                // Show loader and disable submit button
+                uploadLoader.classList.remove('hidden');
+                e.target.querySelector('button[type="submit"]').disabled = true;
+                
+                setStatus('Uploading SBOM...', 'normal');
+                const response = await fetch(`${API_BASE_URL}/api/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || 'Unknown server error');
+                }
+                
+                // Check if saved to dataset
+                if (data.dataset_saved) {
+                    setStatus(`Upload successful: ${data.message}`, 'success');
+                } else {
+                    setStatus(`Upload partially successful: ${data.message}`, 'warning');
+                }
+                
+                displayResult(data);
+                
+                // Reset form after successful upload
+                e.target.reset();
+                
+                // Refresh metadata list
+                document.getElementById('listMetadata').click();
+            } catch (error) {
+                setError(`Error uploading SBOM: ${error.message}`);
+            } finally {
+                // Hide loader and enable submit button
+                uploadLoader.classList.add('hidden');
+                e.target.querySelector('button[type="submit"]').disabled = false;
+            }
+        });
+
+        document.getElementById('listMetadata').addEventListener('click', async () => {
+            try {
+                setStatus('Loading SBOM metadata...', 'normal');
+                const response = await fetch(`${API_BASE_URL}/api/sboms/metadata`);
+                const data = await response.json();
+                displayResult(data);
+                populateSbomDropdown(data);
+            } catch (error) {
+                setError(`Error fetching metadata: ${error.message}`);
+            }
+        });
+
+        document.getElementById('diagnostics').addEventListener('click', async () => {
+            try {
+                setStatus('Running diagnostics...', 'normal');
+                const response = await fetch(`${API_BASE_URL}/api/diagnostics/sboms`);
+                const data = await response.json();
+                displayResult(data);
+            } catch (error) {
+                setError(`Error running diagnostics: ${error.message}`);
+            }
+        });
+
+        document.getElementById('statistics').addEventListener('click', async () => {
+            try {
+                setStatus('Fetching statistics...', 'normal');
+                const response = await fetch(`${API_BASE_URL}/api/statistics`);
+                const data = await response.json();
+                displayResult(data);
+            } catch (error) {
+                setError(`Error fetching statistics: ${error.message}`);
+            }
+        });
+
+        document.getElementById('loadSbom').addEventListener('click', async () => {
+            const sbomFilename = document.getElementById('sbomSelect').value;
+            if (!sbomFilename) {
+                setError('Please select an SBOM first');
+                return;
+            }
+
+            try {
+                setStatus(`Loading SBOM: ${sbomFilename}...`, 'normal');
+                const response = await fetch(`${API_BASE_URL}/api/sbom/${sbomFilename}`);
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Unknown server error');
+                }
+                const data = await response.json();
+                displayResult(data);
+            } catch (error) {
+                setError(`Error loading SBOM: ${error.message}`);
+            }
+        });
+
+        function setStatus(message, type = 'normal') {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            
+            // Remove all classes
+            statusEl.className = '';
+            
+            // Add appropriate class based on type
+            if (type === 'error') {
+                statusEl.className = 'error';
+            } else if (type === 'success') {
+                statusEl.className = 'success';
+            } else if (type === 'warning') {
+                statusEl.className = 'warning';
+            }
+        }
+
+        function setError(message) {
+            setStatus(message, 'error');
+        }
+
+        function displayResult(data) {
+            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+        }
+
+        function populateSbomDropdown(data) {
+            const select = document.getElementById('sbomSelect');
+            // Clear existing options (except first)
+            while (select.options.length > 1) {
+                select.remove(1);
+            }
+
+            // Add new options
+            data.forEach(sbom => {
+                const option = document.createElement('option');
+                option.value = sbom.filename;
+                option.textContent = `${sbom.app_name} (${sbom.operating_system || 'Unknown OS'})`;
+                select.appendChild(option);
+            });
+        }
+    </script>
+</body>
+</html> 

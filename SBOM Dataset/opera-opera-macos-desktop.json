@@ -1,0 +1,578 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:eb2af59759965f4374d611bf0301fc36",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.453781",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:opera/opera@5.1.28",
+      "name": "opera",
+      "version": "5.1.28",
+      "supplier": {
+        "name": "opera"
+      },
+      "cpe": "cpe:2.3:a:opera:opera:5.1.28:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/service-opera-common@8.4.84",
+      "name": "service-opera-common",
+      "version": "8.4.84",
+      "purl": "pkg:generic/service-opera-common@8.4.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/opera-service-js@9.14.79",
+      "name": "opera-service-js",
+      "version": "9.14.79",
+      "purl": "pkg:generic/opera-service-js@9.14.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/module-opera-api@5.4.30",
+      "name": "module-opera-api",
+      "version": "5.4.30",
+      "purl": "pkg:generic/module-opera-api@5.4.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/module-opera-base@5.7.84",
+      "name": "module-opera-base",
+      "version": "5.7.84",
+      "purl": "pkg:generic/module-opera-base@5.7.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/opera-service-base@2.20.10",
+      "name": "opera-service-base",
+      "version": "2.20.10",
+      "purl": "pkg:generic/opera-service-base@2.20.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/opera-util-js@5.6.62",
+      "name": "opera-util-js",
+      "version": "5.6.62",
+      "purl": "pkg:generic/opera-util-js@5.6.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/opera-service@10.0.66",
+      "name": "opera-service",
+      "version": "10.0.66",
+      "purl": "pkg:generic/opera-service@10.0.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/opera-service-api@1.4.97",
+      "name": "opera-service-api",
+      "version": "1.4.97",
+      "purl": "pkg:generic/opera-service-api@1.4.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/opera-framework-client@10.7.91",
+      "name": "opera-framework-client",
+      "version": "10.7.91",
+      "purl": "pkg:generic/opera-framework-client@10.7.91",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/opera-engine-common@8.6.43",
+      "name": "opera-engine-common",
+      "version": "8.6.43",
+      "purl": "pkg:generic/opera-engine-common@8.6.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/opera-util-common@9.20.33",
+      "name": "opera-util-common",
+      "version": "9.20.33",
+      "purl": "pkg:generic/opera-util-common@9.20.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-opera-lib@10.13.34",
+      "name": "util-opera-lib",
+      "version": "10.13.34",
+      "purl": "pkg:generic/util-opera-lib@10.13.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/opera-sdk-lib@6.15.90",
+      "name": "opera-sdk-lib",
+      "version": "6.15.90",
+      "purl": "pkg:generic/opera-sdk-lib@6.15.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/opera-sdk@1.19.80",
+      "name": "opera-sdk",
+      "version": "1.19.80",
+      "purl": "pkg:generic/opera-sdk@1.19.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-opera-client@1.7.81",
+      "name": "sdk-opera-client",
+      "version": "1.7.81",
+      "purl": "pkg:generic/sdk-opera-client@1.7.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/engine-opera-js@1.15.64",
+      "name": "engine-opera-js",
+      "version": "1.15.64",
+      "purl": "pkg:generic/engine-opera-js@1.15.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-opera-js@3.5.41",
+      "name": "plugin-opera-js",
+      "version": "3.5.41",
+      "purl": "pkg:generic/plugin-opera-js@3.5.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/opera-api-js@9.15.13",
+      "name": "opera-api-js",
+      "version": "9.15.13",
+      "purl": "pkg:generic/opera-api-js@9.15.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/opera-lib-js@4.4.38",
+      "name": "opera-lib-js",
+      "version": "4.4.38",
+      "purl": "pkg:generic/opera-lib-js@4.4.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-opera-api@4.2.87",
+      "name": "sdk-opera-api",
+      "version": "4.2.87",
+      "purl": "pkg:generic/sdk-opera-api@4.2.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-10-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/opera-framework-core@4.3.47",
+      "name": "opera-framework-core",
+      "version": "4.3.47",
+      "purl": "pkg:generic/opera-framework-core@4.3.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-opera-common@7.1.33",
+      "name": "lib-opera-common",
+      "version": "7.1.33",
+      "purl": "pkg:generic/lib-opera-common@7.1.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/engine-opera-server@8.6.60",
+      "name": "engine-opera-server",
+      "version": "8.6.60",
+      "purl": "pkg:generic/engine-opera-server@8.6.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/opera-core@6.17.82",
+      "name": "opera-core",
+      "version": "6.17.82",
+      "purl": "pkg:generic/opera-core@6.17.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/opera-plugin-api@8.3.52",
+      "name": "opera-plugin-api",
+      "version": "8.3.52",
+      "purl": "pkg:generic/opera-plugin-api@8.3.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-08T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

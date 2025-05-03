@@ -1,0 +1,958 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:be06cb262c8aacda17d0bc5ce801b363",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:55.022514",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:adobe/lightroom@7.8.54",
+      "name": "lightroom",
+      "version": "7.8.54",
+      "supplier": {
+        "name": "adobe"
+      },
+      "cpe": "cpe:2.3:a:adobe:lightroom:7.8.54:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lightroom-lib-server@9.18.23",
+      "name": "lightroom-lib-server",
+      "version": "9.18.23",
+      "purl": "pkg:generic/lightroom-lib-server@9.18.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-lightroom-base@5.2.58",
+      "name": "framework-lightroom-base",
+      "version": "5.2.58",
+      "purl": "pkg:generic/framework-lightroom-base@5.2.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-lightroom-base@2.10.99",
+      "name": "core-lightroom-base",
+      "version": "2.10.99",
+      "purl": "pkg:generic/core-lightroom-base@2.10.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-lightroom-api@2.8.70",
+      "name": "module-lightroom-api",
+      "version": "2.8.70",
+      "purl": "pkg:generic/module-lightroom-api@2.8.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-lightroom-common@8.10.66",
+      "name": "service-lightroom-common",
+      "version": "8.10.66",
+      "purl": "pkg:generic/service-lightroom-common@8.10.66",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lightroom-core@1.13.96",
+      "name": "lightroom-core",
+      "version": "1.13.96",
+      "purl": "pkg:generic/lightroom-core@1.13.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lightroom-plugin-base@5.13.76",
+      "name": "lightroom-plugin-base",
+      "version": "5.13.76",
+      "purl": "pkg:generic/lightroom-plugin-base@5.13.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-lightroom-base@3.12.81",
+      "name": "module-lightroom-base",
+      "version": "3.12.81",
+      "purl": "pkg:generic/module-lightroom-base@3.12.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lightroom-core-utils@10.14.19",
+      "name": "lightroom-core-utils",
+      "version": "10.14.19",
+      "purl": "pkg:generic/lightroom-core-utils@10.14.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lightroom-sdk-client@7.12.31",
+      "name": "lightroom-sdk-client",
+      "version": "7.12.31",
+      "purl": "pkg:generic/lightroom-sdk-client@7.12.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-lightroom-server@6.10.0",
+      "name": "plugin-lightroom-server",
+      "version": "6.10.0",
+      "purl": "pkg:generic/plugin-lightroom-server@6.10.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-lightroom-api@5.0.80",
+      "name": "framework-lightroom-api",
+      "version": "5.0.80",
+      "purl": "pkg:generic/framework-lightroom-api@5.0.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lightroom-framework-common@3.12.12",
+      "name": "lightroom-framework-common",
+      "version": "3.12.12",
+      "purl": "pkg:generic/lightroom-framework-common@3.12.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lightroom-framework-core@10.17.90",
+      "name": "lightroom-framework-core",
+      "version": "10.17.90",
+      "purl": "pkg:generic/lightroom-framework-core@10.17.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lightroom-lib-base@3.12.11",
+      "name": "lightroom-lib-base",
+      "version": "3.12.11",
+      "purl": "pkg:generic/lightroom-lib-base@3.12.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/util-lightroom-lib@4.18.17",
+      "name": "util-lightroom-lib",
+      "version": "4.18.17",
+      "purl": "pkg:generic/util-lightroom-lib@4.18.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lightroom-module-server@8.10.92",
+      "name": "lightroom-module-server",
+      "version": "8.10.92",
+      "purl": "pkg:generic/lightroom-module-server@8.10.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-lightroom@5.1.26",
+      "name": "lib-lightroom",
+      "version": "5.1.26",
+      "purl": "pkg:generic/lib-lightroom@5.1.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-lightroom-core@2.14.49",
+      "name": "module-lightroom-core",
+      "version": "2.14.49",
+      "purl": "pkg:generic/module-lightroom-core@2.14.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lightroom-service-common@1.1.30",
+      "name": "lightroom-service-common",
+      "version": "1.1.30",
+      "purl": "pkg:generic/lightroom-service-common@1.1.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lightroom-engine-lib@1.10.76",
+      "name": "lightroom-engine-lib",
+      "version": "1.10.76",
+      "purl": "pkg:generic/lightroom-engine-lib@1.10.76",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/util-lightroom-api@10.16.36",
+      "name": "util-lightroom-api",
+      "version": "10.16.36",
+      "purl": "pkg:generic/util-lightroom-api@10.16.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lightroom-plugin-client@9.15.61",
+      "name": "lightroom-plugin-client",
+      "version": "9.15.61",
+      "purl": "pkg:generic/lightroom-plugin-client@9.15.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/service-lightroom-client@5.9.98",
+      "name": "service-lightroom-client",
+      "version": "5.9.98",
+      "purl": "pkg:generic/service-lightroom-client@5.9.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lightroom-module-common@5.13.93",
+      "name": "lightroom-module-common",
+      "version": "5.13.93",
+      "purl": "pkg:generic/lightroom-module-common@5.13.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-lightroom-common@8.7.40",
+      "name": "engine-lightroom-common",
+      "version": "8.7.40",
+      "purl": "pkg:generic/engine-lightroom-common@8.7.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lightroom-engine-base@6.13.34",
+      "name": "lightroom-engine-base",
+      "version": "6.13.34",
+      "purl": "pkg:generic/lightroom-engine-base@6.13.34",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lightroom-service-api@10.15.33",
+      "name": "lightroom-service-api",
+      "version": "10.15.33",
+      "purl": "pkg:generic/lightroom-service-api@10.15.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-lightroom-common@2.17.88",
+      "name": "lib-lightroom-common",
+      "version": "2.17.88",
+      "purl": "pkg:generic/lib-lightroom-common@2.17.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/lightroom-service-core@8.6.80",
+      "name": "lightroom-service-core",
+      "version": "8.6.80",
+      "purl": "pkg:generic/lightroom-service-core@8.6.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lightroom-api-server@9.2.15",
+      "name": "lightroom-api-server",
+      "version": "9.2.15",
+      "purl": "pkg:generic/lightroom-api-server@9.2.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-lightroom-client@9.20.81",
+      "name": "framework-lightroom-client",
+      "version": "9.20.81",
+      "purl": "pkg:generic/framework-lightroom-client@9.20.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/core-lightroom-lib@2.14.87",
+      "name": "core-lightroom-lib",
+      "version": "2.14.87",
+      "purl": "pkg:generic/core-lightroom-lib@2.14.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lightroom-plugin-lib@7.18.81",
+      "name": "lightroom-plugin-lib",
+      "version": "7.18.81",
+      "purl": "pkg:generic/lightroom-plugin-lib@7.18.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lightroom-framework-js@6.19.9",
+      "name": "lightroom-framework-js",
+      "version": "6.19.9",
+      "purl": "pkg:generic/lightroom-framework-js@6.19.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-11-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lightroom-util@3.16.43",
+      "name": "lightroom-util",
+      "version": "3.16.43",
+      "purl": "pkg:generic/lightroom-util@3.16.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lightroom-core-api@3.9.8",
+      "name": "lightroom-core-api",
+      "version": "3.9.8",
+      "purl": "pkg:generic/lightroom-core-api@3.9.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lightroom-core-lib@3.11.81",
+      "name": "lightroom-core-lib",
+      "version": "3.11.81",
+      "purl": "pkg:generic/lightroom-core-lib@3.11.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lightroom-plugin@6.14.21",
+      "name": "lightroom-plugin",
+      "version": "6.14.21",
+      "purl": "pkg:generic/lightroom-plugin@6.14.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/lightroom-plugin-core@5.7.41",
+      "name": "lightroom-plugin-core",
+      "version": "5.7.41",
+      "purl": "pkg:generic/lightroom-plugin-core@5.7.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-lightroom-base@4.2.25",
+      "name": "sdk-lightroom-base",
+      "version": "4.2.25",
+      "purl": "pkg:generic/sdk-lightroom-base@4.2.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/lightroom-core-base@4.13.75",
+      "name": "lightroom-core-base",
+      "version": "4.13.75",
+      "purl": "pkg:generic/lightroom-core-base@4.13.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/util-lightroom-utils@5.18.57",
+      "name": "util-lightroom-utils",
+      "version": "5.18.57",
+      "purl": "pkg:generic/util-lightroom-utils@5.18.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-19T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

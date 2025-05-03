@@ -1,0 +1,38 @@
+[2025-05-03 00:10:19] Starting SBOM dataset generation
+[2025-05-03 00:10:19] ✅ Created backup directory: ./test_backup
+[2025-05-03 00:10:23] Processing 1/52: element-desktop (messaging)
+[2025-05-03 00:10:23] Installing package: element-desktop
+[2025-05-03 00:10:32] ❌ Failed to install element-desktop: Command '['apt-get', 'install', '-y', 'element-desktop']' returned non-zero exit status 100.
+[2025-05-03 00:10:33] Processing 2/52: postgresql (database)
+[2025-05-03 00:10:33] Installing package: postgresql
+[2025-05-03 00:11:14] ✅ Successfully installed postgresql
+[2025-05-03 00:11:14] Generating SBOM for postgresql (database)
+[2025-05-03 00:11:44] ❌ Failed to generate SBOM for postgresql: Command "packages" is deprecated, use `syft scan` instead
+Flag --file has been deprecated, use: --output FORMAT=PATH
+[0031] ERROR [31mcould not determine source: errors occurred attempting to resolve 'deb://postgresql':
+  - docker: docker not available: failed to connect to Docker daemon. Ensure Docker is running and accessible
+  - podman: podman not available: no host address
+  - containerd: containerd not available: no grpc connection or services is available: unavailable
+  - oci-registry: failed to get image descriptor from registry: Get "https://deb/v2/": dial tcp: lookup deb on 10.255.255.254:53: read udp 10.255.255.254:34291->10.255.255.254:53: i/o timeout
+  - additionally, the following providers failed with file does not exist: docker-archive, oci-archive, oci-dir, singularity, oci-dir, local-file, local-directory[0m
+
+[2025-05-03 00:11:44] Cleaning up package: postgresql
+[2025-05-03 00:11:46] ✅ Successfully removed postgresql
+[2025-05-03 00:11:47] Processing 3/52: gcc (programming)
+[2025-05-03 00:11:47] Installing package: gcc
+[2025-05-03 00:11:50] ✅ Successfully installed gcc
+[2025-05-03 00:11:50] Generating SBOM for gcc (programming)
+2025-05-03 00:51:07,600 [INFO] Windows directory created/verified: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM
+2025-05-03 00:51:07,601 [INFO] Loaded 60 custom applications from custom_apps.json
+2025-05-03 00:51:07,601 [INFO] Starting SBOM generation process
+2025-05-03 00:51:07,601 [INFO] Checking if Syft is installed...
+2025-05-03 00:51:07,783 [INFO] Syft is already installed
+2025-05-03 00:51:07,783 [INFO] Updating package lists...
+2025-05-03 00:51:07,783 [INFO] Running command: sudo apt-get update
+2025-05-03 00:52:58,932 [INFO] Windows directory created/verified: /mnt/c/Users/Gunty Snehajoyce/Documents/SBOM
+2025-05-03 00:52:58,933 [INFO] Loaded 60 custom applications from custom_apps.json
+2025-05-03 00:52:58,933 [INFO] Starting SBOM generation process
+2025-05-03 00:52:58,934 [INFO] Checking if Syft is installed...
+2025-05-03 00:52:58,937 [INFO] Syft is already installed
+2025-05-03 00:52:58,937 [INFO] Updating package lists...
+2025-05-03 00:52:58,938 [INFO] Running command: sudo apt-get update

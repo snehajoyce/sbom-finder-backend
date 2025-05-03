@@ -1,0 +1,163 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:ab4a7bd0222c904ae1c5d17fc9cbeeaa",
+  "metadata": {
+    "timestamp": "2025-05-03T00:57:00.287047",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:telegram/telegram@9.19.4",
+      "name": "telegram",
+      "version": "9.19.4",
+      "supplier": {
+        "name": "telegram"
+      },
+      "cpe": "cpe:2.3:a:telegram:telegram:9.19.4:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-telegram-js@1.9.80",
+      "name": "util-telegram-js",
+      "version": "1.9.80",
+      "purl": "pkg:generic/util-telegram-js@1.9.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/telegram-plugin-api@8.19.20",
+      "name": "telegram-plugin-api",
+      "version": "8.19.20",
+      "purl": "pkg:generic/telegram-plugin-api@8.19.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-02-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/telegram-lib-js@2.11.26",
+      "name": "telegram-lib-js",
+      "version": "2.11.26",
+      "purl": "pkg:generic/telegram-lib-js@2.11.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-telegram@10.14.98",
+      "name": "sdk-telegram",
+      "version": "10.14.98",
+      "purl": "pkg:generic/sdk-telegram@10.14.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/framework-telegram@7.12.56",
+      "name": "framework-telegram",
+      "version": "7.12.56",
+      "purl": "pkg:generic/framework-telegram@7.12.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-12-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/telegram-service-lib@1.19.59",
+      "name": "telegram-service-lib",
+      "version": "1.19.59",
+      "purl": "pkg:generic/telegram-service-lib@1.19.59",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-02T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

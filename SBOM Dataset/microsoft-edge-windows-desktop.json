@@ -1,0 +1,828 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:56863827dc720188b70bb787a238e2c5",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.244406",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/edge@1.18.81",
+      "name": "edge",
+      "version": "1.18.81",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:edge:1.18.81:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/engine-edge-utils@4.12.27",
+      "name": "engine-edge-utils",
+      "version": "4.12.27",
+      "purl": "pkg:generic/engine-edge-utils@4.12.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/core-edge-common@3.17.50",
+      "name": "core-edge-common",
+      "version": "3.17.50",
+      "purl": "pkg:generic/core-edge-common@3.17.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/edge-lib-utils@2.10.82",
+      "name": "edge-lib-utils",
+      "version": "2.10.82",
+      "purl": "pkg:generic/edge-lib-utils@2.10.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/edge-api-client@1.11.96",
+      "name": "edge-api-client",
+      "version": "1.11.96",
+      "purl": "pkg:generic/edge-api-client@1.11.96",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-09-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/edge-util-base@4.15.3",
+      "name": "edge-util-base",
+      "version": "4.15.3",
+      "purl": "pkg:generic/edge-util-base@4.15.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/edge-engine-lib@2.17.56",
+      "name": "edge-engine-lib",
+      "version": "2.17.56",
+      "purl": "pkg:generic/edge-engine-lib@2.17.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/edge-service-lib@10.10.57",
+      "name": "edge-service-lib",
+      "version": "10.10.57",
+      "purl": "pkg:generic/edge-service-lib@10.10.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-sdk-core@6.6.16",
+      "name": "edge-sdk-core",
+      "version": "6.6.16",
+      "purl": "pkg:generic/edge-sdk-core@6.6.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-12-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/plugin-edge@10.15.92",
+      "name": "plugin-edge",
+      "version": "10.15.92",
+      "purl": "pkg:generic/plugin-edge@10.15.92",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/api-edge-server@4.2.70",
+      "name": "api-edge-server",
+      "version": "4.2.70",
+      "purl": "pkg:generic/api-edge-server@4.2.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/framework-edge-base@9.0.12",
+      "name": "framework-edge-base",
+      "version": "9.0.12",
+      "purl": "pkg:generic/framework-edge-base@9.0.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-lib@3.18.36",
+      "name": "edge-lib",
+      "version": "3.18.36",
+      "purl": "pkg:generic/edge-lib@3.18.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/edge-sdk-client@4.14.55",
+      "name": "edge-sdk-client",
+      "version": "4.14.55",
+      "purl": "pkg:generic/edge-sdk-client@4.14.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/edge-plugin-base@2.5.13",
+      "name": "edge-plugin-base",
+      "version": "2.5.13",
+      "purl": "pkg:generic/edge-plugin-base@2.5.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/edge-sdk-js@7.1.24",
+      "name": "edge-sdk-js",
+      "version": "7.1.24",
+      "purl": "pkg:generic/edge-sdk-js@7.1.24",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/edge-service-core@9.4.57",
+      "name": "edge-service-core",
+      "version": "9.4.57",
+      "purl": "pkg:generic/edge-service-core@9.4.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-module-client@10.2.71",
+      "name": "edge-module-client",
+      "version": "10.2.71",
+      "purl": "pkg:generic/edge-module-client@10.2.71",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/edge-engine-api@8.11.25",
+      "name": "edge-engine-api",
+      "version": "8.11.25",
+      "purl": "pkg:generic/edge-engine-api@8.11.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-04-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-edge-base@2.15.79",
+      "name": "engine-edge-base",
+      "version": "2.15.79",
+      "purl": "pkg:generic/engine-edge-base@2.15.79",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/edge-framework@3.16.87",
+      "name": "edge-framework",
+      "version": "3.16.87",
+      "purl": "pkg:generic/edge-framework@3.16.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/edge-plugin-utils@9.20.75",
+      "name": "edge-plugin-utils",
+      "version": "9.20.75",
+      "purl": "pkg:generic/edge-plugin-utils@9.20.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-26T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-engine-client@8.19.13",
+      "name": "edge-engine-client",
+      "version": "8.19.13",
+      "purl": "pkg:generic/edge-engine-client@8.19.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/module-edge-utils@4.8.72",
+      "name": "module-edge-utils",
+      "version": "4.8.72",
+      "purl": "pkg:generic/module-edge-utils@4.8.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/module-edge-common@10.17.97",
+      "name": "module-edge-common",
+      "version": "10.17.97",
+      "purl": "pkg:generic/module-edge-common@10.17.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-core-api@5.8.52",
+      "name": "edge-core-api",
+      "version": "5.8.52",
+      "purl": "pkg:generic/edge-core-api@5.8.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/edge-service-api@2.12.75",
+      "name": "edge-service-api",
+      "version": "2.12.75",
+      "purl": "pkg:generic/edge-service-api@2.12.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/edge-sdk-utils@3.4.21",
+      "name": "edge-sdk-utils",
+      "version": "3.4.21",
+      "purl": "pkg:generic/edge-sdk-utils@3.4.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/module-edge-js@5.1.77",
+      "name": "module-edge-js",
+      "version": "5.1.77",
+      "purl": "pkg:generic/module-edge-js@5.1.77",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/edge-engine-common@9.15.49",
+      "name": "edge-engine-common",
+      "version": "9.15.49",
+      "purl": "pkg:generic/edge-engine-common@9.15.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/edge-plugin-client@7.3.73",
+      "name": "edge-plugin-client",
+      "version": "7.3.73",
+      "purl": "pkg:generic/edge-plugin-client@7.3.73",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-05-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/edge-service-common@8.4.52",
+      "name": "edge-service-common",
+      "version": "8.4.52",
+      "purl": "pkg:generic/edge-service-common@8.4.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-edge-base@9.20.93",
+      "name": "core-edge-base",
+      "version": "9.20.93",
+      "purl": "pkg:generic/core-edge-base@9.20.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/edge-service-base@10.12.21",
+      "name": "edge-service-base",
+      "version": "10.12.21",
+      "purl": "pkg:generic/edge-service-base@10.12.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-08-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/edge-framework-lib@8.8.88",
+      "name": "edge-framework-lib",
+      "version": "8.8.88",
+      "purl": "pkg:generic/edge-framework-lib@8.8.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-05-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/framework-edge-server@9.18.43",
+      "name": "framework-edge-server",
+      "version": "9.18.43",
+      "purl": "pkg:generic/framework-edge-server@9.18.43",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-edge-core@8.1.30",
+      "name": "service-edge-core",
+      "version": "8.1.30",
+      "purl": "pkg:generic/service-edge-core@8.1.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/edge-lib-js@4.0.75",
+      "name": "edge-lib-js",
+      "version": "4.0.75",
+      "purl": "pkg:generic/edge-lib-js@4.0.75",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-03T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:f0a4ff5d0be40cbf254b2c41f78f88db",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:55.776347",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:microsoft/visualstudio@9.0.22",
+      "name": "visualstudio",
+      "version": "9.0.22",
+      "supplier": {
+        "name": "microsoft"
+      },
+      "cpe": "cpe:2.3:a:microsoft:visualstudio:9.0.22:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/visualstudio-core-server@2.19.60",
+      "name": "visualstudio-core-server",
+      "version": "2.19.60",
+      "purl": "pkg:generic/visualstudio-core-server@2.19.60",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-visualstudio-lib@8.12.90",
+      "name": "engine-visualstudio-lib",
+      "version": "8.12.90",
+      "purl": "pkg:generic/engine-visualstudio-lib@8.12.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/visualstudio-engine-api@7.18.80",
+      "name": "visualstudio-engine-api",
+      "version": "7.18.80",
+      "purl": "pkg:generic/visualstudio-engine-api@7.18.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-visualstudio@5.4.5",
+      "name": "service-visualstudio",
+      "version": "5.4.5",
+      "purl": "pkg:generic/service-visualstudio@5.4.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/visualstudio-module-api@6.9.37",
+      "name": "visualstudio-module-api",
+      "version": "6.9.37",
+      "purl": "pkg:generic/visualstudio-module-api@6.9.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-visualstudio-utils@6.14.13",
+      "name": "sdk-visualstudio-utils",
+      "version": "6.14.13",
+      "purl": "pkg:generic/sdk-visualstudio-utils@6.14.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/sdk-visualstudio-lib@6.0.17",
+      "name": "sdk-visualstudio-lib",
+      "version": "6.0.17",
+      "purl": "pkg:generic/sdk-visualstudio-lib@6.0.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-visualstudio-server@10.10.33",
+      "name": "engine-visualstudio-server",
+      "version": "10.10.33",
+      "purl": "pkg:generic/engine-visualstudio-server@10.10.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-visualstudio-utils@1.10.64",
+      "name": "api-visualstudio-utils",
+      "version": "1.10.64",
+      "purl": "pkg:generic/api-visualstudio-utils@1.10.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/plugin-visualstudio-js@4.19.35",
+      "name": "plugin-visualstudio-js",
+      "version": "4.19.35",
+      "purl": "pkg:generic/plugin-visualstudio-js@4.19.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/visualstudio-plugin-common@5.8.19",
+      "name": "visualstudio-plugin-common",
+      "version": "5.8.19",
+      "purl": "pkg:generic/visualstudio-plugin-common@5.8.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/lib-visualstudio-base@5.8.35",
+      "name": "lib-visualstudio-base",
+      "version": "5.8.35",
+      "purl": "pkg:generic/lib-visualstudio-base@5.8.35",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-visualstudio-utils@6.14.93",
+      "name": "module-visualstudio-utils",
+      "version": "6.14.93",
+      "purl": "pkg:generic/module-visualstudio-utils@6.14.93",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-03-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/api-visualstudio-common@3.10.90",
+      "name": "api-visualstudio-common",
+      "version": "3.10.90",
+      "purl": "pkg:generic/api-visualstudio-common@3.10.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/visualstudio-core@8.1.50",
+      "name": "visualstudio-core",
+      "version": "8.1.50",
+      "purl": "pkg:generic/visualstudio-core@8.1.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/visualstudio-api-common@7.0.81",
+      "name": "visualstudio-api-common",
+      "version": "7.0.81",
+      "purl": "pkg:generic/visualstudio-api-common@7.0.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/visualstudio-core-api@3.8.4",
+      "name": "visualstudio-core-api",
+      "version": "3.8.4",
+      "purl": "pkg:generic/visualstudio-core-api@3.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-05-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/visualstudio-plugin-base@8.11.12",
+      "name": "visualstudio-plugin-base",
+      "version": "8.11.12",
+      "purl": "pkg:generic/visualstudio-plugin-base@8.11.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/sdk-visualstudio-common@5.2.11",
+      "name": "sdk-visualstudio-common",
+      "version": "5.2.11",
+      "purl": "pkg:generic/sdk-visualstudio-common@5.2.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/framework-visualstudio-api@8.15.58",
+      "name": "framework-visualstudio-api",
+      "version": "8.15.58",
+      "purl": "pkg:generic/framework-visualstudio-api@8.15.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-06-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/visualstudio-util-server@2.6.54",
+      "name": "visualstudio-util-server",
+      "version": "2.6.54",
+      "purl": "pkg:generic/visualstudio-util-server@2.6.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/sdk-visualstudio-js@6.5.99",
+      "name": "sdk-visualstudio-js",
+      "version": "6.5.99",
+      "purl": "pkg:generic/sdk-visualstudio-js@6.5.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-09-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/visualstudio-plugin-js@2.13.87",
+      "name": "visualstudio-plugin-js",
+      "version": "2.13.87",
+      "purl": "pkg:generic/visualstudio-plugin-js@2.13.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-02-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/visualstudio-core-common@4.14.37",
+      "name": "visualstudio-core-common",
+      "version": "4.14.37",
+      "purl": "pkg:generic/visualstudio-core-common@4.14.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/visualstudio-sdk-utils@5.8.64",
+      "name": "visualstudio-sdk-utils",
+      "version": "5.8.64",
+      "purl": "pkg:generic/visualstudio-sdk-utils@5.8.64",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/util-visualstudio-js@8.19.41",
+      "name": "util-visualstudio-js",
+      "version": "8.19.41",
+      "purl": "pkg:generic/util-visualstudio-js@8.19.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/visualstudio-api-js@2.1.38",
+      "name": "visualstudio-api-js",
+      "version": "2.1.38",
+      "purl": "pkg:generic/visualstudio-api-js@2.1.38",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/visualstudio-sdk-common@6.10.16",
+      "name": "visualstudio-sdk-common",
+      "version": "6.10.16",
+      "purl": "pkg:generic/visualstudio-sdk-common@6.10.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-01-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/lib-visualstudio-utils@6.6.80",
+      "name": "lib-visualstudio-utils",
+      "version": "6.6.80",
+      "purl": "pkg:generic/lib-visualstudio-utils@6.6.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-09-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/visualstudio-sdk-server@7.16.6",
+      "name": "visualstudio-sdk-server",
+      "version": "7.16.6",
+      "purl": "pkg:generic/visualstudio-sdk-server@7.16.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/visualstudio-core-base@4.20.86",
+      "name": "visualstudio-core-base",
+      "version": "4.20.86",
+      "purl": "pkg:generic/visualstudio-core-base@4.20.86",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/visualstudio-lib-lib@1.1.1",
+      "name": "visualstudio-lib-lib",
+      "version": "1.1.1",
+      "purl": "pkg:generic/visualstudio-lib-lib@1.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/framework-visualstudio-server@5.11.69",
+      "name": "framework-visualstudio-server",
+      "version": "5.11.69",
+      "purl": "pkg:generic/framework-visualstudio-server@5.11.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-03-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lib-visualstudio-common@9.18.37",
+      "name": "lib-visualstudio-common",
+      "version": "9.18.37",
+      "purl": "pkg:generic/lib-visualstudio-common@9.18.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/visualstudio-plugin-utils@7.3.0",
+      "name": "visualstudio-plugin-utils",
+      "version": "7.3.0",
+      "purl": "pkg:generic/visualstudio-plugin-utils@7.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lib-visualstudio-core@1.17.99",
+      "name": "lib-visualstudio-core",
+      "version": "1.17.99",
+      "purl": "pkg:generic/lib-visualstudio-core@1.17.99",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/engine-visualstudio-api@8.4.27",
+      "name": "engine-visualstudio-api",
+      "version": "8.4.27",
+      "purl": "pkg:generic/engine-visualstudio-api@8.4.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/visualstudio-module-utils@6.12.61",
+      "name": "visualstudio-module-utils",
+      "version": "6.12.61",
+      "purl": "pkg:generic/visualstudio-module-utils@6.12.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/framework-visualstudio-core@8.2.80",
+      "name": "framework-visualstudio-core",
+      "version": "8.2.80",
+      "purl": "pkg:generic/framework-visualstudio-core@8.2.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/plugin-visualstudio-core@10.5.13",
+      "name": "plugin-visualstudio-core",
+      "version": "10.5.13",
+      "purl": "pkg:generic/plugin-visualstudio-core@10.5.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-04-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-visualstudio-client@5.9.10",
+      "name": "module-visualstudio-client",
+      "version": "5.9.10",
+      "purl": "pkg:generic/module-visualstudio-client@5.9.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-07-18T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

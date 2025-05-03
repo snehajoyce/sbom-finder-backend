@@ -1,0 +1,663 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:e87b28f6d51534b30603fa6395f84c9a",
+  "metadata": {
+    "timestamp": "2025-05-03T00:57:00.332985",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:meta/whatsapp@9.3.37",
+      "name": "whatsapp",
+      "version": "9.3.37",
+      "supplier": {
+        "name": "meta"
+      },
+      "cpe": "cpe:2.3:a:meta:whatsapp:9.3.37:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/whatsapp-framework-client@2.9.2",
+      "name": "whatsapp-framework-client",
+      "version": "2.9.2",
+      "purl": "pkg:generic/whatsapp-framework-client@2.9.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-08-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-whatsapp-common@9.7.67",
+      "name": "sdk-whatsapp-common",
+      "version": "9.7.67",
+      "purl": "pkg:generic/sdk-whatsapp-common@9.7.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/plugin-whatsapp-utils@4.3.33",
+      "name": "plugin-whatsapp-utils",
+      "version": "4.3.33",
+      "purl": "pkg:generic/plugin-whatsapp-utils@4.3.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-04-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/core-whatsapp-common@10.6.56",
+      "name": "core-whatsapp-common",
+      "version": "10.6.56",
+      "purl": "pkg:generic/core-whatsapp-common@10.6.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/whatsapp-sdk-client@1.14.87",
+      "name": "whatsapp-sdk-client",
+      "version": "1.14.87",
+      "purl": "pkg:generic/whatsapp-sdk-client@1.14.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/sdk-whatsapp-js@10.1.40",
+      "name": "sdk-whatsapp-js",
+      "version": "10.1.40",
+      "purl": "pkg:generic/sdk-whatsapp-js@10.1.40",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-08-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/api-whatsapp-base@6.15.78",
+      "name": "api-whatsapp-base",
+      "version": "6.15.78",
+      "purl": "pkg:generic/api-whatsapp-base@6.15.78",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-04-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/module-whatsapp-core@2.3.19",
+      "name": "module-whatsapp-core",
+      "version": "2.3.19",
+      "purl": "pkg:generic/module-whatsapp-core@2.3.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/whatsapp-plugin-server@2.10.45",
+      "name": "whatsapp-plugin-server",
+      "version": "2.10.45",
+      "purl": "pkg:generic/whatsapp-plugin-server@2.10.45",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-09-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/whatsapp-module-core@4.6.39",
+      "name": "whatsapp-module-core",
+      "version": "4.6.39",
+      "purl": "pkg:generic/whatsapp-module-core@4.6.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-whatsapp-api@4.3.26",
+      "name": "plugin-whatsapp-api",
+      "version": "4.3.26",
+      "purl": "pkg:generic/plugin-whatsapp-api@4.3.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-10-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/whatsapp-module-js@5.2.9",
+      "name": "whatsapp-module-js",
+      "version": "5.2.9",
+      "purl": "pkg:generic/whatsapp-module-js@5.2.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/whatsapp-framework-base@2.13.25",
+      "name": "whatsapp-framework-base",
+      "version": "2.13.25",
+      "purl": "pkg:generic/whatsapp-framework-base@2.13.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/whatsapp-util-lib@5.7.82",
+      "name": "whatsapp-util-lib",
+      "version": "5.7.82",
+      "purl": "pkg:generic/whatsapp-util-lib@5.7.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/whatsapp-core-utils@6.8.48",
+      "name": "whatsapp-core-utils",
+      "version": "6.8.48",
+      "purl": "pkg:generic/whatsapp-core-utils@6.8.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/module-whatsapp-api@6.19.80",
+      "name": "module-whatsapp-api",
+      "version": "6.19.80",
+      "purl": "pkg:generic/module-whatsapp-api@6.19.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/whatsapp-core-common@6.4.25",
+      "name": "whatsapp-core-common",
+      "version": "6.4.25",
+      "purl": "pkg:generic/whatsapp-core-common@6.4.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/whatsapp-lib-utils@7.10.61",
+      "name": "whatsapp-lib-utils",
+      "version": "7.10.61",
+      "purl": "pkg:generic/whatsapp-lib-utils@7.10.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/util-whatsapp-js@3.7.90",
+      "name": "util-whatsapp-js",
+      "version": "3.7.90",
+      "purl": "pkg:generic/util-whatsapp-js@3.7.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/whatsapp-lib-core@4.0.48",
+      "name": "whatsapp-lib-core",
+      "version": "4.0.48",
+      "purl": "pkg:generic/whatsapp-lib-core@4.0.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-whatsapp-lib@3.7.39",
+      "name": "lib-whatsapp-lib",
+      "version": "3.7.39",
+      "purl": "pkg:generic/lib-whatsapp-lib@3.7.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/whatsapp-framework-server@10.8.0",
+      "name": "whatsapp-framework-server",
+      "version": "10.8.0",
+      "purl": "pkg:generic/whatsapp-framework-server@10.8.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-02-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/whatsapp-engine-utils@9.0.49",
+      "name": "whatsapp-engine-utils",
+      "version": "9.0.49",
+      "purl": "pkg:generic/whatsapp-engine-utils@9.0.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/whatsapp-service-base@3.18.46",
+      "name": "whatsapp-service-base",
+      "version": "3.18.46",
+      "purl": "pkg:generic/whatsapp-service-base@3.18.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-08-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-whatsapp-utils@9.15.65",
+      "name": "framework-whatsapp-utils",
+      "version": "9.15.65",
+      "purl": "pkg:generic/framework-whatsapp-utils@9.15.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/whatsapp-framework@7.13.1",
+      "name": "whatsapp-framework",
+      "version": "7.13.1",
+      "purl": "pkg:generic/whatsapp-framework@7.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-whatsapp@3.9.70",
+      "name": "service-whatsapp",
+      "version": "3.9.70",
+      "purl": "pkg:generic/service-whatsapp@3.9.70",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-05-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/whatsapp-service-server@7.12.2",
+      "name": "whatsapp-service-server",
+      "version": "7.12.2",
+      "purl": "pkg:generic/whatsapp-service-server@7.12.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-10-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/plugin-whatsapp@2.17.28",
+      "name": "plugin-whatsapp",
+      "version": "2.17.28",
+      "purl": "pkg:generic/plugin-whatsapp@2.17.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/plugin-whatsapp-base@8.2.54",
+      "name": "plugin-whatsapp-base",
+      "version": "8.2.54",
+      "purl": "pkg:generic/plugin-whatsapp-base@8.2.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-02T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:f046da19a4dc39eb45d6307992dfc5d3",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:52.917753",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:onlyoffice/onlyoffice@7.9.84",
+      "name": "onlyoffice",
+      "version": "7.9.84",
+      "supplier": {
+        "name": "onlyoffice"
+      },
+      "cpe": "cpe:2.3:a:onlyoffice:onlyoffice:7.9.84:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "windows"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/onlyoffice-plugin-client@10.3.14",
+      "name": "onlyoffice-plugin-client",
+      "version": "10.3.14",
+      "purl": "pkg:generic/onlyoffice-plugin-client@10.3.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-06-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/onlyoffice-sdk-utils@7.13.29",
+      "name": "onlyoffice-sdk-utils",
+      "version": "7.13.29",
+      "purl": "pkg:generic/onlyoffice-sdk-utils@7.13.29",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/service-onlyoffice-base@6.4.95",
+      "name": "service-onlyoffice-base",
+      "version": "6.4.95",
+      "purl": "pkg:generic/service-onlyoffice-base@6.4.95",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-02-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/api-onlyoffice-js@6.6.80",
+      "name": "api-onlyoffice-js",
+      "version": "6.6.80",
+      "purl": "pkg:generic/api-onlyoffice-js@6.6.80",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/onlyoffice-service-client@3.18.84",
+      "name": "onlyoffice-service-client",
+      "version": "3.18.84",
+      "purl": "pkg:generic/onlyoffice-service-client@3.18.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-01-09T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/onlyoffice-util-base@6.19.87",
+      "name": "onlyoffice-util-base",
+      "version": "6.19.87",
+      "purl": "pkg:generic/onlyoffice-util-base@6.19.87",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-12-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/onlyoffice-api-base@5.8.68",
+      "name": "onlyoffice-api-base",
+      "version": "5.8.68",
+      "purl": "pkg:generic/onlyoffice-api-base@5.8.68",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-06-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/lib-onlyoffice-utils@8.5.55",
+      "name": "lib-onlyoffice-utils",
+      "version": "8.5.55",
+      "purl": "pkg:generic/lib-onlyoffice-utils@8.5.55",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/plugin-onlyoffice-core@10.3.90",
+      "name": "plugin-onlyoffice-core",
+      "version": "10.3.90",
+      "purl": "pkg:generic/plugin-onlyoffice-core@10.3.90",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-19T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/onlyoffice-service@10.6.17",
+      "name": "onlyoffice-service",
+      "version": "10.6.17",
+      "purl": "pkg:generic/onlyoffice-service@10.6.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-08-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/onlyoffice-module-api@4.5.19",
+      "name": "onlyoffice-module-api",
+      "version": "4.5.19",
+      "purl": "pkg:generic/onlyoffice-module-api@4.5.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/onlyoffice-lib-lib@6.20.65",
+      "name": "onlyoffice-lib-lib",
+      "version": "6.20.65",
+      "purl": "pkg:generic/onlyoffice-lib-lib@6.20.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/onlyoffice-lib-common@7.17.41",
+      "name": "onlyoffice-lib-common",
+      "version": "7.17.41",
+      "purl": "pkg:generic/onlyoffice-lib-common@7.17.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-11-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/onlyoffice-module-core@5.10.69",
+      "name": "onlyoffice-module-core",
+      "version": "5.10.69",
+      "purl": "pkg:generic/onlyoffice-module-core@5.10.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/lib-onlyoffice-js@3.7.25",
+      "name": "lib-onlyoffice-js",
+      "version": "3.7.25",
+      "purl": "pkg:generic/lib-onlyoffice-js@3.7.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-03-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/onlyoffice-module-utils@2.18.5",
+      "name": "onlyoffice-module-utils",
+      "version": "2.18.5",
+      "purl": "pkg:generic/onlyoffice-module-utils@2.18.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/util-onlyoffice-client@2.5.25",
+      "name": "util-onlyoffice-client",
+      "version": "2.5.25",
+      "purl": "pkg:generic/util-onlyoffice-client@2.5.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/core-onlyoffice-common@10.11.14",
+      "name": "core-onlyoffice-common",
+      "version": "10.11.14",
+      "purl": "pkg:generic/core-onlyoffice-common@10.11.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-04-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-onlyoffice-core@9.15.48",
+      "name": "module-onlyoffice-core",
+      "version": "9.15.48",
+      "purl": "pkg:generic/module-onlyoffice-core@9.15.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-09-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/onlyoffice-service-lib@7.4.69",
+      "name": "onlyoffice-service-lib",
+      "version": "7.4.69",
+      "purl": "pkg:generic/onlyoffice-service-lib@7.4.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-03-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/service-onlyoffice-server@9.17.1",
+      "name": "service-onlyoffice-server",
+      "version": "9.17.1",
+      "purl": "pkg:generic/service-onlyoffice-server@9.17.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-09-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-onlyoffice-api@3.13.65",
+      "name": "util-onlyoffice-api",
+      "version": "3.13.65",
+      "purl": "pkg:generic/util-onlyoffice-api@3.13.65",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-12-24T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/util-onlyoffice-utils@2.1.57",
+      "name": "util-onlyoffice-utils",
+      "version": "2.1.57",
+      "purl": "pkg:generic/util-onlyoffice-utils@2.1.57",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-08-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-onlyoffice-js@8.20.48",
+      "name": "framework-onlyoffice-js",
+      "version": "8.20.48",
+      "purl": "pkg:generic/framework-onlyoffice-js@8.20.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/onlyoffice-service-common@4.1.17",
+      "name": "onlyoffice-service-common",
+      "version": "4.1.17",
+      "purl": "pkg:generic/onlyoffice-service-common@4.1.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/onlyoffice-framework-base@10.13.17",
+      "name": "onlyoffice-framework-base",
+      "version": "10.13.17",
+      "purl": "pkg:generic/onlyoffice-framework-base@10.13.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-06T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:c0c67a9d281031ddca0e3160d5c43a41",
+  "metadata": {
+    "timestamp": "2025-05-03T00:57:01.284971",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:anydesk/anydesk@6.8.99",
+      "name": "anydesk",
+      "version": "6.8.99",
+      "supplier": {
+        "name": "anydesk"
+      },
+      "cpe": "cpe:2.3:a:anydesk:anydesk:6.8.99:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "ios"
+        },
+        {
+          "name": "type",
+          "value": "mobile"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/sdk-anydesk-server@10.9.67",
+      "name": "sdk-anydesk-server",
+      "version": "10.9.67",
+      "purl": "pkg:generic/sdk-anydesk-server@10.9.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/lib-anydesk-common@2.7.37",
+      "name": "lib-anydesk-common",
+      "version": "2.7.37",
+      "purl": "pkg:generic/lib-anydesk-common@2.7.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-15T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/anydesk-api-js@3.7.37",
+      "name": "anydesk-api-js",
+      "version": "3.7.37",
+      "purl": "pkg:generic/anydesk-api-js@3.7.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-06-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-anydesk-js@1.6.25",
+      "name": "core-anydesk-js",
+      "version": "1.6.25",
+      "purl": "pkg:generic/core-anydesk-js@1.6.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/plugin-anydesk-lib@10.5.72",
+      "name": "plugin-anydesk-lib",
+      "version": "10.5.72",
+      "purl": "pkg:generic/plugin-anydesk-lib@10.5.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-04-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/core-anydesk-common@7.13.17",
+      "name": "core-anydesk-common",
+      "version": "7.13.17",
+      "purl": "pkg:generic/core-anydesk-common@7.13.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/plugin-anydesk-core@4.6.98",
+      "name": "plugin-anydesk-core",
+      "version": "4.6.98",
+      "purl": "pkg:generic/plugin-anydesk-core@4.6.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/anydesk-engine-lib@1.8.72",
+      "name": "anydesk-engine-lib",
+      "version": "1.8.72",
+      "purl": "pkg:generic/anydesk-engine-lib@1.8.72",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/util-anydesk-common@9.8.82",
+      "name": "util-anydesk-common",
+      "version": "9.8.82",
+      "purl": "pkg:generic/util-anydesk-common@9.8.82",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-07-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/anydesk-api-core@2.10.58",
+      "name": "anydesk-api-core",
+      "version": "2.10.58",
+      "purl": "pkg:generic/anydesk-api-core@2.10.58",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-05-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "bom-ref": "pkg:generic/anydesk-plugin-base@7.18.97",
+      "name": "anydesk-plugin-base",
+      "version": "7.18.97",
+      "purl": "pkg:generic/anydesk-plugin-base@7.18.97",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-07-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/anydesk-framework-client@2.20.5",
+      "name": "anydesk-framework-client",
+      "version": "2.20.5",
+      "purl": "pkg:generic/anydesk-framework-client@2.20.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/lib-anydesk-utils@1.14.22",
+      "name": "lib-anydesk-utils",
+      "version": "1.14.22",
+      "purl": "pkg:generic/lib-anydesk-utils@1.14.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-05-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/anydesk-service-base@5.10.4",
+      "name": "anydesk-service-base",
+      "version": "5.10.4",
+      "purl": "pkg:generic/anydesk-service-base@5.10.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/anydesk-sdk-core@6.7.36",
+      "name": "anydesk-sdk-core",
+      "version": "6.7.36",
+      "purl": "pkg:generic/anydesk-sdk-core@6.7.36",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-anydesk-utils@5.10.63",
+      "name": "module-anydesk-utils",
+      "version": "5.10.63",
+      "purl": "pkg:generic/module-anydesk-utils@5.10.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-01-18T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/api-anydesk-utils@4.4.81",
+      "name": "api-anydesk-utils",
+      "version": "4.4.81",
+      "purl": "pkg:generic/api-anydesk-utils@4.4.81",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-01-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/anydesk-api-server@5.12.27",
+      "name": "anydesk-api-server",
+      "version": "5.12.27",
+      "purl": "pkg:generic/anydesk-api-server@5.12.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-02-10T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

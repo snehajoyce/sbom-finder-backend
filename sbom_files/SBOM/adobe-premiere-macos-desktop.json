@@ -1,0 +1,818 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:4532546fabb9b76dd883b7eed61f32d5",
+  "metadata": {
+    "timestamp": "2025-05-03T00:56:55.333351",
+    "tools": [
+      {
+        "vendor": "SBOM Finder",
+        "name": "SBOM Generator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:adobe/premiere@9.11.52",
+      "name": "premiere",
+      "version": "9.11.52",
+      "supplier": {
+        "name": "adobe"
+      },
+      "cpe": "cpe:2.3:a:adobe:premiere:9.11.52:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "os",
+          "value": "macos"
+        },
+        {
+          "name": "type",
+          "value": "desktop"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/engine-premiere-lib@10.6.62",
+      "name": "engine-premiere-lib",
+      "version": "10.6.62",
+      "purl": "pkg:generic/engine-premiere-lib@10.6.62",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-10-21T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/premiere-plugin-api@8.4.16",
+      "name": "premiere-plugin-api",
+      "version": "8.4.16",
+      "purl": "pkg:generic/premiere-plugin-api@8.4.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-11-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/api-premiere-utils@8.7.63",
+      "name": "api-premiere-utils",
+      "version": "8.7.63",
+      "purl": "pkg:generic/api-premiere-utils@8.7.63",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-06-25T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/premiere-core@4.16.69",
+      "name": "premiere-core",
+      "version": "4.16.69",
+      "purl": "pkg:generic/premiere-core@4.16.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-02-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/premiere-service-base@7.19.83",
+      "name": "premiere-service-base",
+      "version": "7.19.83",
+      "purl": "pkg:generic/premiere-service-base@7.19.83",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-01-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/premiere-service-utils@7.7.54",
+      "name": "premiere-service-utils",
+      "version": "7.7.54",
+      "purl": "pkg:generic/premiere-service-utils@7.7.54",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-10-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/premiere-plugin-lib@10.16.39",
+      "name": "premiere-plugin-lib",
+      "version": "10.16.39",
+      "purl": "pkg:generic/premiere-plugin-lib@10.16.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/premiere-engine-common@10.5.98",
+      "name": "premiere-engine-common",
+      "version": "10.5.98",
+      "purl": "pkg:generic/premiere-engine-common@10.5.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-06-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/premiere-api-base@9.17.89",
+      "name": "premiere-api-base",
+      "version": "9.17.89",
+      "purl": "pkg:generic/premiere-api-base@9.17.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-05-06T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/premiere-engine-lib@3.10.56",
+      "name": "premiere-engine-lib",
+      "version": "3.10.56",
+      "purl": "pkg:generic/premiere-engine-lib@3.10.56",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/lib-premiere-js@10.11.1",
+      "name": "lib-premiere-js",
+      "version": "10.11.1",
+      "purl": "pkg:generic/lib-premiere-js@10.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-08-17T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/service-premiere-lib@4.4.2",
+      "name": "service-premiere-lib",
+      "version": "4.4.2",
+      "purl": "pkg:generic/service-premiere-lib@4.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-05-10T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/plugin-premiere-core@10.1.47",
+      "name": "plugin-premiere-core",
+      "version": "10.1.47",
+      "purl": "pkg:generic/plugin-premiere-core@10.1.47",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-03-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/premiere-plugin-core@5.15.13",
+      "name": "premiere-plugin-core",
+      "version": "5.15.13",
+      "purl": "pkg:generic/premiere-plugin-core@5.15.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/module-premiere-api@10.10.98",
+      "name": "module-premiere-api",
+      "version": "10.10.98",
+      "purl": "pkg:generic/module-premiere-api@10.10.98",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        },
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-11-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/framework-premiere-js@10.8.32",
+      "name": "framework-premiere-js",
+      "version": "10.8.32",
+      "purl": "pkg:generic/framework-premiere-js@10.8.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-08-11T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-premiere-core@10.12.28",
+      "name": "service-premiere-core",
+      "version": "10.12.28",
+      "purl": "pkg:generic/service-premiere-core@10.12.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-23T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/premiere-service-lib@9.7.61",
+      "name": "premiere-service-lib",
+      "version": "9.7.61",
+      "purl": "pkg:generic/premiere-service-lib@9.7.61",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-12-20T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/util-premiere-client@2.14.85",
+      "name": "util-premiere-client",
+      "version": "2.14.85",
+      "purl": "pkg:generic/util-premiere-client@2.14.85",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-12-05T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/service-premiere-api@9.8.84",
+      "name": "service-premiere-api",
+      "version": "9.8.84",
+      "purl": "pkg:generic/service-premiere-api@9.8.84",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-03-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/core-premiere-client@5.15.46",
+      "name": "core-premiere-client",
+      "version": "5.15.46",
+      "purl": "pkg:generic/core-premiere-client@5.15.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-10-12T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/util-premiere-base@2.11.88",
+      "name": "util-premiere-base",
+      "version": "2.11.88",
+      "purl": "pkg:generic/util-premiere-base@2.11.88",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-09-08T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/premiere-engine-base@4.18.16",
+      "name": "premiere-engine-base",
+      "version": "4.18.16",
+      "purl": "pkg:generic/premiere-engine-base@4.18.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-02-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/module-premiere-server@7.14.50",
+      "name": "module-premiere-server",
+      "version": "7.14.50",
+      "purl": "pkg:generic/module-premiere-server@7.14.50",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-06-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "container",
+      "bom-ref": "pkg:generic/premiere-framework-lib@4.1.74",
+      "name": "premiere-framework-lib",
+      "version": "4.1.74",
+      "purl": "pkg:generic/premiere-framework-lib@4.1.74",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-11-28T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/lib-premiere@3.15.89",
+      "name": "lib-premiere",
+      "version": "3.15.89",
+      "purl": "pkg:generic/lib-premiere@3.15.89",
+      "licenses": [
+        {
+          "license": {
+            "id": "Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2018-07-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/premiere-sdk-api@1.17.8",
+      "name": "premiere-sdk-api",
+      "version": "1.17.8",
+      "purl": "pkg:generic/premiere-sdk-api@1.17.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-07-14T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "runtime",
+      "bom-ref": "pkg:generic/premiere-lib-core@5.4.21",
+      "name": "premiere-lib-core",
+      "version": "5.4.21",
+      "purl": "pkg:generic/premiere-lib-core@5.4.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2022-01-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "pkg:generic/premiere-api-api@10.19.39",
+      "name": "premiere-api-api",
+      "version": "10.19.39",
+      "purl": "pkg:generic/premiere-api-api@10.19.39",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-12-07T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "bom-ref": "pkg:generic/util-premiere-common@1.16.25",
+      "name": "util-premiere-common",
+      "version": "1.16.25",
+      "purl": "pkg:generic/util-premiere-common@1.16.25",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-09-22T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "pkg:generic/service-premiere@5.1.41",
+      "name": "service-premiere",
+      "version": "5.1.41",
+      "purl": "pkg:generic/service-premiere@5.1.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2019-12-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/framework-premiere@6.15.11",
+      "name": "framework-premiere",
+      "version": "6.15.11",
+      "purl": "pkg:generic/framework-premiere@6.15.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2020-03-27T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "pkg:generic/premiere-lib-server@2.8.69",
+      "name": "premiere-lib-server",
+      "version": "2.8.69",
+      "purl": "pkg:generic/premiere-lib-server@2.8.69",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2021-07-16T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/service-premiere-js@8.4.67",
+      "name": "service-premiere-js",
+      "version": "8.4.67",
+      "purl": "pkg:generic/service-premiere-js@8.4.67",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2024-07-13T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "firmware",
+      "bom-ref": "pkg:generic/sdk-premiere-core@7.7.37",
+      "name": "sdk-premiere-core",
+      "version": "7.7.37",
+      "purl": "pkg:generic/sdk-premiere-core@7.7.37",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2023-11-02T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "pkg:generic/premiere-engine-js@4.8.53",
+      "name": "premiere-engine-js",
+      "version": "4.8.53",
+      "purl": "pkg:generic/premiere-engine-js@4.8.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "last-modified",
+          "value": "2025-11-25T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}
