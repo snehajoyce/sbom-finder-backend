@@ -10,10 +10,18 @@ import uuid
 import re
 from sqlalchemy import or_, func, and_
 
+# Optional Google Cloud Storage support
+try:
+    from google.cloud import storage
+    GCS_ENABLED = True
+except ImportError:
+    GCS_ENABLED = False
+
 # Initialize Flask app
 app = Flask(__name__)
-# Enable CORS for all routes and origins
-CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST", "OPTIONS"], "allow_headers": ["Content-Type", "Authorization"]}})
+# Enable CORS for specific origin or * for all
+cors_origin = os.environ.get('CORS_ORIGIN', '*')
+CORS(app, resources={r"/*": {"origins": cors_origin, "methods": ["GET", "POST", "OPTIONS"], "allow_headers": ["Content-Type", "Authorization"]}})
 
 # File storage path
 SBOM_DIR = "./sbom_files/"
@@ -22,6 +30,23 @@ DATASET_DIR = "./sbom_files/SBOM/"
 os.makedirs(SBOM_DIR, exist_ok=True)
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(DATASET_DIR, exist_ok=True)
+
+# Google Cloud Storage configuration
+GCS_BUCKET_NAME = os.environ.get('GCS_BUCKET_NAME')
+CLOUD_STORAGE_ENABLED = GCS_ENABLED and GCS_BUCKET_NAME is not None
+
+# Initialize GCS client if enabled
+storage_client = None
+if CLOUD_STORAGE_ENABLED:
+    try:
+        storage_client = storage.Client()
+        bucket = storage_client.bucket(GCS_BUCKET_NAME)
+        if not bucket.exists():
+            bucket = storage_client.create_bucket(GCS_BUCKET_NAME)
+        print(f"Connected to GCS bucket: {GCS_BUCKET_NAME}")
+    except Exception as e:
+        print(f"Warning: Cloud Storage initialization failed: {e}")
+        CLOUD_STORAGE_ENABLED = False
 
 # Database configuration
 SQLITE_PATH = os.environ.get('SQLITE_PATH', 'sboms.db')
@@ -132,6 +157,24 @@ def get_sbom(filename):
     except Exception as e:
         return jsonify({"error": f"Error loading SBOM: {str(e)}", "filename": filename}), 500
 
+# Helper function to save file to GCS
+def save_to_gcs(file_path, destination_blob_name):
+    """Upload a file to the GCS bucket."""
+    if not CLOUD_STORAGE_ENABLED:
+        return False
+    
+    try:
+        bucket = storage_client.bucket(GCS_BUCKET_NAME)
+        blob = bucket.blob(destination_blob_name)
+        
+        # Upload from a local file
+        blob.upload_from_filename(file_path)
+        print(f"File {file_path} uploaded to {destination_blob_name} in bucket {GCS_BUCKET_NAME}")
+        return True
+    except Exception as e:
+        print(f"Error uploading to GCS: {e}")
+        return False
+
 # Upload SBOM with metadata
 @app.route('/api/upload', methods=['POST'])
 def upload_sbom():
@@ -213,18 +256,39 @@ def upload_sbom():
     except Exception as e:
         print(f"Warning: Could not save to dataset directory: {e}")
     
+    # Try to upload to Google Cloud Storage if enabled
+    gcs_saved = False
+    if CLOUD_STORAGE_ENABLED:
+        main_blob_name = f"sbom_files/{filename}"
+        dataset_blob_name = f"sbom_files/SBOM/{filename}"
+        
+        # Upload to main SBOM directory in GCS
+        gcs_saved = save_to_gcs(sbom_dir_path, main_blob_name)
+        
+        # Upload to dataset directory in GCS
+        if dataset_saved:
+            dataset_gcs_saved = save_to_gcs(dataset_dir_path, dataset_blob_name)
+            gcs_saved = gcs_saved and dataset_gcs_saved
+    
     # Prepare response message
     message = f"{filename} uploaded successfully with metadata"
     if dataset_saved:
         message += " and added to dataset"
     else:
         message += " (Note: Only saved to main directory)"
+    
+    if CLOUD_STORAGE_ENABLED:
+        if gcs_saved:
+            message += " and saved to Cloud Storage"
+        else:
+            message += " (Failed to save to Cloud Storage)"
 
     return jsonify({
         "message": message,
         "sbom_id": new_sbom.id,
         "filename": filename,
-        "dataset_saved": dataset_saved
+        "dataset_saved": dataset_saved,
+        "cloud_storage_saved": gcs_saved if CLOUD_STORAGE_ENABLED else None
     }), 200
 
 # Auto-generate SBOM from uploaded executable using Syft
@@ -276,19 +340,44 @@ def generate_sbom():
         db.session.add(new_sbom)
         db.session.commit()
 
+        # Try to upload to Google Cloud Storage if enabled
+        gcs_saved = False
+        if CLOUD_STORAGE_ENABLED:
+            blob_name = f"sbom_files/{sbom_filename}"
+            gcs_saved = save_to_gcs(sbom_path, blob_name)
+
+        # Clean up the uploaded executable file
+        os.remove(exe_path)
+
+        # Prepare the message
+        message = f"SBOM generated successfully for {original_name}"
+        if CLOUD_STORAGE_ENABLED:
+            if gcs_saved:
+                message += " and saved to Cloud Storage"
+            else:
+                message += " (Failed to save to Cloud Storage)"
+
         return jsonify({
-            "message": f"SBOM generated successfully for {original_name}", 
+            "message": message, 
             "sbom_id": new_sbom.id,
-            "filename": sbom_filename
+            "filename": sbom_filename,
+            "cloud_storage_saved": gcs_saved if CLOUD_STORAGE_ENABLED else None
         }), 200
 
     except subprocess.CalledProcessError as e:
-        return jsonify({"error": f"Syft error: {e.stderr}"}), 500
+        # Clean up the uploaded executable file
+        os.remove(exe_path)
+        return jsonify({
+            "error": "Failed to generate SBOM", 
+            "details": f"Syft error: {e.stderr}"
+        }), 500
     except Exception as e:
-        return jsonify({"error": f"Error: {str(e)}"}), 500
-    finally:
-        if os.path.exists(exe_path):
-            os.remove(exe_path)
+        # Clean up the uploaded executable file
+        os.remove(exe_path)
+        return jsonify({
+            "error": "Failed to generate SBOM", 
+            "details": str(e)
+        }), 500
 
 # Search for components within a specific SBOM file
 @app.route('/api/search-components', methods=['POST'])
