@@ -446,7 +446,7 @@ def search_sboms():
             "total_components": sbom.total_components,
             "unique_licenses": sbom.unique_licenses
         })
-    
+
     return jsonify({
         "count": len(results),
         "results": results
