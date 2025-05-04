@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Create necessary directories
-RUN mkdir -p sbom_files/SBOM uploads
+RUN mkdir -p sbom_files/SBOM uploads instance
 
 # The Cloud Run container runs with a non-root user by default
 # We need to grant permissions to our working directories

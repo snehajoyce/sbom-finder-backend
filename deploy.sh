@@ -2,16 +2,10 @@
 set -e
 
 # Set variables
-PROJECT_ID=$(gcloud config get-value project)
+PROJECT_ID="scenic-block-458718-t0"  # Your actual project ID
 SERVICE_NAME="sbom-finder"
 REGION="us-central1"
 BUCKET_NAME="sbom-finder-storage"
-
-# Check if project ID is set
-if [ -z "$PROJECT_ID" ]; then
-    echo "Error: No project ID set. Run 'gcloud config set project YOUR_PROJECT_ID'"
-    exit 1
-fi
 
 echo "Deploying to project: $PROJECT_ID"
 
@@ -45,7 +39,7 @@ gcloud run deploy $SERVICE_NAME \
     --allow-unauthenticated \
     --memory 1Gi \
     --set-env-vars="BUCKET_NAME=$BUCKET_NAME" \
-    --service-account="$SERVICE_NAME-sa@$PROJECT_ID.iam.gserviceaccount.com"
+    --service-account="sbom-finder-sa@$PROJECT_ID.iam.gserviceaccount.com"
 
 echo "Deployment completed! Your service URL is:"
 gcloud run services describe $SERVICE_NAME --platform managed --region $REGION --format="value(status.url)" 
